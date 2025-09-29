@@ -213,55 +213,12 @@
   // =========================== RTL Mode js End ================================
 
   // =========================== Color Schema js Start ================================
-  // const colorPickerButtons = document.querySelectorAll(".color-picker-btn");
-
-  // const colors = {
-  //   blue: "#2563eb",
-  //   red: "#dc2626",
-  //   green: "#16a34a",
-  //   yellow: "#ff9f29",
-  //   cyan: "#00b8f2",
-  //   violet: "#7c3aed",
-  // };
-
-  // function applyColor(color) {
-  //   document.documentElement.style.setProperty("--primary-600", colors[color]);
-  //   localStorage.setItem("templateColor", color);
-  // }
-
-  // colorPickerButtons.forEach((btn) => {
-  //   btn.addEventListener("click", () => {
-  //     const color = btn.getAttribute("data-color");
-
-  //     // Apply color
-  //     applyColor(color);
-
-  //     // Active state
-  //     colorPickerButtons.forEach((b) => b.classList.remove("active"));
-  //     btn.classList.add("active");
-  //   });
-  // });
-
-  // // Load saved color on refresh
-  // const savedColor = localStorage.getItem("templateColor");
-  // if (savedColor && colors[savedColor]) {
-  //   applyColor(savedColor);
-  //   document
-  //     .querySelector(`.color-picker-btn[data-color="${savedColor}"]`)
-  //     .classList.add("active");
-  // } else {
-  //   // Default (blue)
-  //   document
-  //     .querySelector(`.color-picker-btn[data-color="blue"]`)
-  //     .classList.add("active");
-  // }
-
   const colorPickerButtons = document.querySelectorAll(".color-picker-btn");
 
   const colors = {
-    blue: "#2563eb",
+    base: "#25A194",
     red: "#dc2626",
-    green: "#16a34a",
+    blue: "#2563eb",
     yellow: "#ff9f29",
     cyan: "#00b8f2",
     violet: "#7c3aed",
@@ -295,9 +252,9 @@
       .querySelector(`.color-picker-btn[data-color="${savedColor}"]`)
       .classList.add("active");
   } else {
-    // Default (blue)
+    // Default (base)
     document
-      .querySelector(`.color-picker-btn[data-color="blue"]`)
+      .querySelector(`.color-picker-btn[data-color="base"]`)
       .classList.add("active");
   }
   // =========================== Color Schema js End ================================

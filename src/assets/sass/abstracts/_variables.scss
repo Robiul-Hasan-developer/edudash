@@ -1,19 +1,18 @@
 $colors: (
-  primary: (
-    "50": #E4F1FF,
-    "100": #BFDCFF,
-    "200": #95C7FF,
-    "300": #6BB1FF,
-    "400": #519FFF,
-    "500": #458EFF,
-    "600": #487FFF, // main theme color
-    "700": #486CEA,
-    "800": #4759D6,
-    "900": #4536B6
+  primary: ("50": "#E6F7F5",
+    "100": "#C0EAE5",
+    "200": "#99DDD5",
+    "300": "#66CBBF",
+    "400": "#3DB9AB",
+    "500": "#27A798",
+    "600": "#25A194", // main theme color
+    "700": "#1C7F73",
+    "800": "#145D55",
+    "900": "#0D3C36"
+
   ),
 
-  neutral: (
-    "50": #F5F6FA,
+  neutral: ("50": #F5F6FA,
     "100": #F3F4F6,
     "200": #EBECEF,
     "300": #D1D5DB,
@@ -22,11 +21,9 @@ $colors: (
     "600": #4B5563,
     "700": #374151,
     "800": #1F2937,
-    "900": #111827
-  ),
+    "900": #111827),
 
-  danger: (
-    "50": #FEF2F2,
+  danger: ("50": #FEF2F2,
     "100": #FEE2E2,
     "200": #FECACA,
     "300": #FCA5A5,
@@ -35,11 +32,9 @@ $colors: (
     "600": #DC2626,
     "700": #B91C1C,
     "800": #991B1B,
-    "900": #7F1D1D
-  ),
+    "900": #7F1D1D),
 
-  success: (
-    "50": #F0FDF4,
+  success: ("50": #F0FDF4,
     "100": #DCFCE7,
     "200": #BBF7D0,
     "300": #86EFAC,
@@ -48,11 +43,9 @@ $colors: (
     "600": #16A34A,
     "700": #15803D,
     "800": #166534,
-    "900": #14532D
-  ),
+    "900": #14532D),
 
-  warning: (
-    "50": #FEFCE8,  
+  warning: ("50": #FEFCE8,
     "100": #FEF9C3,
     "200": #FEF08A,
     "300": #FDE047,
@@ -61,11 +54,9 @@ $colors: (
     "600": #FF9F29,
     "700": #f39016,
     "800": #e58209,
-    "900": #d77907
-  ),
+    "900": #d77907),
 
-  info: (
-    "50": #EFF6FF,
+  info: ("50": #EFF6FF,
     "100": #DBEAFE,
     "200": #BFDBFE,
     "300": #93C5FD,
@@ -74,10 +65,8 @@ $colors: (
     "600": #2563EB,
     "700": #1D4ED8,
     "800": #1E40AF,
-    "900": #1E3A8A
-  ),
-  "cyan": (
-    "50": #e2f5fb,
+    "900": #1E3A8A),
+  "cyan": ("50": #e2f5fb,
     "100": #DAF6FF,
     "200": #85daf4,
     "300": #6cdafc,
@@ -86,16 +75,13 @@ $colors: (
     "600": #00b8f2,
     "700": #03a9dc,
     "800": #049dcb,
-    "900": #0390bb
-  ),
+    "900": #0390bb),
 
-  dark: (
-    "1": #1B2431,
+  dark: ("1": #1B2431,
     "2": #273142,
     "3": #323D4E,
   ),
-  lilac: (
-    "50": #f0e1ff,
+  lilac: ("50": #f0e1ff,
     "100": #EBD7FF,
     "200": #dcc0f8,
     "300": #cd9ffa,
@@ -105,8 +91,7 @@ $colors: (
     "700": #6f37e6,
     "800": #601eef,
   ),
-  light: (
-    "50": #F5F6FA,
+  light: ("50": #F5F6FA,
     "100": #F3F4F6,
     "600": #E4F1FF,
     "700": #374151,
@@ -128,8 +113,7 @@ $neutral-dark: (
 );
 
 $semantic-colors: (
-  success: (
-    "main": #45B369,
+  success: ("main": #45B369,
     "surface": #DAF0E1,
     "border": #B5E1C3,
     "hover": #009F5E,
@@ -137,32 +121,26 @@ $semantic-colors: (
     "focus": #45b36926,
   ),
 
-  info: (
-    "main": #144BD6,
+  info: ("main": #144BD6,
     "surface": #E7EEFC,
     "border": #AECAFC,
     "hover": #0A51CE,
     "pressed": #06307C,
-    "focus": #144bd626
-  ),
+    "focus": #144bd626),
 
-  warning: (
-    "main": #FF9F29,
+  warning: ("main": #FF9F29,
     "surface": #FFF9E2,
     "border": #FFEBA6,
     "hover": #D69705,
     "pressed": #C28800,
-    "focus": #ffc02d26
-  ),
-  
-  danger: (
-    "main": #EF4A00,
+    "focus": #ffc02d26),
+
+  danger: ("main": #EF4A00,
     "surface": #FCDAE2,
     "border": #F9B5C6,
     "hover": #D53128,
     "pressed": #801D18,
-    "focus": #ef477026
-  )
+    "focus": #ef477026)
 );
 
 $extra-colors: (
@@ -207,8 +185,8 @@ $spaces: (
   "28": #{rem(24px)},
   "32": #{rem(32px)},
   "36": #{rem(32px)},
-  "40": #{rem(40px)}, 
-  "44": #{rem(44px)}, 
+  "40": #{rem(40px)},
+  "44": #{rem(44px)},
   "48": #{rem(48px)},
   "50": #{rem(50px)},
   "56": #{rem(56px)},
@@ -279,12 +257,12 @@ $font-sizes: (
   // shadows
   @each $property, $value in $shadows {
     --shadow-#{$property}: #{$value};
-  }  
+  }
 
   // font sizes
   @each $property, $value in $font-sizes {
     --font-#{$property}: #{$value};
-  }  
+  }
 
   // colors
   @each $color, $shades in $colors {
@@ -292,28 +270,28 @@ $font-sizes: (
       --#{$color}-#{$shade}: #{$value};
     }
   }
-  
+
   @each $color, $shades in $semantic-colors {
     @each $shade, $value in $shades {
       --#{$color}-#{$shade}: #{$value};
-		}
-	}
+    }
+  }
 
   // extra colors
   @each $property, $value in $extra-colors {
     --#{$property}: #{$value};
-  }  
-  
+  }
+
   // bg light colors
   @each $property, $value in $bg-light-colors {
     --#{$property}: #{$value};
-  }  
-  
+  }
+
   // border light colors
   @each $property, $value in $border-light-colors {
     --#{$property}: #{$value};
-  }  
-  
+  }
+
   // Design Token variables
   --base: #fff;
   --brand: var(--primary-600);
