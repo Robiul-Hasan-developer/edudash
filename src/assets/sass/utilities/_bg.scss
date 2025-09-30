@@ -63,19 +63,30 @@
   &-1 {
     background: linear-gradient(119deg, #FFF 32.06%, #FFF4E8 97.01%);
   }
+
   &-2 {
     background: linear-gradient(117deg, #FFF 36.28%, #E0E7FF 97%);
   }
+
   &-3 {
     background: linear-gradient(116deg, #FFF 38.14%, #F7E2FF 98.5%);
   }
+
   &-4 {
     background: linear-gradient(115deg, #FFF 38.69%, #D9FFFB 100%);
   }
+
   &-5 {
-    background:  linear-gradient(115deg, #FFF 38.69%, #DBFFE1 100%);
+    background: linear-gradient(115deg, #FFF 38.69%, #DBFFE1 100%);
   }
+
   &-6 {
     background: linear-gradient(115deg, #FFF 38.69%, #DBF4FF 100%);
+  }
+}
+
+[data-theme=dark] {
+  .gradient-bg-end-1, .gradient-bg-end-2, .gradient-bg-end-3, .gradient-bg-end-4, .gradient-bg-end-5, .gradient-bg-end-6 {
+    background: var(--neutral-100);
   }
 }
