@@ -197,16 +197,7 @@ $spaces: (
 );
 
 $shadows: (
-  "1": 0 4px 60px 0 rgba(#04060F, 0.8),
-  "2": 0 4px 60px 0 rgba(#04060F, 0.5),
-  "3": 0 20px 100px 0 rgba(#04060F, 0.8),
-  "4": 4px 8px 24px 0 rgba(#B6B6B6, 0.20),
-  "5": 4px 12px 32px 0 rgba(#00A99E, 0.10),
-  "6": 4px 16px 32px 0 rgba(#00A99E, 0.10),
-  "7": 0px 4px 30px 0px rgba(46, 45, 116, 0.05),
-  "8": 0px 4px 4px 0px rgba(0, 0, 0, 0.05),
-  "9": 0px 4px 16px 0px rgba(46, 45, 116, 0.04),
-  "10": 0 2px 6px 0 rgba(0, 0, 0, 0.10)
+  "1": 0 4px 30px 0 rgba(52, 77, 75, 0.05),
 );
 
 $font-sizes: (
@@ -289,7 +280,7 @@ $font-sizes: (
   --white: var(--base);
   --bg-color: var(--neutral-50);
   --text-primary-light: var(--neutral-900);
-  --text-secondary-light: var(--neutral-600);
+  --text-secondary-light: #6C757D;
   --text-secondary-dark: var(--neutral-300);
 
   --input-form-light: var(--neutral-300);
