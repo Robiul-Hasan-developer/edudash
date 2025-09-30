@@ -23,24 +23,15 @@
   @include media(xl) {
     display: inline-block;
   }
-
-  &.active {
-    .icon {
-      &.non-active {
-        display: none;
-      }
-
-      &.active {
-        display: inline-block;
-      }
-    }
-  }
-
   .icon {
     &.active {
       display: none;
     }
   }
+}
+
+.sidebar-toggle.active .ri-contract-left-line:before {
+    content: "\F301";
 }
 
 .sidebar-mobile-toggle {
