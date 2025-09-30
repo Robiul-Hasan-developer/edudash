@@ -147,45 +147,75 @@
         <div class="col-xxl-4">
           <div class="card h-100">
             <div class="card-body p-0">
-              <div class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
                 <h6 class="text-lg mb-0">Student Attendance</h6>
               </div>
               <div class="p-24">
                 <div class="d-flex gap-6">
-                  <div class="h-32-px bg-primary-600 rounded" style="width: 87%;"></div>
-                  <div class="h-32-px bg-warning-600 rounded" style="width: 40%;"></div>
-                  <div class="h-32-px bg-purple-600 rounded" style="width: 20%;"></div>
-                  <div class="h-32-px bg-success-600 rounded" style="width: 20%;"></div>
+                  <div class="h-44-px bg-primary-600 rounded" style="width: 87%;"></div>
+                  <div class="h-44-px bg-warning-600 rounded" style="width: 40%;"></div>
+                  <div class="h-44-px bg-purple-600 rounded" style="width: 20%;"></div>
+                  <div class="h-44-px bg-success-600 rounded" style="width: 20%;"></div>
                 </div>
                 <div class="py-12 d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
-                    <span class="w-10-px h-10-px radius-2 bg-primary-600"></span>
+                    <span class="w-12-px h-12-px radius-2 bg-primary-600"></span>
                     <span class="text-neutral-600">Present </span>
                   </div>
                   <span class="fw-semibold text-primary-light">87%</span>
                 </div>
                 <div class="py-12 d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
-                    <span class="w-10-px h-10-px radius-2 bg-warning-600"></span>
-                    <span class="text-neutral-600">Absent:  </span>
+                    <span class="w-12-px h-12-px radius-2 bg-warning-600"></span>
+                    <span class="text-neutral-600">Absent: </span>
                   </div>
                   <span class="fw-semibold text-primary-light">40%</span>
                 </div>
                 <div class="py-12 d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
-                    <span class="w-10-px h-10-px radius-2 bg-purple-600"></span>
+                    <span class="w-12-px h-12-px radius-2 bg-purple-600"></span>
                     <span class="text-neutral-600">Late </span>
                   </div>
                   <span class="fw-semibold text-primary-light">20%</span>
                 </div>
                 <div class="py-12 d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center gap-2">
-                    <span class="w-10-px h-10-px radius-2 bg-success-600"></span>
+                    <span class="w-12-px h-12-px radius-2 bg-success-600"></span>
                     <span class="text-neutral-600">Half day </span>
                   </div>
                   <span class="fw-semibold text-primary-light">20%</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-8">
+          <div class="card h-100">
+            <div class="card-body p-0">
+              <div
+                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                <h6 class="text-lg mb-0">Revenue Statistic</h6>
+              </div>
+              <div class="p-24">
+                <ul class="d-flex flex-wrap align-items-center justify-content-center mb-16 gap-3">
+                  <li class="flex items-center gap-3">
+                    <span class="w-12-px h-12-px radius-2 bg-primary-600"></span>
+                    <span class="text-secondary-light text-sm fw-semibold">
+                      Total Fee:
+                      <span class="text-primary-light fw-bold">$500</span>
+                    </span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <span class="w-12-px h-12-px radius-2 bg-warning-600"></span>
+                    <span class="text-secondary-light text-sm font-semibold">
+                      Collected Fee:
+                      <span class="text-primary-light fw-bold"> $300</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="" id="revenueStatistic"></div>
             </div>
           </div>
         </div>
@@ -198,7 +228,62 @@
 
 @@include('../partial-html/_template-bottom.html')
 
-<script src="assets/js/homeOneChart.js"></script>
+<script>
+  var options = {
+    series: [{
+      name: 'Total Fee',
+      data: [25, 35, 50, 60, 26, 20, 40, 20, 50, 16, 10, 40]
+    }, {
+      name: 'Collected Fee',
+      data: [15, 16, 24, 30, 20, 15, 20, 10, 25, 10, 6, 20]
+    }],
+    chart: {
+      type: 'bar',
+      height: 350,
+      stacked: true,
+      toolbar: {
+        show: false
+      },
+      zoom: {
+        enabled: true
+      }
+    },
+    colors: ["#25A194", "#FF7A2C"],
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "50%",
+        // 👇 makes bars triangular
+        shape: "pyramid",  // available shapes: 'pyramid', 'funnel'
+      },
+    },
+    xaxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr',
+        'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+      ],
+    },
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return "$" + value + "k";
+        },
+        style: {
+          fontSize: "14px"
+        }
+      },
+    },
+    legend: {
+      position: 'right',
+      show: true,
+    },
+    fill: {
+      opacity: 1
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#revenueStatistic"), options);
+  chart.render()
+</script>
 
 </body>
 

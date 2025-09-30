@@ -88,7 +88,7 @@ $colors: (
     "800": "#182FA0",
     "900": "#121F73",
   ),
-  
+
   "purple": ("50": "#FAEFFF",
     "100": "#F3DBFF",
     "200": "#E4B7FB",
@@ -304,7 +304,7 @@ $font-sizes: (
   --black: var(--dark-2);
   --white: var(--base);
   --bg-color: var(--neutral-50);
-  --text-primary-light: var(--neutral-900);
+  --text-primary-light: #212529;
   --text-secondary-light: #6C757D;
   --text-secondary-dark: var(--neutral-300);
 
