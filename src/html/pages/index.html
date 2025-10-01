@@ -253,8 +253,7 @@
       bar: {
         horizontal: false,
         columnWidth: "50%",
-        // 👇 makes bars triangular
-        shape: "pyramid",  // available shapes: 'pyramid', 'funnel'
+        shape: "pyramid",
       },
     },
     xaxis: {
@@ -273,8 +272,7 @@
       },
     },
     legend: {
-      position: 'right',
-      show: true,
+      show: false,
     },
     fill: {
       opacity: 1
@@ -284,6 +282,7 @@
   var chart = new ApexCharts(document.querySelector("#revenueStatistic"), options);
   chart.render()
 </script>
+
 
 </body>
 
