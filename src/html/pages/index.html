@@ -151,7 +151,7 @@
                 class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
                 <h6 class="text-lg mb-0">Student Attendance</h6>
               </div>
-              <div class="p-24">
+              <div class="p-20">
                 <div class="d-flex gap-6">
                   <div class="h-44-px bg-primary-600 rounded" style="width: 87%;"></div>
                   <div class="h-44-px bg-warning-600 rounded" style="width: 40%;"></div>
@@ -190,32 +190,141 @@
             </div>
           </div>
         </div>
-        <div class="col-xxl-8">
-          <div class="card h-100">
-            <div class="card-body p-0">
-              <div
-                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                <h6 class="text-lg mb-0">Revenue Statistic</h6>
+        <div class="col-12">
+          <div class="row gy-4">
+            <div class="col-xxl-8">
+              <div class="row gy-4">
+                <div class="col-12">
+                  <div class="card h-100">
+                    <div class="card-body p-0">
+                      <div
+                        class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                        <h6 class="text-lg mb-0">Revenue Statistic</h6>
+                      </div>
+                      <div class="p-20">
+                        <ul class="d-flex flex-wrap align-items-center justify-content-center mb-16 gap-3">
+                          <li class="flex items-center gap-3">
+                            <span class="w-12-px h-12-px radius-2 bg-primary-600"></span>
+                            <span class="text-secondary-light text-sm fw-semibold">
+                              Total Fee:
+                              <span class="text-primary-light fw-bold">$500</span>
+                            </span>
+                          </li>
+                          <li class="flex items-center gap-3">
+                            <span class="w-12-px h-12-px radius-2 bg-warning-600"></span>
+                            <span class="text-secondary-light text-sm font-semibold">
+                              Collected Fee:
+                              <span class="text-primary-light fw-bold"> $300</span>
+                            </span>
+                          </li>
+                        </ul>
+                        <div id="revenueStatistic"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div class="card h-100">
+                    <div class="card-body p-0">
+                      <div
+                        class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                        <h6 class="text-lg mb-0">Notice Board</h6>
+                        <div class="dropdown">
+                          <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <iconify-icon icon="entypo:dots-three-vertical"
+                              class="icon text-secondary-light"></iconify-icon>
+                          </button>
+                          <ul class="dropdown-menu p-12 border bg-base shadow">
+                            <li>
+                              <button type="button"
+                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                <iconify-icon icon="hugeicons:view" class="icon text-lg line-height-1"></iconify-icon>
+                                View
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                <iconify-icon icon="lucide:edit" class="icon text-lg line-height-1"></iconify-icon>
+                                Edit
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                <iconify-icon icon="fluent:delete-24-regular"
+                                  class="icon text-lg line-height-1"></iconify-icon>
+                                Delete
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="p-20 pe-0">
+                        <div class="pe-20 d-flex flex-column gap-20 max-h-412-px overflow-y-auto scroll-sm">
+                          <div class="d-flex align-items-start gap-16">
+                              <img src="assets/images/home-one/notice-board-img1.png" alt="Thumbnail"
+                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                            <div class="">
+                              <h6 class="mb-4 text-lg">Admin</h6>
+                              <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</p>
+                              <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-start gap-16">
+                              <img src="assets/images/home-one/notice-board-img2.png" alt="Thumbnail"
+                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                            <div class="">
+                              <h6 class="mb-4 text-lg">Kathryn Murphy</h6>
+                              <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy text of the printing and typesett ing industry Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                              <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-start gap-16">
+                              <img src="assets/images/home-one/notice-board-img3.png" alt="Thumbnail"
+                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                            <div class="">
+                              <h6 class="mb-4 text-lg">Admin</h6>
+                              <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy text of the printing and typesetti ng industry.</p>
+                              <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                            </div>
+                          </div>
+                               <div class="d-flex align-items-start gap-16">
+                              <img src="assets/images/home-one/notice-board-img2.png" alt="Thumbnail"
+                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                            <div class="">
+                              <h6 class="mb-4 text-lg">John Doe</h6>
+                              <p class="text-secondary-light text-sm mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas corporis qui dolore est odit officia fuga voluptate quasi suscipit?</p>
+                              <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="p-24">
-                <ul class="d-flex flex-wrap align-items-center justify-content-center mb-16 gap-3">
-                  <li class="flex items-center gap-3">
-                    <span class="w-12-px h-12-px radius-2 bg-primary-600"></span>
-                    <span class="text-secondary-light text-sm fw-semibold">
-                      Total Fee:
-                      <span class="text-primary-light fw-bold">$500</span>
-                    </span>
-                  </li>
-                  <li class="flex items-center gap-3">
-                    <span class="w-12-px h-12-px radius-2 bg-warning-600"></span>
-                    <span class="text-secondary-light text-sm font-semibold">
-                      Collected Fee:
-                      <span class="text-primary-light fw-bold"> $300</span>
-                    </span>
-                  </li>
-                </ul>
+            </div>
+            <div class="col-xxl-4">
+              <div class="card h-100">
+                <div class="card-body p-0">
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                    <h6 class="text-lg mb-0">Calendar</h6>
+                  </div>
+                  <div class="p-20">
+                    
+                  </div>
+                </div>
               </div>
-              <div class="" id="revenueStatistic"></div>
+            </div>
+            <div class="col-xxl-4">
+              <div class="">
+
+              </div>
             </div>
           </div>
         </div>
@@ -239,7 +348,7 @@
     }],
     chart: {
       type: 'bar',
-      height: 350,
+      height: 300,
       stacked: true,
       toolbar: {
         show: false
@@ -282,7 +391,6 @@
   var chart = new ApexCharts(document.querySelector("#revenueStatistic"), options);
   chart.render()
 </script>
-
 
 </body>
 
