@@ -438,9 +438,28 @@
                     class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
                     <h6 class="text-lg mb-0">Calendar</h6>
                   </div>
+
                   <div class="p-20">
-                    
+                    <div class="calendar">
+                      <div class="calendar__header">
+                        <button type="button" class="calendar__arrow left"><i class="ph ph-caret-left"></i></button>
+                        <p class="display h6 mb-0">""</p>
+                        <button type="button" class="calendar__arrow right"><i class="ph ph-caret-right"></i></button>
+                      </div>
+
+                      <div class="calendar__week week">
+                        <div class="calendar__week-text">Su</div>
+                        <div class="calendar__week-text">Mo</div>
+                        <div class="calendar__week-text">Tu</div>
+                        <div class="calendar__week-text">We</div>
+                        <div class="calendar__week-text">Th</div>
+                        <div class="calendar__week-text">Fr</div>
+                        <div class="calendar__week-text">Sa</div>
+                      </div>
+                      <div class="days"></div>
+                    </div>
                   </div>
+
                   <div class="p-20 pe-0 border-top border-neutral-200">
                     <h6 class="text-lg mb-20">Upcoming Events</h6>
                     <div class="pe-20 d-flex flex-column gap-24 overflow-y-auto max-h-412-px">
@@ -1295,6 +1314,91 @@
     });
   }).trigger('scroll');
   // ================================ Animated Radial Progress Bar End ================================
+
+
+
+
+  // ============================= Calendar Js Start =================================
+  let display = document.querySelector(".display");
+  let days = document.querySelector(".days");
+  let previous = document.querySelector(".left");
+  let next = document.querySelector(".right");
+
+  let date = new Date();
+
+  let year = date.getFullYear();
+  let month = date.getMonth();
+
+  function displayCalendar() {
+    const firstDay = new Date(year, month, 1);
+
+    const lastDay = new Date(year, month + 1, 0);
+
+    const firstDayIndex = firstDay.getDay(); //4
+
+    const numberOfDays = lastDay.getDate(); //31
+
+    let formattedDate = date.toLocaleString("en-US", {
+      month: "long",
+      year: "numeric"
+    });
+
+    display.innerHTML = `${formattedDate}`;
+
+    for (let x = 1; x <= firstDayIndex; x++) {
+      const div = document.createElement("div");
+      div.innerHTML += "";
+
+      days.appendChild(div);
+    }
+
+    for (let i = 1; i <= numberOfDays; i++) {
+      let div = document.createElement("div");
+      let currentDate = new Date(year, month, i);
+
+      div.dataset.date = currentDate.toDateString();
+
+      div.innerHTML += i;
+      days.appendChild(div);
+      if (
+        currentDate.getFullYear() === new Date().getFullYear() &&
+        currentDate.getMonth() === new Date().getMonth() &&
+        currentDate.getDate() === new Date().getDate()
+      ) {
+        div.classList.add("current-date");
+      }
+    }
+  }
+
+  // Call the function to display the calendar
+  displayCalendar();
+
+  previous.addEventListener("click", () => {
+    days.innerHTML = "";
+
+    if (month < 0) {
+      month = 11;
+      year = year - 1;
+    }
+    month = month - 1;
+    date.setMonth(month);
+    displayCalendar();
+  });
+
+  next.addEventListener("click", () => {
+    days.innerHTML = "";
+
+    if (month > 11) {
+      month = 0;
+      year = year + 1;
+    }
+
+    month = month + 1;
+    date.setMonth(month);
+
+    displayCalendar();
+  });
+  // ============================= Calendar Js End =================================
 
 </script>
 
