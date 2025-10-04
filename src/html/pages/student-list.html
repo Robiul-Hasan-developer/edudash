@@ -1,0 +1,111 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../layouts/_sidebar.html')
+
+<main class="dashboard-main">
+    @@include('../layouts/_nav.html')
+
+    <div class="dashboard-main-body">
+
+        @@include('../layouts/_breadcrumb.html', {
+        mainPageTitle: "Student List",
+        showMiddleText: "d-none",
+        middleText: "Student",
+        middleLink: "javascript:void(0)",
+        currentPage: "Student Details"
+        })
+
+        <div class="mt-24">
+            <div class="card h-100">
+                <div class="card-body p-0">
+                    <div
+                        class="d-flex flex-wrap align-items-center gap-16 px-20 py-12 border-bottom border-neutral-200">
+                        <div class="dropdown">
+                            <button type="button" class="px-12 py-6 border border-neutral-300 radius-4 d-flex align-items-center gap-20" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="d-flex align-items-center gap-1 text-secondary-light text-sm">
+                                    <i class="ri-file-upload-line text-md line-height-1"></i>
+                                    Export
+                                </span>
+                                <span class="">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu p-12 border bg-base shadow">
+                                <li>
+                                    <button type="button"
+                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                        <i class="ri-file-3-line"></i>
+                                        PDF
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                        <i class="ri-file-excel-line"></i>
+                                        Excel
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="navbar-search">
+                            <input type="text" class="bg-transparent" name="search" placeholder="Search...">
+                            <iconify-icon icon="ion:search-outline" class="icon"></iconify-icon>
+                        </form>
+                        <div class="dropdown">
+                            <button type="button" class="px-12 py-6 border border-neutral-300 radius-4 d-flex align-items-center gap-20" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="d-flex align-items-center gap-1 text-secondary-light text-sm">
+                                    Filter
+                                </span>
+                                <span class="">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu p-12 border bg-base shadow">
+                                <li>
+                                    <button type="button"
+                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                        <iconify-icon icon="hugeicons:view"
+                                            class="icon text-lg line-height-1"></iconify-icon>
+                                        View
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                        <iconify-icon icon="lucide:edit"
+                                            class="icon text-lg line-height-1"></iconify-icon>
+                                        Edit
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                        <iconify-icon icon="fluent:delete-24-regular"
+                                            class="icon text-lg line-height-1"></iconify-icon>
+                                        Delete
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-0">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('../layouts/_footer.html')
+</main>
+
+@@include('../partial-html/_template-bottom.html')
+
+</body>
+
+</html>
