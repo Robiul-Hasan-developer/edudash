@@ -48,4 +48,10 @@
 .fill-black {
     fill: #000 !important;
 }
+
+.hover-underline {
+    &:hover {
+        text-decoration: underline;
+    }
+}
 /* ====================== Animated Radial Progress bar Css End ======================== */
