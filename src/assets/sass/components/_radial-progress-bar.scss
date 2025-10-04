@@ -49,6 +49,10 @@
     fill: #000 !important;
 }
 
+[data-theme="dark"] .fill-black {
+    fill: #fff !important;
+}
+
 .hover-underline {
     &:hover {
         text-decoration: underline;

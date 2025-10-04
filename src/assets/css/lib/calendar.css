@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 6px;
-    background-color: var(--main-50);
+    background-color: var(--primary-50);
     border-radius: 50px;
+    margin-bottom: 16px;
 }
 
 .calendar__arrow {
@@ -15,7 +16,7 @@
     align-items: center;
     border-radius: 50%;
     background-color: #fff;
-    border: 1px solid var(--main-100);
+    border: 1px solid var(--primary-100);
     color: var(--primary-600);
 }
 
@@ -61,7 +62,7 @@
 }
 
 .days div:hover {
-    background: var(--neutral-100);
+    background: var(--neutral-200);
     color: var(--primary-600);
     cursor: pointer;
 }
@@ -70,7 +71,7 @@
     color: #fff;
 }
 .current-date:hover {
-    background-color: var(--main-800) !important;
+    background-color: var(--primary-800) !important;
     color: #fff !important;
 }
   
