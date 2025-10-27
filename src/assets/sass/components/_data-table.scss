@@ -1,4 +1,21 @@
 /* Data Table css start */
+.dt-layout-row:has(.dt-layout-cell .dt-length), .dt-layout-row:has(.dt-layout-cell .dt-info) {
+    padding: 12px 24px;
+}
+
+.dt-length .dt-input {
+    height: 28px;
+    margin-inline-end: 12px;
+    line-height: 20px;
+}
+
+.dt-search .dt-input {
+    border-color: #ddd !important;
+    height: 34px;
+    margin-inline-end: 0;
+    margin-inline-start: 10px !important;
+}
+
 .dt-layout-cell {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
