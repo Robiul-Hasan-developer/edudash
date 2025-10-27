@@ -1,0 +1,9 @@
+/* Data Table css start */
+.dt-layout-row:has(.dt-layout-cell.dt-start) {
+    display: none !important;
+}
+
+.dt-layout-cell {
+    padding-top: 0 !important;
+}
+/* Data Table css end */
