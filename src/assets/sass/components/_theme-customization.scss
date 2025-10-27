@@ -18,6 +18,14 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+
+.sm-grid-cols-3 {
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
 .theme-customization__button {
     z-index: 9;
 }

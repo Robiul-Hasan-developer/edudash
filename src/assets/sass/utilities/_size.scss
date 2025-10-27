@@ -103,6 +103,9 @@
 .max-w-288-px {
     max-width: 288px;
 }
+.max-w-540-px {
+    max-width: 540px;
+}
 
 /* Min max width & height Start */
 .text-w-200-px {
@@ -160,6 +163,12 @@
   }
 }
 
+@media (min-width: 992px) {
+  .lg-w-50 {
+    width: 50%;
+  }
+}
+
 .text-xxs {
   font-size: 10px !important;
 }
@@ -170,4 +179,9 @@
 
 .rotate-45-deg {
     transform: rotate(45deg);
+}
+
+
+.mt-200-px {
+  margin-top: clamp(2.5rem, -6.7308rem + 19.2308vw, 12.5rem);;
 }
