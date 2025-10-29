@@ -1,0 +1,32 @@
+/* Translate Css start */
+.translate-x-full {
+    transform: translateX(100%);
+}
+
+.my-sidebar {
+    &.active {
+        transform: translateX(0);
+    }
+}
+.overlay {
+    cursor: crosshair;
+    &.active {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+.duration-300 {
+    transition: .3s linear;
+}
+
+.z {
+    &-9 {
+        z-index: 9;
+    }
+    &-99 {
+        z-index: 99;
+    }
+}
+
+/* Translate Css end */
