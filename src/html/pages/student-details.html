@@ -8,128 +8,95 @@
     <div class="dashboard-main-body">
 
         @@include('../layouts/_breadcrumb.html', {
-            mainPageTitle: "Student Details",
-            showMiddleText: "d-none",
-            middleText: "Student",
-            middleLink: "javascript:void(0)",
-            currentPage: "Student Details",
-            btnClasses: "text-primary-light bg-base bg-hover-primary-600",
-            btnLink: "add-new-student.html",
-            btnIconClass: "ri-lock-line"
+        mainPageTitle: "Student Details",
+        showMiddleText: "",
+        middleText: "Student",
+        middleLink: "student-list.html",
+        currentPage: "Student Details",
+        btnClasses: "text-primary-light bg-base bg-hover-primary-600",
+        btnLink: "add-new-student.html",
+        btnIconClass: "ri-lock-line"
         })
 
         <div class="mt-24">
             <div class="card h-100">
-                <div class="card-body p-0">
+                <div class="card-body p-24">
+                    <div class="d-flex gap-32 flex-md-row flex-column">
 
-                    <div
-                        class="d-flex flex-wrap align-items-center gap-16 px-20 py-12 border-bottom border-neutral-200">
-                        <div class="dropdown">
-                            <button type="button"
-                                class="px-12 py-5-px border border-neutral-300 radius-8 d-flex align-items-center gap-20 "
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="d-flex align-items-center gap-1 text-secondary-light text-sm">
-                                    <i class="ri-file-upload-line text-md line-height-1"></i>
-                                    Export
-                                </span>
-                                <span class="">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </span>
-                            </button>
-                            <ul class="dropdown-menu p-12 border bg-base shadow">
-                                <li>
-                                    <button type="button"
-                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                        <i class="ri-file-3-line"></i>
-                                        PDF
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button"
-                                        class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                        <i class="ri-file-excel-line"></i>
-                                        Excel
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                        <form class="navbar-search">
-                            <input type="text" class="bg-transparent radius-4" name="search" placeholder="Search...">
-                            <iconify-icon icon="ion:search-outline" class="icon"></iconify-icon>
-                        </form>
-
-                        <div class="dropdown">
-                            <button type="button"
-                                class="px-12 py-5-px border border-neutral-300 radius-8 d-flex align-items-center gap-20"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="d-flex align-items-center gap-1 text-secondary-light text-sm">
-                                    Filter
-                                </span>
-                                <span class="">
-                                    <i class="ri-arrow-down-s-line"></i>
-                                </span>
-                            </button>
-                            <div class="dropdown-menu border bg-base shadow dropdown-menu-lg p-0">
-                                <div class="d-flex align-items-center justify-content-between border-bottom py-8 px-16">
-                                    <span class="fw-semibold text-lg text-primary-light">Filter</span>
-                                    <button type="button">
-                                        <i class="ri-close-large-line"></i>
-                                    </button>
-                                </div>
-
-                                <form action="#" class="p-16 d-grid grid-cols-2 gap-16">
-                                    <div class="">
-                                        <label for="class"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class</label>
-                                        <select id="class" class="form-control form-select">
-                                            <option value="Select" disabled>Select Class</option>
-                                            <option value="Primary">Primary</option>
-                                            <option value="SSC">SSC</option>
-                                            <option value="HSC">HSC</option>
-                                            <option value="Hons">Hons</option>
-                                            <option value="Masters">Masters</option>
-                                        </select>
-                                    </div>
-                                    <div class="">
-                                        <label for="section"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Section</label>
-                                        <select id="section" class="form-control form-select">
-                                            <option value="Select">Select Section</option>
-                                            <option value="Arts">Arts</option>
-                                            <option value="Science">Science</option>
-                                            <option value="Commerce">Commerce</option>
-                                        </select>
-                                    </div>
-                                    <div class="">
-                                        <label for="gender"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Gender</label>
-                                        <select id="gender" class="form-control form-select">
-                                            <option value="Select">Select Gender</option>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="">
-                                        <label for="status"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Status</label>
-                                        <select id="status" class="form-control form-select">
-                                            <option value="Select">Select Status</option>
-                                            <option value="Active">Active</option>
-                                            <option value="Inactive">Inactive</option>
-                                        </select>
-                                    </div>
-                                    <div class="">
-                                        <button type="reset"
-                                            class="btn btn-danger-200 text-danger-600 w-100">Reset</button>
-                                    </div>
-                                    <div class="">
-                                        <button type="submit" class="btn btn-primary-600 w-100">Apply</button>
-                                    </div>
-                                </form>
+                        <div class="max-w-300-px w-100 text-center">
+                            <figure class="mb-24 w-120-px h-120-px mx-auto rounded-circle overflow-hidden">
+                                <img src="assets/images/thumbs/student-details-img.png" alt="Student Image"
+                                    class="w-100 h-100 object-fit-cover" />
+                            </figure>
+                            <h6 class="mb-16">Seth Hallam</h6>
+                            <p class="mb-0">Admission No: <span class="text-primary-600 fw-semibold">AD1256589</span> </p>
+                            <p class="mb-0">Admission No: <span class="text-primary-light fw-semibold">10</span> </p>
+                            <div class="mt-32 d-flex gap-16 w-100">
+                                <button type="button"
+                                    class="border fw-medium border-danger-600 bg-hover-danger-200 text-danger-600 text-md d-flex justify-content-center align-items-center gap-8 flex-grow-1 px-12 py-8 radius-8">
+                                    <span class="d-flex text-lg">
+                                        <i class="ri-delete-bin-2-line"></i>
+                                    </span>
+                                    Suspend
+                                </button>
+                                <button type="button"
+                                    class="btn btn-primary-600 border fw-medium border-primary-600 text-md d-flex justify-content-center align-items-center gap-8 flex-grow-1 px-12 py-8 radius-8">
+                                    <span class="d-flex text-lg">
+                                        <i class="ri-edit-line"></i>
+                                    </span>
+                                    Edit 
+                                </button>
                             </div>
                         </div>
+                        <div class="">
+                            <span class="h-100 w-1-px bg-neutral-200"></span>
+                        </div>
+
+                        <div class="flex-grow-1">
+                            <div class="pb-16 border-bottom d-flex align-items-center justify-content-between gap-20">
+                                <h6 class="text-lg mb-0">Personal Info</h6>
+                                <span class="bg-success-100 text-success-600 px-16 py-4 radius-4 fw-medium text-sm">Active</span>
+                            </div>
+                            <div class="mt-16 d-flex flex-column gap-8">
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Class</span>
+                                    <span class="fw-normal text-sm text-primary-light">: Class 6 (2025-26)</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Section</span>
+                                    <span class="fw-normal text-sm text-primary-light">: A</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Roll No</span>
+                                    <span class="fw-normal text-sm text-primary-light">: 10</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Gender</span>
+                                    <span class="fw-normal text-sm text-primary-light">: Male</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Date Of Birth</span>
+                                    <span class="fw-normal text-sm text-primary-light">: 10 Nov 2006</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Category</span>
+                                    <span class="fw-normal text-sm text-primary-light">: General</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Academic Year</span>
+                                    <span class="fw-normal text-sm text-primary-light">: Jun 2025/2026</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Phone Number</span>
+                                    <span class="fw-normal text-sm text-primary-600">: 789678456</span>
+                                </div>
+                                <div class="d-flex gap-4">
+                                    <span class="fw-semibold text-sm text-primary-light w-110-px">Email</span>
+                                    <span class="fw-normal text-sm text-primary-600">: Set@example.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

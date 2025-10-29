@@ -17,6 +17,15 @@
   height: 100px;
 }
 
+
+.w-120-px {
+  width: 120px;
+}
+
+.h-120-px {
+  height: 120px;
+}
+
 .h {
   &-100vh {
     height: 100vh;
@@ -31,8 +40,15 @@
   width: 190px;
 }
 
+.w-1-px {
+  width: 1px;
+}
+
 .max-w-700-px {
   max-width: 700px;
+}
+.max-w-300-px {
+  max-width: 300px;
 }
 
 .max-w-740-px {
