@@ -1,4 +1,8 @@
 /* Data Table css start */
+.dt-layout-cell {
+    overflow-x: auto;
+}
+
 .dt-layout-row:has(.dt-layout-cell .dt-length), .dt-layout-row:has(.dt-layout-cell .dt-info) {
     padding: 12px 24px;
 }
