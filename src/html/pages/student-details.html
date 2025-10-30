@@ -20,7 +20,7 @@
             <button type="button"
                 class="btn btn-primary-600 d-flex align-items-center gap-6 bg-base text-primary-light bg-hover-primary-600">
                 <span class="d-flex text-md">
-                    <i class=""></i>
+                    <i class="ri-lock-2-line"></i>
                 </span>
                 Login Details
             </button>
@@ -1362,7 +1362,7 @@
                                             <td>3</td>
                                             <td>07 May 2025 </td>
                                             <td> 
-                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                                <span class="bg-warning-100 text-warning-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1396,7 +1396,7 @@
                                             <td>6</td>
                                             <td>07 May 2025 </td>
                                             <td> 
-                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                                <span class="bg-warning-100 text-warning-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1430,7 +1430,7 @@
                                             <td>2</td>
                                             <td>07 May 2025 </td>
                                             <td> 
-                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Rejected</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1464,7 +1464,7 @@
                                             <td>6</td>
                                             <td>07 May 2025 </td>
                                             <td> 
-                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Rejected</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1498,7 +1498,7 @@
                                             <td>2</td>
                                             <td>07 May 2025 </td>
                                             <td> 
-                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                                <span class="bg-danger-100 text-danger-600 px-20 py-4 radius-4 fw-medium text-sm">Rejected</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1541,8 +1541,14 @@
 @@include('../partial-html/_template-bottom.html')
 
 <script>
-    // Data Table
+    // Data Table start
     let table = new DataTable('#dataTable');
+
+    $('#dt-search-0').on('keyup', function () {
+        table.search(this.value).draw();
+    });
+    // Data Table end
+
     
     // Dynamic Class added to the (absent/present/late/holiday)
     $(document).ready(function () {

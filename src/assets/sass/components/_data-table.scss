@@ -128,6 +128,13 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
     text-align: center;
 }
 
+.dt-container div.dt-layout-cell.dt-end:has(.dt-search) {
+    display: none;
+}
+.dt-layout-cell.dt-start:has(.dt-length) {
+    text-align: right !important;
+}
+
 [data-theme=dark] {
     .table>:not(caption)>*>* {
         background-color: #273142;
