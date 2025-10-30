@@ -23,6 +23,7 @@
   @include media(xl) {
     display: inline-block;
   }
+
   .icon {
     &.active {
       display: none;
@@ -31,7 +32,7 @@
 }
 
 .sidebar-toggle.active .ri-contract-left-line:before {
-    content: "\F301";
+  content: "\F301";
 }
 
 .sidebar-mobile-toggle {
@@ -94,6 +95,12 @@
       content: "\ef6f";
       color: #fff;
     }
+  }
+}
+
+[data-theme=dark] {
+  .navbar-header {
+    box-shadow: 0 4px 30px 0 rgb(0 0 0 / 29%);
   }
 }
 

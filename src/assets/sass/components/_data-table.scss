@@ -39,12 +39,102 @@ table.dataTable>thead>tr>td {
     background: #EEEEEE;
 }
 
+.dt-container.dt-empty-footer tbody>tr:last-child>* {
+    border-color: #dee2e6 !important;
+}
+
+.basic-data-table {
+    .dt-layout-row {
+        padding-bottom: rem(14px);
+        select {
+            -webkit-appearance: auto;
+            appearance: auto; 
+            color: var(--text-secondary-light) !important;
+            height: rem(40px);
+            border: 1px solid var(--input-form-light) !important;
+            @include border-radius(10px !important);
+            padding: rem(10px) rem(5px) rem(10px) rem(10px) !important;
+        }
+        .dt-layout-cell {
+            padding: 0;
+        }
+        .dt-length {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: rem(15px);
+        }
+        .dt-search {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: rem(15px);
+            justify-content: flex-end;
+            .dt-input {
+                color: var(--text-secondary-light) !important;
+                height: rem(40px);
+                border: 1px solid var(--input-form-light) !important;
+                @include border-radius(10px !important);
+            }
+        }
+        div, label {
+            color: var(--text-secondary-light);
+        }
+    }
+}
+
+div.dt-container {
+    .dt-paging {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: rem(10px);
+        .dt-paging-button {
+            width: rem(32px);
+            height: rem(32px);
+            padding: 0 !important;
+            &:not(.first, .previous, .next, .last) {
+                color: var(--text-secondary-light) !important;
+                
+                @include border-radius(4px !important);
+                background: var(--neutral-200) !important;
+                font-weight: 500;
+                border: none !important;
+            }
+            &:focus {
+                border: none !important;
+                box-shadow: none !important;
+            }
+            &:hover, 
+            &.current {
+                background: var(--primary-600) !important;
+                color: #fff !important;
+                &:hover {
+                    color: #fff !important;
+                }
+            }
+        } 
+    }
+}
+
+table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+    padding: 13px;
+}
+table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
+    padding: 12px;
+}
+
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+    text-align: center;
+}
+
 [data-theme=dark] {
     .table>:not(caption)>*>* {
         background-color: #273142;
     }
 
-    .table td {
+    .table td,
+    .dt-container.dt-empty-footer tbody>tr:last-child>* {
         border-color: var(--neutral-300);
     }
 
@@ -66,7 +156,12 @@ table.dataTable>thead>tr>td {
 
     .table-heading-dark-mode tr th {
         background: var(--neutral-50) !important;
+        border-color: var(--neutral-300) !important;
     }
-}
 
+    .dt-container.dt-empty-footer tbody>tr:last-child>* {
+        border-color: var(--neutral-300) !important;
+    }
+
+}
 /* Data Table css end */
