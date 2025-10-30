@@ -8,19 +8,6 @@
     padding: 12px 24px;
 }
 
-.dt-length .dt-input {
-    height: 28px;
-    margin-inline-end: 12px;
-    line-height: 20px;
-}
-
-.dt-search .dt-input {
-    border-color: #ddd !important;
-    height: 34px;
-    margin-inline-end: 0;
-    margin-inline-start: 10px !important;
-}
-
 .dt-layout-cell {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -128,11 +115,8 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
     text-align: center;
 }
 
-.dt-container div.dt-layout-cell.dt-end:has(.dt-search) {
-    display: none;
-}
-.dt-layout-cell.dt-start:has(.dt-length) {
-    text-align: right !important;
+.dt-layout-row:has(.dt-length) {
+    display: none !important;
 }
 
 [data-theme=dark] {
