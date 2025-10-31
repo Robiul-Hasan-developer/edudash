@@ -1,0 +1,13 @@
+/* custom accordion css start */
+.custom-accordion-btn {
+    &.active {
+        color: var(--text-primary-light) !important;
+        .arrow-icon {
+            transform: rotate(180deg);
+        }
+    }
+}
+.custom-accordion-content {
+    display: none;
+}
+/* custom accordion css end */
