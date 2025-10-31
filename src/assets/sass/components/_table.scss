@@ -1,7 +1,7 @@
 /* Table Common Css Start */
 /* Table Common Css Start */
 .table>tbody tr > td:first-child, .table>thead tr > th:first-child {
-    position: sticky;
+    position: sticky !important;
     left: 0;
     z-index: 1;
 }
