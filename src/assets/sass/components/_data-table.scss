@@ -119,6 +119,11 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
     display: none !important;
 }
 
+
+.table-bottom-info-none .dt-layout-row:has(.dt-layout-cell.dt-start .dt-info) {
+    display: none;
+}
+
 [data-theme=dark] {
     .table>:not(caption)>*>* {
         background-color: #273142;
