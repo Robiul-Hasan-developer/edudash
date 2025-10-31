@@ -2,6 +2,7 @@
 .custom-accordion-btn {
     &.active {
         color: var(--text-primary-light) !important;
+        font-weight: 700 !important;
         .arrow-icon {
             transform: rotate(180deg);
         }
