@@ -2,6 +2,134 @@
 @@include('../partial-html/_template-top.html')
 @@include('../layouts/_sidebar.html')
 
+
+<div
+    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Login Details</h5>
+        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column">
+        <div class="p-20">
+            <div class="d-flex align-items-center gap-20">
+                <figure class="w-72-px h-72-px rounded-circle overflow-hidden mb-0">
+                    <img src="assets/images/thumbs/student-details-img.png" alt="Student Image"
+                        class="w-100 h-100 object-fit-cover">
+                </figure>
+                <div class="flex-grow-1">
+                    <h2 class="text-xl text-primary-light mb-4">Seth Hallam</h2>
+                    <p class="mb-0">Roll No: <span class="text-primary-light fw-semibold">10</span> </p>
+                </div>
+            </div>
+        </div>
+        <div class="table-bottom-info-none">
+            <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table" id="loginDetailsTable"
+                data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-start">User Type</th>
+                        <th scope="col" class="text-start">Email</th>
+                        <th scope="col" class="text-start">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-start">Student</td>
+                        <td class="text-start">student@example.com</td>
+                        <td class="text-start">15445@#AC</td>
+                    </tr>
+                    <tr>
+                        <td class="text-start">Parent</td>
+                        <td class="text-start">parent@example.com</td>
+                        <td class="text-start">52445@#AC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+
+
+<div
+    class="apply-leave bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Apply Leave</h5>
+        <button type="button" class="close-apply-leave text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="leaveType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
+                    </label>
+                    <select id="leaveType" class="form-control form-select">
+                        <option value="Select a leave type" selected disabled>Select a leave type</option>
+                        <option value="Sickness">Sickness</option>
+                        <option value="Accident">Accident</option>
+                        <option value="Travel">Travel</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="fromDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
+                    </label>
+                    <input type="date" class="form-control" id="fromDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="toDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">To Date
+                    </label>
+                    <input type="date" class="form-control" id="toDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="leaveDays" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave
+                        Days</label>
+                    <select id="leaveDays" class="form-control form-select">
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="ReasonForLeave"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for Leave
+                    </label>
+                    <textarea id="ReasonForLeave" class="form-control"
+                        placeholder="Enter reason for leave..."></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Save Changes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
 <main class="dashboard-main">
     @@include('../layouts/_nav.html')
 
@@ -18,7 +146,7 @@
                 </div>
             </div>
             <button type="button"
-                class="btn btn-primary-600 d-flex align-items-center gap-6 bg-base text-primary-light bg-hover-primary-600">
+                class="my-sidebar-btn btn btn-primary-600 d-flex align-items-center gap-6 bg-base text-primary-light bg-hover-primary-600">
                 <span class="d-flex text-md">
                     <i class="ri-lock-2-line"></i>
                 </span>
@@ -182,7 +310,7 @@
                 <div class="tab-content" id="pills-tabContent">
 
                     <!-- Student Details tab start -->
-                    <div class="tab-pane fade" id="pills-studentDetails" role="tabpanel"
+                    <div class="tab-pane fade show active" id="pills-studentDetails" role="tabpanel"
                         aria-labelledby="pills-studentDetails-tab" tabindex="0">
                         <div class="row gy-4">
                             <div class="col-12">
@@ -1257,7 +1385,7 @@
                                 class="card-header border-bottom bg-base py-10 px-20 d-flex align-items-center justify-content-between">
                                 <h6 class="text-lg fw-semibold mb-0">Leave </h6>
                                 <button type="button"
-                                    class="apply-leave-button btn btn-primary-600 d-flex align-items-center gap-6 py-8 text-sm">
+                                    class="apply-leave-btn btn btn-primary-600 d-flex align-items-center gap-6 py-8 text-sm">
                                     <span class="d-flex text-sm">
                                         <i class="ri-calendar-close-line"></i>
                                     </span>
@@ -2644,8 +2772,8 @@
                     <!-- Exam tab start -->
 
                     <!-- Library tab start -->
-                    <div class="tab-pane fade show active" id="pills-library" role="tabpanel"
-                        aria-labelledby="pills-library-tab" tabindex="0">
+                    <div class="tab-pane fade" id="pills-library" role="tabpanel" aria-labelledby="pills-library-tab"
+                        tabindex="0">
                         <div class="shadow-1 radius-12 bg-base h-100 overflow-hidden">
                             <div
                                 class="card-header border-bottom bg-base py-10 px-20 d-flex align-items-center justify-content-between">
@@ -2705,7 +2833,9 @@
                                                     <img src="assets/images/thumbs/library-img1.png" alt="Library Image"
                                                         class="flex-shrink-0 me-12 radius-4 w-36-px h-36-px">
                                                     <div class="">
-                                                        <h6 class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">Marigold (NCERT)
+                                                        <h6
+                                                            class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">
+                                                            Marigold (NCERT)
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -2722,7 +2852,9 @@
                                                     <img src="assets/images/thumbs/library-img2.png" alt="Library Image"
                                                         class="flex-shrink-0 me-12 radius-4 w-36-px h-36-px">
                                                     <div class="">
-                                                        <h6 class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">Number Magic
+                                                        <h6
+                                                            class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">
+                                                            Number Magic
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -2739,7 +2871,9 @@
                                                     <img src="assets/images/thumbs/library-img3.png" alt="Library Image"
                                                         class="flex-shrink-0 me-12 radius-4 w-36-px h-36-px">
                                                     <div class="">
-                                                        <h6 class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">Mental Math
+                                                        <h6
+                                                            class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">
+                                                            Mental Math
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -2756,7 +2890,9 @@
                                                     <img src="assets/images/thumbs/library-img4.png" alt="Library Image"
                                                         class="flex-shrink-0 me-12 radius-4 w-36-px h-36-px">
                                                     <div class="">
-                                                        <h6 class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">Our Environment
+                                                        <h6
+                                                            class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">
+                                                            Our Environment
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -2773,7 +2909,9 @@
                                                     <img src="assets/images/thumbs/library-img5.png" alt="Library Image"
                                                         class="flex-shrink-0 me-12 radius-4 w-36-px h-36-px">
                                                     <div class="">
-                                                        <h6 class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">Brainvita
+                                                        <h6
+                                                            class="text-md mb-0 fw-medium flex-grow-1 text-secondary-light">
+                                                            Brainvita
                                                         </h6>
                                                     </div>
                                                 </div>
@@ -2814,6 +2952,7 @@
     let weeklyTestMay = new DataTable('#weeklyTestMay');
     let monthlyTestMay = new DataTable('#monthlyTestMay');
     let dataTableLibrary = new DataTable('#dataTableLibrary');
+    let loginDetailsTable = new DataTable('#loginDetailsTable');
 
     // ✅ Data Table start
     $('.data-table').each(function () {
@@ -2870,6 +3009,28 @@
         firstAccordion.siblings('.custom-accordion-content').show();
     });
     // Custom accordion js end
+
+
+    // Sidebar js start
+    $('.my-sidebar-btn').on('click', function () {
+        $('.my-sidebar').addClass('active');
+        $('.overlay').addClass('active');
+    });
+    $('.close-my-sidebar, .overlay').on('click', function () {
+        $('.my-sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+
+
+    $('.apply-leave-btn').on('click', function () {
+        $('.apply-leave').addClass('active');
+        $('.overlay').addClass('active');
+    });
+    $('.close-apply-leave, .overlay').on('click', function () {
+        $('.apply-leave').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+    // Sidebar js end
 </script>
 
 </body>
