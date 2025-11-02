@@ -2,7 +2,7 @@
 @@include('../partial-html/_template-top.html')
 @@include('../layouts/_sidebar.html')
 
-
+<!-- Login Details sidebar start -->
 <div
     class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
     <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
@@ -50,8 +50,9 @@
         </div>
     </form>
 </div>
+<!-- Login Details sidebar end -->
 
-
+<!-- Apply Leave sidebar start -->
 <div
     class="apply-leave bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
     <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
@@ -128,7 +129,110 @@
         </div>
     </form>
 </div>
+<!-- Apply Leave sidebar end -->
 
+<!-- Collect Fees sidebar start -->
+<div
+    class="collect-fees bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0 active">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Collect Fees</h5>
+        <button type="button" class="close-collect-fees text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
+                    </label>
+                    <select id="feesType" class="form-control form-select">
+                        <option value="Select a fees type" selected disabled>Select a fees type</option>
+                        <option value="May month fees">May month fees</option>
+                        <option value="June month fees">June month fees</option>
+                        <option value="July month fees">July month fees</option>
+                        <option value="August month fees">August month fees</option>
+                        <option value="September month fees">September month fees</option>
+                        <option value="October month fees">October month fees</option>
+                        <option value="November month fees">November month fees</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
+                    </label>
+                    <input type="date" class="form-control" id="feesDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesAmount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Amount
+                    </label>
+                    <input type="text" class="form-control" id="feesAmount" value="$700.50" placeholder="$700.50"
+                        disabled>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesPaymentType"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Type</label>
+                    <select id="feesPaymentType" class="form-control form-select">
+                        <option value="Bank">Bank</option>
+                        <option value="bKash">bKash</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="feesNote" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for
+                        Leave
+                    </label>
+                    <textarea id="feesNote" class="form-control" placeholder="Enter note..."></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Pay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Collect Fees sidebar end -->
+
+<!-- Modal Delete Event start -->
+<div class="modal fade" id="exampleModalDelete" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-340-px">
+        <div class="modal-content radius-16 bg-base">
+            <div class="modal-body pt-32 px-36 pb-24 text-center">
+                <span class="mb-16 fs-1 line-height-1 text-danger">
+                    <iconify-icon icon="fluent:delete-24-regular" class="menu-icon"></iconify-icon>
+                </span>
+                <h6 class="text-lg fw-semibold text-primary-light mb-0">Are your sure you want to Suspend this Student
+                </h6>
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-24">
+                    <button type="reset"
+                        class="flex-grow-1 border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-24 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="button"
+                        class="flex-grow-1 btn btn-primary-600 border border-primary-600 text-md px-16 py-12 radius-8">
+                        Yes, Suspend
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Delete Event end -->
 
 <main class="dashboard-main">
     @@include('../layouts/_nav.html')
@@ -168,13 +272,14 @@
                             </p>
                             <p class="mb-0">Admission No: <span class="text-primary-light fw-semibold">10</span> </p>
                             <div class="mt-32 d-flex gap-16 w-100">
-                                <a href="suspended-student.html"
-                                    class="btn border fw-medium border-danger-600 bg-hover-danger-200 text-danger-600 text-md d-flex justify-content-center align-items-center gap-8 flex-grow-1 px-12 py-8 radius-8">
+                                <button type="button"
+                                    class="btn border fw-medium border-danger-600 bg-hover-danger-200 text-danger-600 text-md d-flex justify-content-center align-items-center gap-8 flex-grow-1 px-12 py-8 radius-8"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
                                     <span class="d-flex text-lg">
                                         <i class="ri-delete-bin-2-line"></i>
                                     </span>
                                     Suspend
-                                </a>
+                                </button>
                                 <a href="edit-student.html"
                                     class="btn btn-primary-600 border fw-medium border-primary-600 text-md d-flex justify-content-center align-items-center gap-8 flex-grow-1 px-12 py-8 radius-8">
                                     <span class="d-flex text-lg">
@@ -1673,7 +1778,7 @@
                                 class="card-header border-bottom bg-base py-10 px-20 d-flex align-items-center justify-content-between">
                                 <h6 class="text-lg fw-semibold mb-0">Fees </h6>
                                 <button type="button"
-                                    class="collect-fees-button btn btn-primary-600 d-flex align-items-center gap-6 py-8 text-sm">
+                                    class="collect-fees-btn btn btn-primary-600 d-flex align-items-center gap-6 py-8 text-sm">
                                     <span class="d-flex text-sm">
                                         <i class="ri-calendar-close-line"></i>
                                     </span>
@@ -3031,6 +3136,17 @@
         $('.overlay').removeClass('active');
     });
     // Sidebar js end
+
+    $('.collect-fees-btn').on('click', function () {
+        $('.collect-fees').addClass('active');
+        $('.overlay').addClass('active');
+    });
+    $('.close-collect-fees, .overlay').on('click', function () {
+        $('.collect-fees').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+    // Sidebar js end
+
 </script>
 
 </body>
