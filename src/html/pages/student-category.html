@@ -63,7 +63,7 @@
 
         <div class="mt-24">
             <div class="card h-100">
-                <div class="card-body p-0">
+                <div class="card-body dataTable-wrapper p-0">
 
                     <div
                         class="d-flex flex-wrap align-items-center gap-16 px-20 py-12 border-bottom border-neutral-200">
@@ -98,15 +98,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <form class="navbar-search">
-                            <input type="text" class="bg-transparent radius-4" name="search" placeholder="Search...">
+                        <form class="navbar-search dt-search m-0">
+                            <input type="text" class="dt-input bg-transparent radius-4" aria-controls="dataTable"
+                                name="search" placeholder="Search...">
                             <iconify-icon icon="ion:search-outline" class="icon"></iconify-icon>
                         </form>
 
                     </div>
 
                     <div class="p-0">
-                        <table class="table bordered-table mb-0" id="dataTable" data-page-length='10'>
+                        <table class="table data-table bordered-table mb-0" id="dataTable" data-page-length='10'>
                             <thead>
                                 <tr>
                                     <th scope="col">
@@ -518,6 +519,25 @@
 
 <script>
     let table = new DataTable('#dataTable');
+
+    // ✅ Data Table start
+    $('.data-table').each(function () {
+        const $table = $(this);
+        const tableInstance = new DataTable(this);
+
+        // Handle search input (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-search .dt-input').on('keyup', function () {
+            tableInstance.search(this.value).draw();
+        });
+
+        // Handle page length change (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-length .dt-input').on('change', function () {
+            const value = $(this).val();
+            tableInstance.page.len(value).draw();
+        });
+    });
+    // ✅ Data Table end
+
 
     // Sidebar js start
     $('.my-sidebar-btn').on('click', function () {
