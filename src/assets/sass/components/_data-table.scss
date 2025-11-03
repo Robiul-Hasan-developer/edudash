@@ -104,11 +104,13 @@ div.dt-container {
     }
 }
 
-table.dataTable>thead>tr>th, table.dataTable>thead>tr>td {
+table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
     padding: 13px;
+    padding-inline-start: 24px;
 }
-table.dataTable>tbody>tr>th, table.dataTable>tbody>tr>td {
+table.dataTable > tbody > tr > th, table.dataTable > tbody > tr > td {
     padding: 12px;
+    padding-inline-start: 24px;
 }
 
 table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
