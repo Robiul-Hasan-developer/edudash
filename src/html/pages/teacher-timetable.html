@@ -2,127 +2,6 @@
 @@include('../partial-html/_template-top.html')
 @@include('../layouts/_sidebar.html')
 
-<!-- Add New Timetable sidebar start -->
-<div
-    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
-    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
-        <h5 class="text-lg mb-0">Add New Timetable</h5>
-        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
-            <i class="ri-close-large-line"></i>
-        </button>
-    </div>
-    <form action="#" class="d-flex flex-column p-20">
-        <div class="row g-3">
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="timetableDay" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Day
-                    </label>
-                    <select id="timetableDay" class="form-control form-select">
-                        <option value="Select a Day" selected disabled>Select a Day</option>
-                        <option value="Sunday">Sunday</option>
-                        <option value="Monday">Monday</option>
-                        <option value="Tuesday">Tuesday</option>
-                        <option value="Wednesday">Wednesday</option>
-                        <option value="Thursday">Thursday</option>
-                        <option value="Friday">Friday</option>
-                        <option value="Saturday">Saturday</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="timetableSelectTeacher"
-                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Teacher
-                    </label>
-                    <select id="timetableSelectTeacher" class="form-control form-select">
-                        <option value="Select a teacher" selected disabled>Select a teacher</option>
-                        <option value="John Doe">John Doe</option>
-                        <option value="John Alex">John Alex</option>
-                        <option value="Bill Gets">Bill Gets</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="selectClass" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class
-                    </label>
-                    <select id="selectClass" class="form-control form-select">
-                        <option value="Select a class" selected disabled>Select a class</option>
-                        <option value="One">One</option>
-                        <option value="Two">Two</option>
-                        <option value="Three">Three</option>
-                        <option value="Four">Four</option>
-                        <option value="Five">Five</option>
-                        <option value="Six">Six</option>
-                        <option value="Seven">Seven</option>
-                        <option value="Eight">Eight</option>
-                        <option value="Nice">Nice</option>
-                        <option value="Ten">Ten</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="selectSubject"
-                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Subject
-                    </label>
-                    <select id="selectSubject" class="form-control form-select">
-                        <option value="Select a subject" selected disabled>Select a subject</option>
-                        <option value="One">One</option>
-                        <option value="Two">Two</option>
-                        <option value="Three">Three</option>
-                        <option value="Four">Four</option>
-                        <option value="Five">Five</option>
-                        <option value="Six">Six</option>
-                        <option value="Seven">Seven</option>
-                        <option value="Eight">Eight</option>
-                        <option value="Nice">Nice</option>
-                        <option value="Ten">Ten</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="selectRoom" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Room No
-                    </label>
-                    <select id="selectRoom" class="form-control form-select">
-                        <option value="Select a Room No" selected disabled>Select a Room No</option>
-                        <option value="101">101</option>
-                        <option value="102">102</option>
-                        <option value="103">103</option>
-                        <option value="104">104</option>
-                        <option value="105">105</option>
-                        <option value="106">106</option>
-                        <option value="107">107</option>
-                        <option value="108">108</option>
-                        <option value="109">109</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="fromDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
-                    </label>
-                    <input type="date" class="form-control" id="fromDate">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
-                    <button type="reset"
-                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
-                        Cancel
-                    </button>
-                    <button type="submit"
-                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
-                        Save
-                    </button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
-<!-- Add New Timetable sidebar end -->
-
 <main class="dashboard-main">
     @@include('../layouts/_nav.html')
 
@@ -1339,6 +1218,127 @@
 
     @@include('../layouts/_footer.html')
 </main>
+
+<!-- Add New Timetable sidebar start -->
+<div
+    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Add New Timetable</h5>
+        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="timetableDay" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Day
+                    </label>
+                    <select id="timetableDay" class="form-control form-select">
+                        <option value="Select a Day" selected disabled>Select a Day</option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="timetableSelectTeacher"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Teacher
+                    </label>
+                    <select id="timetableSelectTeacher" class="form-control form-select">
+                        <option value="Select a teacher" selected disabled>Select a teacher</option>
+                        <option value="John Doe">John Doe</option>
+                        <option value="John Alex">John Alex</option>
+                        <option value="Bill Gets">Bill Gets</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="selectClass" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class
+                    </label>
+                    <select id="selectClass" class="form-control form-select">
+                        <option value="Select a class" selected disabled>Select a class</option>
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                        <option value="Four">Four</option>
+                        <option value="Five">Five</option>
+                        <option value="Six">Six</option>
+                        <option value="Seven">Seven</option>
+                        <option value="Eight">Eight</option>
+                        <option value="Nice">Nice</option>
+                        <option value="Ten">Ten</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="selectSubject"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Subject
+                    </label>
+                    <select id="selectSubject" class="form-control form-select">
+                        <option value="Select a subject" selected disabled>Select a subject</option>
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                        <option value="Four">Four</option>
+                        <option value="Five">Five</option>
+                        <option value="Six">Six</option>
+                        <option value="Seven">Seven</option>
+                        <option value="Eight">Eight</option>
+                        <option value="Nice">Nice</option>
+                        <option value="Ten">Ten</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="selectRoom" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Room No
+                    </label>
+                    <select id="selectRoom" class="form-control form-select">
+                        <option value="Select a Room No" selected disabled>Select a Room No</option>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                        <option value="104">104</option>
+                        <option value="105">105</option>
+                        <option value="106">106</option>
+                        <option value="107">107</option>
+                        <option value="108">108</option>
+                        <option value="109">109</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="fromDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
+                    </label>
+                    <input type="date" class="form-control" id="fromDate">
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Add New Timetable sidebar end -->
 
 @@include('../partial-html/_template-bottom.html')
 

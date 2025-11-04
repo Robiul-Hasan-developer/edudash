@@ -2,132 +2,6 @@
 @@include('../partial-html/_template-top.html')
 @@include('../layouts/_sidebar.html')
 
-<!-- Login Details sidebar start -->
-<div
-    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
-    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
-        <h5 class="text-lg mb-0">Login Details</h5>
-        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
-            <i class="ri-close-large-line"></i>
-        </button>
-    </div>
-    <form action="#" class="d-flex flex-column">
-        <div class="p-20">
-            <div class="d-flex align-items-center gap-20">
-                <figure class="w-72-px h-72-px rounded-circle overflow-hidden mb-0">
-                    <img src="assets/images/thumbs/student-details-img.png" alt="guardian Image"
-                        class="w-100 h-100 object-fit-cover">
-                </figure>
-                <div class="flex-grow-1">
-                    <h2 class="text-xl text-primary-light mb-4">Marvin McKinney</h2>
-                    <p class="mb-0">Roll No: <span class="text-primary-light fw-semibold">10</span> </p>
-                </div>
-            </div>
-        </div>
-        <div class="table-bottom-info-none">
-            <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table" id="loginDetailsTable"
-                data-page-length='10'>
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-start">User Type</th>
-                        <th scope="col" class="text-start">Email</th>
-                        <th scope="col" class="text-start">Password</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-start">guardian</td>
-                        <td class="text-start">guardian@example.com</td>
-                        <td class="text-start">15445@#AC</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </form>
-</div>
-<!-- Login Details sidebar end -->
-
-<!-- Payslip modal start -->
-<div class="modal fade" id="payslipModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-600-px">
-        <div class="modal-content radius-16 bg-base">
-            <div class="modal-body p-24">
-                <div class="text-center">
-                    <h6 class="mb-0">School Name</h6>
-                    <p class="text-secondary-light">Smithbroand, Unit 4, Holler Tower, San Diego</p>
-                </div>
-                <div class="d-flex align-items-center justify-content-between gap-20 flex-wrap mt-24 ">
-                    <div class="d-flex flex-column">
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">Invoice No</span>
-                            <span class="text-primary-light">: #5695</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">guardian Name</span>
-                            <span class="text-primary-light">: Jon Dan</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">Phone</span>
-                            <span class="text-primary-light">: +112515474</span>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light text-start">Payslip</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-secondary-light text-start">Month: January 2025</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-secondary-light text-start">Payment : 15 Jan 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <ul class="border mt-24 radius-8 overflow-hidden">
-                    <li
-                        class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 bg-neutral-50 border-bottom">
-                        <span class="text-primary-light fw-semibold">Name</span>
-                        <span class="text-primary-light fw-semibold">Amount</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Base Salary</span>
-                        <span class="text-primary-light">$2000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Overtime Pay</span>
-                        <span class="text-primary-light">$1000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Bonuses</span>
-                        <span class="text-primary-light">$2000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Gross Salary</span>
-                        <span class="text-primary-light">$5000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20  bg-neutral-50">
-                        <span class="text-primary-light fw-semibold text-lg">Total</span>
-                        <span class="text-primary-light fw-semibold text-lg">$5000</span>
-                    </li>
-                </ul>
-                <div class="pt-28 ms-16 text-start">
-                    <p class="text-primary-light fw-medium mb-0">Payment type : Bank</p>
-                </div>
-                <div class="text-center mt-100-px">
-                    <h6 class="text-xl mb-4">Thanks</h6>
-                    <p class="text-secondary-light text-sm mb-0">If you need further assistance, please feel free to
-                        contact HR at <span class="fw-semibold text-primary-light">Example school</span> </p>
-                </div>
-                <div class="text-center mt-100-px">
-                    <p class="text-secondary-light text-sm mb-0">Made by <span class="fw-semibold">Wowtheme7.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Payslip modal end -->
-
 <main class="dashboard-main">
     @@include('../layouts/_nav.html')
 
@@ -284,6 +158,51 @@
 
     @@include('../layouts/_footer.html')
 </main>
+
+<!-- Login Details sidebar start -->
+<div
+    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Login Details</h5>
+        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column">
+        <div class="p-20">
+            <div class="d-flex align-items-center gap-20">
+                <figure class="w-72-px h-72-px rounded-circle overflow-hidden mb-0">
+                    <img src="assets/images/thumbs/student-details-img.png" alt="guardian Image"
+                        class="w-100 h-100 object-fit-cover">
+                </figure>
+                <div class="flex-grow-1">
+                    <h2 class="text-xl text-primary-light mb-4">Marvin McKinney</h2>
+                    <p class="mb-0">Roll No: <span class="text-primary-light fw-semibold">10</span> </p>
+                </div>
+            </div>
+        </div>
+        <div class="table-bottom-info-none">
+            <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table" id="loginDetailsTable"
+                data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-start">User Type</th>
+                        <th scope="col" class="text-start">Email</th>
+                        <th scope="col" class="text-start">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-start">guardian</td>
+                        <td class="text-start">guardian@example.com</td>
+                        <td class="text-start">15445@#AC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<!-- Login Details sidebar end -->
 
 @@include('../partial-html/_template-bottom.html')
 

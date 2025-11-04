@@ -2,311 +2,6 @@
 @@include('../partial-html/_template-top.html')
 @@include('../layouts/_sidebar.html')
 
-<!-- Login Details sidebar start -->
-<div
-    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
-    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
-        <h5 class="text-lg mb-0">Login Details</h5>
-        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
-            <i class="ri-close-large-line"></i>
-        </button>
-    </div>
-    <form action="#" class="d-flex flex-column">
-        <div class="p-20">
-            <div class="d-flex align-items-center gap-20">
-                <figure class="w-72-px h-72-px rounded-circle overflow-hidden mb-0">
-                    <img src="assets/images/thumbs/teacher-details-img.png" alt="teacher Image"
-                        class="w-100 h-100 object-fit-cover">
-                </figure>
-                <div class="flex-grow-1">
-                    <h2 class="text-xl text-primary-light mb-4">Marvin McKinney</h2>
-                    <p class="mb-0">Roll No: <span class="text-primary-light fw-semibold">10</span> </p>
-                </div>
-            </div>
-        </div>
-        <div class="table-bottom-info-none">
-            <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table" id="loginDetailsTable"
-                data-page-length='10'>
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-start">User Type</th>
-                        <th scope="col" class="text-start">Email</th>
-                        <th scope="col" class="text-start">Password</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="text-start">Teacher</td>
-                        <td class="text-start">teacher@example.com</td>
-                        <td class="text-start">15445@#AC</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </form>
-</div>
-<!-- Login Details sidebar end -->
-
-<!-- Apply Leave sidebar start -->
-<div
-    class="apply-leave bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
-    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
-        <h5 class="text-lg mb-0">Apply Leave</h5>
-        <button type="button" class="close-apply-leave text-danger-600 text-lg d-flex">
-            <i class="ri-close-large-line"></i>
-        </button>
-    </div>
-    <form action="#" class="d-flex flex-column p-20">
-        <div class="row g-3">
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="leaveType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
-                    </label>
-                    <select id="leaveType" class="form-control form-select">
-                        <option value="Select a leave type" selected disabled>Select a leave type</option>
-                        <option value="Sickness">Sickness</option>
-                        <option value="Accident">Accident</option>
-                        <option value="Travel">Travel</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="fromDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
-                    </label>
-                    <input type="date" class="form-control" id="fromDate">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="toDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">To Date
-                    </label>
-                    <input type="date" class="form-control" id="toDate">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="leaveDays" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave
-                        Days</label>
-                    <select id="leaveDays" class="form-control form-select">
-                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
-                        </option>
-                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
-                        </option>
-                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
-                        </option>
-                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="">
-                    <label for="ReasonForLeave"
-                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for Leave
-                    </label>
-                    <textarea id="ReasonForLeave" class="form-control"
-                        placeholder="Enter reason for leave..."></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
-                    <button type="reset"
-                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
-                        Cancel
-                    </button>
-                    <button type="submit"
-                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
-                        Send Request
-                    </button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
-<!-- Apply Leave sidebar end -->
-
-<!-- Collect Fees sidebar start -->
-<div
-    class="collect-payroll bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
-    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
-        <h5 class="text-lg mb-0">Collect Fees</h5>
-        <button type="button" class="close-collect-payroll text-danger-600 text-lg d-flex">
-            <i class="ri-close-large-line"></i>
-        </button>
-    </div>
-    <form action="#" class="d-flex flex-column p-20">
-        <div class="row g-3">
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="feesType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
-                    </label>
-                    <select id="feesType" class="form-control form-select">
-                        <option value="Select a fees type" selected disabled>Select a fees type</option>
-                        <option value="May month fees">May month fees</option>
-                        <option value="June month fees">June month fees</option>
-                        <option value="July month fees">July month fees</option>
-                        <option value="August month fees">August month fees</option>
-                        <option value="September month fees">September month fees</option>
-                        <option value="October month fees">October month fees</option>
-                        <option value="November month fees">November month fees</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="feesDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
-                    </label>
-                    <input type="date" class="form-control" id="feesDate">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="feesAmount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Amount
-                    </label>
-                    <input type="text" class="form-control" id="feesAmount" value="$700.50" placeholder="$700.50"
-                        disabled>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="">
-                    <label for="feesPaymentType"
-                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Type</label>
-                    <select id="feesPaymentType" class="form-control form-select">
-                        <option value="Bank">Bank</option>
-                        <option value="bKash">bKash</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <div class="">
-                    <label for="feesNote" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for
-                        Leave
-                    </label>
-                    <textarea id="feesNote" class="form-control" placeholder="Enter note..."></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
-                    <button type="reset"
-                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
-                        Cancel
-                    </button>
-                    <button type="submit"
-                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
-                        Pay
-                    </button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
-<!-- Collect Fees sidebar end -->
-
-<!-- Modal Delete Event start -->
-<div class="modal fade" id="exampleModalDelete" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-340-px">
-        <div class="modal-content radius-16 bg-base">
-            <div class="modal-body pt-32 px-36 pb-24 text-center">
-                <span class="mb-16 fs-1 line-height-1 text-danger">
-                    <iconify-icon icon="fluent:delete-24-regular" class="menu-icon"></iconify-icon>
-                </span>
-                <h6 class="text-lg fw-semibold text-primary-light mb-0">Are your sure you want to Suspend this teacher
-                </h6>
-                <div class="d-flex align-items-center justify-content-center gap-3 mt-24">
-                    <button type="reset"
-                        class="flex-grow-1 border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-24 py-11 radius-8">
-                        Cancel
-                    </button>
-                    <button type="button"
-                        class="flex-grow-1 btn btn-primary-600 border border-primary-600 text-md px-16 py-12 radius-8">
-                        Yes, Suspend
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal Delete Event end -->
-
-<!-- Payslip modal start -->
- <div class="modal fade" id="payslipModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-600-px">
-        <div class="modal-content radius-16 bg-base">
-            <div class="modal-body p-24">
-                <div class="text-center">
-                    <h6 class="mb-0">School Name</h6>            
-                    <p class="text-secondary-light">Smithbroand, Unit 4, Holler Tower, San Diego</p>
-                </div>
-                <div class="d-flex align-items-center justify-content-between gap-20 flex-wrap mt-24 ">
-                    <div class="d-flex flex-column">
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">Invoice No</span>
-                            <span class="text-primary-light">: #5695</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">Teacher Name</span>
-                            <span class="text-primary-light">: Jon Dan</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light w-110-px text-start">Phone</span>
-                            <span class="text-primary-light">: +112515474</span>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column">
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-primary-light text-start">Payslip</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-secondary-light text-start">Month: January 2025</span>
-                        </div>
-                        <div class="text-sm fw-medium d-flex">
-                            <span class="text-secondary-light text-start">Payment : 15 Jan 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <ul class="border mt-24 radius-8 overflow-hidden">
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 bg-neutral-50 border-bottom">
-                        <span class="text-primary-light fw-semibold">Name</span>
-                        <span class="text-primary-light fw-semibold">Amount</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Base Salary</span>
-                        <span class="text-primary-light">$2000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Overtime Pay</span>
-                        <span class="text-primary-light">$1000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Bonuses</span>
-                        <span class="text-primary-light">$2000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
-                        <span class="text-primary-light">Gross Salary</span>
-                        <span class="text-primary-light">$5000</span>
-                    </li>
-                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20  bg-neutral-50">
-                        <span class="text-primary-light fw-semibold text-lg">Total</span>
-                        <span class="text-primary-light fw-semibold text-lg">$5000</span>
-                    </li>
-                </ul>
-                <div class="pt-28 ms-16 text-start">
-                    <p class="text-primary-light fw-medium mb-0">Payment type : Bank</p>
-                </div>
-                <div class="text-center mt-100-px">
-                    <h6 class="text-xl mb-4">Thanks</h6>
-                    <p class="text-secondary-light text-sm mb-0">If you need further assistance, please feel free to contact HR at <span class="fw-semibold text-primary-light">Example school</span> </p>
-                </div>
-                <div class="text-center mt-100-px">
-                    <p class="text-secondary-light text-sm mb-0">Made by <span class="fw-semibold">Wowtheme7.</span> </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Payslip modal end -->
-
 <main class="dashboard-main">
     @@include('../layouts/_nav.html')
 
@@ -3538,6 +3233,311 @@
 
     @@include('../layouts/_footer.html')
 </main>
+
+<!-- Login Details sidebar start -->
+<div
+    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Login Details</h5>
+        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column">
+        <div class="p-20">
+            <div class="d-flex align-items-center gap-20">
+                <figure class="w-72-px h-72-px rounded-circle overflow-hidden mb-0">
+                    <img src="assets/images/thumbs/teacher-details-img.png" alt="teacher Image"
+                        class="w-100 h-100 object-fit-cover">
+                </figure>
+                <div class="flex-grow-1">
+                    <h2 class="text-xl text-primary-light mb-4">Marvin McKinney</h2>
+                    <p class="mb-0">Roll No: <span class="text-primary-light fw-semibold">10</span> </p>
+                </div>
+            </div>
+        </div>
+        <div class="table-bottom-info-none">
+            <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table" id="loginDetailsTable"
+                data-page-length='10'>
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-start">User Type</th>
+                        <th scope="col" class="text-start">Email</th>
+                        <th scope="col" class="text-start">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-start">Teacher</td>
+                        <td class="text-start">teacher@example.com</td>
+                        <td class="text-start">15445@#AC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<!-- Login Details sidebar end -->
+
+<!-- Apply Leave sidebar start -->
+<div
+    class="apply-leave bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Apply Leave</h5>
+        <button type="button" class="close-apply-leave text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="leaveType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
+                    </label>
+                    <select id="leaveType" class="form-control form-select">
+                        <option value="Select a leave type" selected disabled>Select a leave type</option>
+                        <option value="Sickness">Sickness</option>
+                        <option value="Accident">Accident</option>
+                        <option value="Travel">Travel</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="fromDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
+                    </label>
+                    <input type="date" class="form-control" id="fromDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="toDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">To Date
+                    </label>
+                    <input type="date" class="form-control" id="toDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="leaveDays" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave
+                        Days</label>
+                    <select id="leaveDays" class="form-control form-select">
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                        <option value="Ex: Full day,  first half, second half">Ex: Full day, first half, second half
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="ReasonForLeave"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for Leave
+                    </label>
+                    <textarea id="ReasonForLeave" class="form-control"
+                        placeholder="Enter reason for leave..."></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Send Request
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Apply Leave sidebar end -->
+
+<!-- Collect Fees sidebar start -->
+<div
+    class="collect-payroll bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Collect Fees</h5>
+        <button type="button" class="close-collect-payroll text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Leave Type
+                    </label>
+                    <select id="feesType" class="form-control form-select">
+                        <option value="Select a fees type" selected disabled>Select a fees type</option>
+                        <option value="May month fees">May month fees</option>
+                        <option value="June month fees">June month fees</option>
+                        <option value="July month fees">July month fees</option>
+                        <option value="August month fees">August month fees</option>
+                        <option value="September month fees">September month fees</option>
+                        <option value="October month fees">October month fees</option>
+                        <option value="November month fees">November month fees</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">From Date
+                    </label>
+                    <input type="date" class="form-control" id="feesDate">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesAmount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Amount
+                    </label>
+                    <input type="text" class="form-control" id="feesAmount" value="$700.50" placeholder="$700.50"
+                        disabled>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="feesPaymentType"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Type</label>
+                    <select id="feesPaymentType" class="form-control form-select">
+                        <option value="Bank">Bank</option>
+                        <option value="bKash">bKash</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="feesNote" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Reason for
+                        Leave
+                    </label>
+                    <textarea id="feesNote" class="form-control" placeholder="Enter note..."></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Pay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Collect Fees sidebar end -->
+
+<!-- Modal Delete Event start -->
+<div class="modal fade" id="exampleModalDelete" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-340-px">
+        <div class="modal-content radius-16 bg-base">
+            <div class="modal-body pt-32 px-36 pb-24 text-center">
+                <span class="mb-16 fs-1 line-height-1 text-danger">
+                    <iconify-icon icon="fluent:delete-24-regular" class="menu-icon"></iconify-icon>
+                </span>
+                <h6 class="text-lg fw-semibold text-primary-light mb-0">Are your sure you want to Suspend this teacher
+                </h6>
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-24">
+                    <button type="reset"
+                        class="flex-grow-1 border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-24 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="button"
+                        class="flex-grow-1 btn btn-primary-600 border border-primary-600 text-md px-16 py-12 radius-8">
+                        Yes, Suspend
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Delete Event end -->
+
+<!-- Payslip modal start -->
+ <div class="modal fade" id="payslipModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog modal-dialog-centered max-w-600-px">
+        <div class="modal-content radius-16 bg-base">
+            <div class="modal-body p-24">
+                <div class="text-center">
+                    <h6 class="mb-0">School Name</h6>            
+                    <p class="text-secondary-light">Smithbroand, Unit 4, Holler Tower, San Diego</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between gap-20 flex-wrap mt-24 ">
+                    <div class="d-flex flex-column">
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-primary-light w-110-px text-start">Invoice No</span>
+                            <span class="text-primary-light">: #5695</span>
+                        </div>
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-primary-light w-110-px text-start">Teacher Name</span>
+                            <span class="text-primary-light">: Jon Dan</span>
+                        </div>
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-primary-light w-110-px text-start">Phone</span>
+                            <span class="text-primary-light">: +112515474</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-primary-light text-start">Payslip</span>
+                        </div>
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-secondary-light text-start">Month: January 2025</span>
+                        </div>
+                        <div class="text-sm fw-medium d-flex">
+                            <span class="text-secondary-light text-start">Payment : 15 Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="border mt-24 radius-8 overflow-hidden">
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 bg-neutral-50 border-bottom">
+                        <span class="text-primary-light fw-semibold">Name</span>
+                        <span class="text-primary-light fw-semibold">Amount</span>
+                    </li>
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
+                        <span class="text-primary-light">Base Salary</span>
+                        <span class="text-primary-light">$2000</span>
+                    </li>
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
+                        <span class="text-primary-light">Overtime Pay</span>
+                        <span class="text-primary-light">$1000</span>
+                    </li>
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
+                        <span class="text-primary-light">Bonuses</span>
+                        <span class="text-primary-light">$2000</span>
+                    </li>
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20 border-bottom">
+                        <span class="text-primary-light">Gross Salary</span>
+                        <span class="text-primary-light">$5000</span>
+                    </li>
+                    <li class="py-10 px-20 d-flex align-items-center justify-content-between gap-20  bg-neutral-50">
+                        <span class="text-primary-light fw-semibold text-lg">Total</span>
+                        <span class="text-primary-light fw-semibold text-lg">$5000</span>
+                    </li>
+                </ul>
+                <div class="pt-28 ms-16 text-start">
+                    <p class="text-primary-light fw-medium mb-0">Payment type : Bank</p>
+                </div>
+                <div class="text-center mt-100-px">
+                    <h6 class="text-xl mb-4">Thanks</h6>
+                    <p class="text-secondary-light text-sm mb-0">If you need further assistance, please feel free to contact HR at <span class="fw-semibold text-primary-light">Example school</span> </p>
+                </div>
+                <div class="text-center mt-100-px">
+                    <p class="text-secondary-light text-sm mb-0">Made by <span class="fw-semibold">Wowtheme7.</span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Payslip modal end -->
 
 @@include('../partial-html/_template-bottom.html')
 
