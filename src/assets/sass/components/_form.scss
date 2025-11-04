@@ -578,15 +578,12 @@ select option {
   }
 }
 
+#your-password {
+    padding-inline-end: 44px !important;
+}
 /* custom form fields css end */
 
 [data-theme=dark] {
-  // .form-select {
-  //   background-image: url(../images/arrow-down.png);
-  //   background-size: 11px 7px;
-  //   background-repeat: no-repeat;
-  // }
-
   .btn-close {
     background-image: url(../images/times.png);
     background-size: auto;

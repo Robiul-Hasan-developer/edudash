@@ -22,6 +22,10 @@ table.dataTable>thead>tr>td {
     border-color: rgb(0 0 0 / 9%);
 }
 
+table.dataTable>thead>tr>th {
+    background-color: var(--neutral-50);
+}
+
 .table-heading-dark-mode tr th {
     background: #EEEEEE;
 }
@@ -33,30 +37,35 @@ table.dataTable>thead>tr>td {
 .basic-data-table {
     .dt-layout-row {
         padding-bottom: rem(14px);
+
         select {
             -webkit-appearance: auto;
-            appearance: auto; 
+            appearance: auto;
             color: var(--text-secondary-light) !important;
             height: rem(40px);
             border: 1px solid var(--input-form-light) !important;
             @include border-radius(10px !important);
             padding: rem(10px) rem(5px) rem(10px) rem(10px) !important;
         }
+
         .dt-layout-cell {
             padding: 0;
         }
+
         .dt-length {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: rem(15px);
         }
+
         .dt-search {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             gap: rem(15px);
             justify-content: flex-end;
+
             .dt-input {
                 color: var(--text-secondary-light) !important;
                 height: rem(40px);
@@ -64,7 +73,9 @@ table.dataTable>thead>tr>td {
                 @include border-radius(10px !important);
             }
         }
-        div, label {
+
+        div,
+        label {
             color: var(--text-secondary-light);
         }
     }
@@ -76,44 +87,55 @@ div.dt-container {
         align-items: center;
         justify-content: flex-end;
         gap: rem(10px);
+
         .dt-paging-button {
             width: rem(32px);
             height: rem(32px);
             padding: 0 !important;
+
             &:not(.first, .previous, .next, .last) {
                 color: var(--text-secondary-light) !important;
-                
+
                 @include border-radius(4px !important);
                 background: var(--neutral-200) !important;
                 font-weight: 500;
                 border: none !important;
             }
+
             &:focus {
                 border: none !important;
                 box-shadow: none !important;
             }
-            &:hover, 
+
+            &:hover,
             &.current {
                 background: var(--primary-600) !important;
                 color: #fff !important;
+
                 &:hover {
                     color: #fff !important;
                 }
             }
-        } 
+        }
     }
 }
 
-table.dataTable > thead > tr > th, table.dataTable > thead > tr > td {
+table.dataTable>thead>tr>th,
+table.dataTable>thead>tr>td {
     padding: 13px;
     padding-inline-start: 24px;
 }
-table.dataTable > tbody > tr > th, table.dataTable > tbody > tr > td {
+
+table.dataTable>tbody>tr>th,
+table.dataTable>tbody>tr>td {
     padding: 12px;
     padding-inline-start: 24px;
 }
 
-table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
     text-align: center;
 }
 
@@ -161,5 +183,10 @@ table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataT
         border-color: var(--neutral-300) !important;
     }
 
+    table.dataTable>thead>tr>th {
+        background-color: #1b2431;
+    }
+
 }
+
 /* Data Table css end */
