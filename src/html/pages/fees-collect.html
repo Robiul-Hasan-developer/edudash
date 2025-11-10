@@ -67,7 +67,9 @@
                                 <iconify-icon icon="ion:search-outline" class="icon"></iconify-icon>
                             </form>
                             <div class="dropdown">
-                                <button type="button" class="px-12 py-5-px border border-neutral-300 radius-8 d-flex align-items-center gap-20" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button type="button"
+                                    class="px-12 py-5-px border border-neutral-300 radius-8 d-flex align-items-center gap-20"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="d-flex align-items-center gap-1 text-secondary-light text-sm">
                                         Filter
                                     </span>
@@ -76,7 +78,8 @@
                                     </span>
                                 </button>
                                 <div class="dropdown-menu border bg-base shadow dropdown-menu-lg p-0">
-                                    <div class="d-flex align-items-center justify-content-between border-bottom py-8 px-16">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between border-bottom py-8 px-16">
                                         <span class="fw-semibold text-lg text-primary-light">Filter</span>
                                         <button type="button">
                                             <i class="ri-close-large-line"></i>
@@ -85,9 +88,10 @@
 
                                     <form action="#" class="p-16 d-grid grid-cols-2 gap-16">
                                         <div class="">
-                                            <label for="class" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class</label>
+                                            <label for="class"
+                                                class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class</label>
                                             <select id="class" class="form-control form-select">
-                                                <option value="Select" disabled="">Select Class</option>
+                                                <option value="Select" disabled>Select Class</option>
                                                 <option value="Primary">Primary</option>
                                                 <option value="SSC">SSC</option>
                                                 <option value="HSC">HSC</option>
@@ -96,7 +100,8 @@
                                             </select>
                                         </div>
                                         <div class="">
-                                            <label for="section" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Section</label>
+                                            <label for="section"
+                                                class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Section</label>
                                             <select id="section" class="form-control form-select">
                                                 <option value="Select">Select Section</option>
                                                 <option value="Arts">Arts</option>
@@ -105,7 +110,8 @@
                                             </select>
                                         </div>
                                         <div class="">
-                                            <label for="gender" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Gender</label>
+                                            <label for="gender"
+                                                class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Gender</label>
                                             <select id="gender" class="form-control form-select">
                                                 <option value="Select">Select Gender</option>
                                                 <option value="Male">Male</option>
@@ -113,7 +119,8 @@
                                             </select>
                                         </div>
                                         <div class="">
-                                            <label for="status" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Status</label>
+                                            <label for="status"
+                                                class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Status</label>
                                             <select id="status" class="form-control form-select">
                                                 <option value="Select">Select Status</option>
                                                 <option value="Active">Active</option>
@@ -121,7 +128,8 @@
                                             </select>
                                         </div>
                                         <div class="">
-                                            <button type="reset" class="btn btn-danger-200 text-danger-600 w-100">Reset</button>
+                                            <button type="reset"
+                                                class="btn btn-danger-200 text-danger-600 w-100">Reset</button>
                                         </div>
                                         <div class="">
                                             <button type="submit" class="btn btn-primary-600 w-100">Apply</button>
@@ -138,7 +146,7 @@
                                 <select name="dataTable_length" aria-controls="dataTable"
                                     class="dt-input form-control form-select">
                                     <option value="5">5</option>
-                                    <option value="10" selected="">10</option>
+                                    <option value="10" selected>10</option>
                                     <option value="25">25</option>
                                     <option value="50">50</option>
                                     <option value="100">100</option>
@@ -697,6 +705,116 @@
 </main>
 
 
+<!-- Add sidebar start -->
+<div
+    class="my-sidebar bg-white position-fixed end-0 top-0 h-100vh overflow-y-auto z-99 max-w-700-px w-100 translate-x-full duration-300 active-translate-0">
+    <div class="px-20 py-12 border-bottom d-flex align-items-center justify-content-between gap-20">
+        <h5 class="text-lg mb-0">Collect Fees</h5>
+        <button type="button" class="close-my-sidebar text-danger-600 text-lg d-flex">
+            <i class="ri-close-large-line"></i>
+        </button>
+    </div>
+    <form action="#" class="d-flex flex-column p-20">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="className" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class
+                    </label>
+                    <select class="form-control form-select" id="className">
+                        <option value="Select a class" selected disabled>Select a class</option>
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                        <option value="Four">Four</option>
+                        <option value="Five">Five</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="section" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Section
+                    </label>
+                    <select class="form-control form-select" id="section">
+                        <option value="Select a class" selected disabled>Select a Section</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="rollNo" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Roll No
+                    </label>
+                    <input type="text" class="form-control" id="rollNo" placeholder="Enter roll no.">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="collectDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Date
+                    </label>
+                    <input type="date" class="form-control" id="collectDate" placeholder="Enter room capacity">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <div class="d-flex align-items-center justify-content-between gap-4">
+                        <label for="collectAmount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Amount
+                        </label>
+                        <span class="text-sm fw-semibold text-warning-600">Due: 2000</span>
+                    </div>
+                    <input type="text" class="form-control" id="collectAmount" placeholder="$1500">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <label for="colDiscount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Discount
+                    </label>
+                    <select class="form-control form-select" id="colDiscount">
+                        <option value="Select a class" selected disabled>Select a Discount</option>
+                        <option value="10%">10%</option>
+                        <option value="20%">20%</option>
+                        <option value="30%">30%</option>
+                        <option value="50%">50%</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="paymentType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Type
+                    </label>
+                    <select class="form-control form-select" id="paymentType">
+                        <option value="Cash" selected>Cash</option>
+                        <option value="bKash">bKash</option>
+                        <option value="Bank">Bank</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="">
+                    <label for="noteType" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Note
+                    </label>
+                    <textarea class="form-control" placeholder="Enter note..."></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center gap-3 mt-8">
+                    <button type="reset"
+                        class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-50 py-11 radius-8">
+                        Cancel
+                    </button>
+                    <button type="submit"
+                        class="btn btn-primary-600 border border-primary-600 text-md px-28 py-12 radius-8">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Add sidebar end -->
+
 @@include('../partial-html/_template-bottom.html')
 
 <script>
@@ -719,6 +837,29 @@
         });
     });
     // ✅ Data Table end
+
+
+    // Sidebar js start
+    $('.my-sidebar-btn').on('click', function () {
+        $('.my-sidebar').addClass('active');
+        $('.overlay').addClass('active');
+    });
+    $('.close-my-sidebar, .overlay').on('click', function () {
+        $('.my-sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+
+
+    $('.edit-sidebar-btn').on('click', function () {
+        $('.edit-sidebar').addClass('active');
+        $('.overlay').addClass('active');
+    });
+    $('.close-edit-sidebar, .overlay').on('click', function () {
+        $('.edit-sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+    // Sidebar js end
+
 </script>
 
 </body>
