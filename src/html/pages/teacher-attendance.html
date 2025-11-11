@@ -8,11 +8,11 @@
     <div class="dashboard-main-body">
 
         @@include('../layouts/_breadcrumb.html', {
-        mainPageTitle: "Student Attendance",
+        mainPageTitle: "Teacher Attendance",
         showMiddleText: "d-none",
-        middleText: "Student Attendance",
+        middleText: "Teacher Attendance",
         middleLink: "javascript:void(0)",
-        currentPage: "Student Attendance",
+        currentPage: "Teacher Attendance",
         btnClasses: "d-none",
         btnText: "Add Teacher",
         btnLink: "add-new-teacher.html",
@@ -84,25 +84,15 @@
 
                                     <form action="#" class="p-16">
                                         <div class="row g-3">
-                                            <div class="col-6">
+                                            <div class="col-12">
                                                 <label for="class"
-                                                    class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class</label>
+                                                    class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Subject</label>
                                                 <select id="class" class="form-control form-select">
-                                                    <option value="One">One</option>
-                                                    <option value="Two">Two</option>
-                                                    <option value="Three">Three</option>
-                                                    <option value="Four">Four</option>
-                                                    <option value="Five">Five</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="section"
-                                                    class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Section</label>
-                                                <select id="section" class="form-control form-select">
-                                                    <option value="A">A</option>
-                                                    <option value="B">B</option>
-                                                    <option value="C">C</option>
-                                                    <option value="D">D</option>
+                                                    <option value="English">English</option>
+                                                    <option value="Bangla">Bangla</option>
+                                                    <option value="Math">Math</option>
+                                                    <option value="Physics">Physics</option>
+                                                    <option value="Chemistry">Chemistry</option>
                                                 </select>
                                             </div>
                                             <div class="col-12">
@@ -169,15 +159,15 @@
                                     <td><span class="text-primary-600">AD52365</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img1.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img1.png"
                                                 alt="Marvin McKinney Image" class="flex-shrink-0 me-12 radius-8">
                                             <div class="">
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Marvin McKinney</h6>
-                                                <span class="">Roll No: <span class="fw-semibold">12</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 1 (A)</td>
+
+                                    <td>Mathematics</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -215,15 +205,14 @@
                                     <td><span class="text-primary-600">AD52366</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img2.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img2.png"
                                                 alt="Cody Fisher Image" class="flex-shrink-0 me-12 radius-8">
                                             <div class="">
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Cody Fisher</h6>
-                                                <span>Roll No: <span class="fw-semibold">8</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 2 (B)</td>
+                                    <td>Physics</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -261,15 +250,14 @@
                                     <td><span class="text-primary-600">AD52367</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img3.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img3.png"
                                                 alt="Jenny Wilson Image" class="flex-shrink-0 me-12 radius-8">
                                             <div class="">
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Jenny Wilson</h6>
-                                                <span>Roll No: <span class="fw-semibold">9</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 3 (C)</td>
+                                    <td>Biology</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -307,15 +295,14 @@
                                     <td><span class="text-primary-600">AD52368</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img4.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img4.png"
                                                 alt="Guy Hawkins Image" class="flex-shrink-0 me-12 radius-8">
                                             <div class="">
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Guy Hawkins</h6>
-                                                <span>Roll No: <span class="fw-semibold">5</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 2 (A)</td>
+                                    <td>English</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -352,15 +339,14 @@
                                     <td><span class="text-primary-600">AD52369</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img5.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img5.png"
                                                 alt="Esther Howard Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Esther Howard</h6>
-                                                <span>Roll No: <span class="fw-semibold">15</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 3 (B)</td>
+                                    <td>Math</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -398,15 +384,14 @@
                                     <td><span class="text-primary-600">AD52370</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img6.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img6.png"
                                                 alt="Jane Cooper Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Jane Cooper</h6>
-                                                <span>Roll No: <span class="fw-semibold">18</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 4 (A)</td>
+                                    <td>Chemistry</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -444,15 +429,14 @@
                                     <td><span class="text-primary-600">AD52371</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img7.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img7.png"
                                                 alt="Robert Fox Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Robert Fox</h6>
-                                                <span>Roll No: <span class="fw-semibold">7</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 4 (B)</td>
+                                    <td>Biology</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -490,15 +474,14 @@
                                     <td><span class="text-primary-600">AD52372</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img8.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img8.png"
                                                 alt="Theresa Webb Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Theresa Webb</h6>
-                                                <span>Roll No: <span class="fw-semibold">11</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 5 (A)</td>
+                                    <td>Mathematics</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -536,15 +519,14 @@
                                     <td><span class="text-primary-600">AD52373</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img9.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img9.png"
                                                 alt="Courtney Henry Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Courtney Henry</h6>
-                                                <span>Roll No: <span class="fw-semibold">14</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 5 (B)</td>
+                                    <td>Physics</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
@@ -582,15 +564,14 @@
                                     <td><span class="text-primary-600">AD52374</span></td>
                                     <td>
                                         <div class="d-flex align-items-center flex-grow-1">
-                                            <img src="assets/images/thumbs/avatar-img6.png"
+                                            <img src="assets/images/thumbs/teacher-avatar-img6.png"
                                                 alt="Wade Warren Image" class="flex-shrink-0 me-12 radius-8">
                                             <div>
                                                 <h6 class="text-md mb-0 fw-medium flex-grow-1">Wade Warren</h6>
-                                                <span>Roll No: <span class="fw-semibold">10</span></span>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>Class 6 (A)</td>
+                                    <td>Biology</td>
                                     <td>
                                         <div class="d-flex align-items-center flex-wrap gap-28">
                                             <div class="form-check checked-primary d-flex align-items-center gap-2">
