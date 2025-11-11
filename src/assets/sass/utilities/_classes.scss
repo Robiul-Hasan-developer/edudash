@@ -16,6 +16,10 @@
     }
 }
 
+.invert {
+    filter: invert(1) brightness(1);
+}
+
 .duration-300 {
     transition: .3s linear;
 }
