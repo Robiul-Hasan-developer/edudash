@@ -277,4 +277,14 @@
     }
   });
   // Remove Table Tr when click on remove btn end
+
+  // Current Date Js start
+  $(document).ready(function () {
+    let currentYear = document.querySelector('.current-year');
+
+    let date = new Date();
+    date = date.getFullYear();
+    currentYear.innerHTML = date;
+  });
+  // Current Date Js end
 })(jQuery);
