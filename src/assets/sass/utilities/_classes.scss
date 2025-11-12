@@ -3,6 +3,10 @@
     transform: translateX(100%);
 }
 
+[dir=rtl] .translate-x-full {
+    transform: translateX(-100%);
+}
+
 .active-translate-0 {
     &.active {
         transform: translateX(0);
@@ -36,5 +40,6 @@
 td {
     vertical-align: middle;
 }
+
 
 /* Translate Css end */
