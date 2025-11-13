@@ -8,14 +8,14 @@
     <div class="dashboard-main-body">
 
         @@include('../layouts/_breadcrumb.html', {
-        mainPageTitle: "Add New Teacher",
+        mainPageTitle: "Add New Employee",
         showMiddleText: "",
-        middleText: "Teacher",
-        middleLink: "teacher-list.html",
-        currentPage: "Add New Teacher",
+        middleText: "Employee List",
+        middleLink: "employee-list.html",
+        currentPage: "Add New Employee",
         btnClasses: "d-none",
-        btnText: "Add Teacher",
-        btnLink: "add-new-teacher.html",
+        btnText: "Add Employee",
+        btnLink: "add-new-employee.html",
         btnIconClass: "ri-add-large-line"
         })
 
@@ -31,11 +31,11 @@
                             <div class="row gy-3">
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="teacherID"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Teacher
+                                        <label for="employeeID"
+                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Employee
                                             ID* <span class="text-danger-600">* </span> </label>
-                                        <input type="text" class="form-control" id="teacherID"
-                                            placeholder="Enter Teacher ID">
+                                        <input type="text" class="form-control" id="employeeID"
+                                            placeholder="Enter Employee ID">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
@@ -49,11 +49,11 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="teacherSubject"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Subject
+                                        <label for="employeeDepartment"
+                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Department
                                         </label>
-                                        <select id="teacherSubject" class="form-control form-select">
-                                            <option value="Select a Subject" disabled>Select a Subject</option>
+                                        <select id="employeeDepartment" class="form-control form-select">
+                                            <option value="Select a Department" disabled>Select a Department</option>
                                             <option value="English">English</option>
                                             <option value="Mathematics">Mathematics</option>
                                             <option value="Physics">Physics</option>
@@ -62,14 +62,16 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="teacherClass"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Class
+                                        <label for="employeeDesignation"
+                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Designation
                                         </label>
-                                        <select id="teacherClass" class="form-control form-select">
-                                            <option value="Select a Class" disabled>Select a Class</option>
-                                            <option value="1 (A)">1 (A)</option>
-                                            <option value="2 (A)">2 (A)</option>
-                                            <option value="3 (A)">3 (A)</option>
+                                        <select id="employeeDesignation" class="form-control form-select">
+                                            <option value="Select a Class" disabled>Select a Designation</option>
+                                            <option value="Team Lead">Team Lead</option>
+                                            <option value="Software Engineer">Software Engineer</option>
+                                            <option value="Frontend Developer">Frontend Developer</option>
+                                            <option value="Backend Developer">Backend Developer</option>
+                                            <option value="Full Stack Developer">Full Stack Developer</option>
                                         </select>
                                     </div>
                                 </div>
@@ -138,9 +140,9 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="teacherShift"
+                                        <label for="employeeShift"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Shift</label>
-                                        <select id="teacherShift" class="form-control form-select">
+                                        <select id="employeeShift" class="form-control form-select">
                                             <option value="Select a shift" disabled>Select a shift</option>
                                             <option value="Day Shift">Day Shift</option>
                                             <option value="Night Shift">Night Shift</option>
@@ -175,35 +177,17 @@
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="teacherEmails"
+                                        <label for="employeeEmails"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Email
                                             <span class="text-danger-600">*</span> </label>
-                                        <input type="text" class="form-control" id="teacherEmails"
+                                        <input type="text" class="form-control" id="employeeEmails"
                                             placeholder="Enter your Email">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="">
-                                        <label for="wordExperience"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Experience
-                                            <span class="text-danger-600">*</span> </label>
-                                        <input type="text" class="form-control" id="wordExperience"
-                                            placeholder="Enter experience">
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-sm-6">
-                                    <div class="">
-                                        <label for="wordQualification"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Experience
-                                            <span class="text-danger-600">*</span> </label>
-                                        <input type="text" class="form-control" id="wordQualification"
-                                            placeholder="Enter Qualification">
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-sm-6">
-                                    <div class="">
                                         <label
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Teacher
+                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Employee
                                             Photo <span class="text-danger-600">*</span> </label>
                                         <div
                                             class="drop-zone height-44-px p-4 d-flex justify-content-center align-items-center text-center fw-medium text-md cursor-pointer border border-neutral-400 radius-8 border-dashed bg-hover-neutral-200">
@@ -327,8 +311,8 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="">
-                                        <label
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Upload File</label>
+                                        <label class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Upload
+                                            File</label>
                                         <div
                                             class="drop-zone height-44-px p-4 d-flex justify-content-center align-items-center text-center fw-medium text-md cursor-pointer border border-neutral-400 radius-8 border-dashed bg-hover-neutral-200">
                                             <span class="drop-zone__prompt">Darg & drop a file here or click</span>
@@ -404,28 +388,7 @@
                     <div class="shadow-1 radius-12 bg-base h-100 overflow-hidden">
                         <div
                             class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center justify-content-between">
-                            <h6 class="text-lg fw-semibold mb-0">Teacher Details</h6>
-                        </div>
-                        <div class="card-body p-20">
-                            <div class="row gy-3">
-                                <div class="col-sm-12">
-                                    <div class="">
-                                        <label for="moreDetails"
-                                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Teacher Details
-                                        </label>
-                                        <textarea id="moreDetails" class="form-control"
-                                            placeholder="Enter details"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div class="shadow-1 radius-12 bg-base h-100 overflow-hidden">
-                        <div
-                            class="card-header border-bottom bg-base py-16 px-24 d-flex align-items-center justify-content-between">
-                            <h6 class="text-lg fw-semibold mb-0">Teacher Details</h6>
+                            <h6 class="text-lg fw-semibold mb-0">Employee Details</h6>
                         </div>
                         <div class="card-body p-20">
                             <div class="row gy-3">
@@ -434,7 +397,8 @@
                                         <label for="facebookLink"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Facebook
                                         </label>
-                                        <input type="text" id="facebookLink" class="form-control" placeholder="Enter your facebook link">
+                                        <input type="text" id="facebookLink" class="form-control"
+                                            placeholder="Enter your facebook link">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
@@ -442,7 +406,8 @@
                                         <label for="linkedInLink"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">LinkedIn
                                         </label>
-                                        <input type="text" id="linkedInLink" class="form-control" placeholder="Enter your LinkedIn link">
+                                        <input type="text" id="linkedInLink" class="form-control"
+                                            placeholder="Enter your LinkedIn link">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
@@ -450,7 +415,8 @@
                                         <label for="instagramLink"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Instagram
                                         </label>
-                                        <input type="text" id="instagramLink" class="form-control" placeholder="Enter your Instagram link">
+                                        <input type="text" id="instagramLink" class="form-control"
+                                            placeholder="Enter your Instagram link">
                                     </div>
                                 </div>
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
@@ -458,7 +424,8 @@
                                         <label for="youTubeLink"
                                             class="text-sm fw-semibold text-primary-light d-inline-block mb-8">YouTube
                                         </label>
-                                        <input type="text" id="youTubeLink" class="form-control" placeholder="Enter your YouTube link">
+                                        <input type="text" id="youTubeLink" class="form-control"
+                                            placeholder="Enter your YouTube link">
                                     </div>
                                 </div>
                             </div>
