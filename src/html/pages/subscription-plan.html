@@ -31,7 +31,8 @@
                                     class="form-switch switch-primary d-flex align-items-center gap-3 mt-28 justify-content-center">
                                     <label class="form-check-label line-height-1 fw-medium text-secondary-light"
                                         for="yes">Monthly</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="yes">
+                                    <input class="form-check-input choose-plan-input" type="checkbox" role="switch"
+                                        id="yes">
                                     <label class="form-check-label line-height-1 fw-medium text-secondary-light"
                                         for="yes">Annually</label>
                                 </div>
@@ -54,8 +55,10 @@
                                         </div>
                                         <p class="mt-16 mb-0 text-secondary-light mb-28">Lorem ipsum dolor sit amet
                                             doloroli sitiol conse ctetur adipiscing elit. </p>
-                                        <h3 class="mb-24">$99 <span
-                                                class="fw-medium text-md text-secondary-light">/monthly</span> </h3>
+                                        <h3 class="mb-24">
+                                            $<span class="price-range">99</span>
+                                            <span class="fw-medium text-md text-secondary-light">/monthly</span>
+                                        </h3>
                                         <span class="mb-20 fw-medium">What’s included</span>
                                         <ul>
                                             <li class="d-flex align-items-center gap-16 mb-16">
@@ -112,8 +115,10 @@
                                         </div>
                                         <p class="mt-16 mb-0 text-white mb-28">Lorem ipsum dolor sit amet doloroli
                                             sitiol conse ctetur adipiscing elit. </p>
-                                        <h3 class="mb-24 text-white">$199 <span
-                                                class="fw-medium text-md text-white">/monthly</span> </h3>
+                                        <h3 class="mb-24 text-white">
+                                            $<span class="price-range">199</span>
+                                            <span class="fw-medium text-md text-white">/monthly</span>
+                                        </h3>
                                         <span class="mb-20 fw-medium">What’s included</span>
                                         <ul>
                                             <li class="d-flex align-items-center gap-16 mb-16">
@@ -167,8 +172,10 @@
                                         </div>
                                         <p class="mt-16 mb-0 text-secondary-light mb-28">Lorem ipsum dolor sit amet
                                             doloroli sitiol conse ctetur adipiscing elit. </p>
-                                        <h3 class="mb-24">$399 <span
-                                                class="fw-medium text-md text-secondary-light">/monthly</span> </h3>
+                                        <h3 class="mb-24">
+                                            $<span class="price-range">399</span>
+                                            <span class="fw-medium text-md text-secondary-light">/monthly</span>
+                                        </h3>
                                         <span class="mb-20 fw-medium">What’s included</span>
                                         <ul>
                                             <li class="d-flex align-items-center gap-16 mb-16">
@@ -218,6 +225,36 @@
 </main>
 
 @@include('../partial-html/_template-bottom.html')
+
+<script>
+    let choosePlanInput = document.querySelector('.choose-plan-input');
+    let priceRanges = document.querySelectorAll('.price-range');
+
+    // Store original prices (once)
+    priceRanges.forEach(price => {
+        price.dataset.original = price.innerHTML.trim();
+    });
+
+    choosePlanInput.addEventListener('change', function () {
+
+        if (this.checked) {
+            // When checked → Multiply by 10
+            priceRanges.forEach(price => {
+                let cleanValue = price.dataset.original.replace(/[^0-9.]/g, '').trim();
+                let multiplied = Number(cleanValue) * 10;
+                price.innerHTML = multiplied;
+            });
+
+        } else {
+            // When unchecked → Restore original values
+            priceRanges.forEach(price => {
+                price.innerHTML = price.dataset.original;
+            });
+        }
+    });
+
+</script>
+
 
 </body>
 
