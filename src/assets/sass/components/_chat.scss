@@ -79,13 +79,13 @@
 }
 
 .chat-all-list {
-  max-height: 534px;
+  max-height: 554px;
   overflow-y: auto;
   @include media(xl) {
     max-height: 400px;
   }
   @include media(xxl) {
-    max-height: 534px;
+    max-height: 554px;
   }
   &::-webkit-scrollbar {
     width: 10px;
