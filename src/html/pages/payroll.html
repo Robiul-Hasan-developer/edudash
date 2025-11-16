@@ -23,7 +23,7 @@
             </button>
         </div>
 
-        <div class="mt-24">
+      <div class="mt-24">
             <div class="card h-100">
                 <div class="card-body p-0 dataTable-wrapper">
 
@@ -139,9 +139,8 @@
                     </div>
 
                     <div class="p-0">
-                        <table class="table bordered-table mb-0 table-heading-dark-mode w-100 data-table"
-                            id="dataTableTwo" data-page-length='10'>
-                            <thead>
+                        <table class="table bordered-table mb-0 data-table" id="dataTable" data-page-length='10'>
+                             <thead>
                                 <tr>
                                     <th scope="col">
                                         <div class="form-check style-check d-flex align-items-center">
@@ -161,7 +160,7 @@
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                              <tbody>
                                 <tr>
                                     <td>
                                         <div class="form-check style-check d-flex align-items-center">
@@ -462,7 +461,6 @@
                                     </td>
                                 </tr>
                             </tbody>
-
                         </table>
                     </div>
                 </div>
@@ -486,21 +484,23 @@
         <div class="row g-3">
             <div class="col-sm-6">
                 <div class="">
-                    <label for="employeeName" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Employee Name
+                    <label for="employeeName"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Employee Name
                     </label>
                     <input type="text" class="form-control" id="employeeName" placeholder="Enter Fees Type name">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="">
-                    <label for="paymentAmount" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Amount ($)
+                    <label for="paymentAmount"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Amount ($)
                     </label>
                     <input type="text" class="form-control" id="paymentAmount" placeholder="Enter Payment Amount ($)">
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="">
-                    <label for="month" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Month 
+                    <label for="month" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Month
                     </label>
                     <select id="month" class="form-control form-select">
                         <option value="Select a Month" selected disabled>Select Month</option>
@@ -514,9 +514,10 @@
             </div>
             <div class="col-sm-6">
                 <div class="">
-                    <label for="month" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment Type
+                    <label for="paymentTypee" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Payment
+                        Type
                     </label>
-                    <select id="month" class="form-control form-select">
+                    <select id="paymentTypee" class="form-control form-select">
                         <option value="Select Payment Type" selected disabled>Select Payment Type</option>
                         <option value="Cash">Cash</option>
                         <option value="Bank">Bank</option>
@@ -524,16 +525,17 @@
                     </select>
                 </div>
             </div>
-             <div class="col-sm-12">
+            <div class="col-sm-12">
                 <div class="">
                     <label for="paymentDate" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Date
                     </label>
                     <input type="date" class="form-control" id="paymentDate">
                 </div>
             </div>
-             <div class="col-sm-12">
+            <div class="col-sm-12">
                 <div class="">
-                    <label for="ddescription" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Description
+                    <label for="ddescription"
+                        class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Description
                     </label>
                     <textarea class="form-control" id="ddescription" placeholder="Enter Description"></textarea>
                 </div>
