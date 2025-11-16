@@ -17,46 +17,46 @@
   </div>
   <!-- User Info start -->
   <div class="mx-16 py-12">
-    <div class="bg-neutral-50 p-10 radius-12 d-flex align-items-center justify-content-between">
-      <div class="d-flex align-items-start gap-10">
-        <img src="assets/images/thumbs/leave-request-img2.png" alt="Thumbnail"
-          class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-        <div class="">
-          <h6 class="mb-0 text-md">Jone Copper</h6>
-          <span class="text-secondary-light text-sm mb-0">Admin</span>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button type="button" class="pe-8 text-xl d-flex line-height-1" data-bs-toggle="dropdown"
-          data-bs-display="static" aria-expanded="false">
+    <div class="dropdown profile-dropdown">
+      <button type="button" class="profile-dropdown__button d-flex align-items-center justify-content-between p-10 w-100 overflow-hidden bg-neutral-50 radius-12 " data-bs-toggle="dropdown" data-bs-display="static"
+        aria-expanded="false">
+        <span class="d-flex align-items-start gap-10">
+          <img src="assets/images/thumbs/leave-request-img2.png" alt="Thumbnail"
+            class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+          <span class="profile-dropdown__contents">
+            <span class="h6 mb-0 text-md d-block text-primary-light">Jone Copper</span>
+            <span class="text-secondary-light text-sm mb-0 d-block">Admin</span>
+          </span>
+        </span>
+        <span class="profile-dropdown__icon pe-8 text-xl d-flex line-height-1">
           <i class="ri-arrow-right-s-line"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-lg-end border p-12">
-          <li>
-            <button
-              class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6"
-              type="button">
-              <i class="ri-user-3-line"></i>
-              My Profile
-            </button>
-          </li>
-          <li>
-            <a href="edit-student.html"
-              class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6">
-              <i class="ri-settings-3-line"></i>
-              Setting
-            </a>
-          </li>
-          <li>
-            <button
-              class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6"
-              type="button">
-              <i class="ri-shut-down-line"></i>
-              Log Out
-            </button>
-          </li>
-        </ul>
-      </div>
+        </span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-lg-end border p-12">
+        <li>
+          <button
+            class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6"
+            type="button">
+            <i class="ri-user-3-line"></i>
+            My Profile
+          </button>
+        </li>
+        <li>
+          <a href="general.html"
+            class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6">
+            <i class="ri-settings-3-line"></i>
+            Setting
+          </a>
+        </li>
+        <li>
+          <button
+            class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2 py-6"
+            type="button">
+            <i class="ri-shut-down-line"></i>
+            Log Out
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
   <!-- User Info end -->
@@ -513,4 +513,4 @@
       </li>
     </ul>
   </div>
-</aside>  
+</aside>

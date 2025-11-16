@@ -398,6 +398,32 @@
   }
 }
 
-.sidebar-menu .sidebar-submenu li.active-page a .circle-icon{
-    color: var(--primary-600);
+.sidebar-menu .sidebar-submenu li.active-page a .circle-icon {
+  color: var(--primary-600);
 }
+
+
+
+
+// profile dropdown css start
+.sidebar.active {
+  .profile-dropdown__contents {
+    display: none;
+  }
+
+  .dropdown.profile-dropdown .profile-dropdown__button {
+    padding: 0 !important;
+    width: 56px !important;
+    height: 56px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px;
+  }
+
+  .profile-dropdown__icon {
+    display: none !important;
+  }
+}
+
+// profile dropdown css end
