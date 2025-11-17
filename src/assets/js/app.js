@@ -259,28 +259,25 @@
   }
   // =========================== Color Schema js End ================================
 
-  // =========================== Table Header Checkbox checked all js Start ================================
-  $("#selectAll").on("change", function () {
-    $(".form-check .form-check-input").prop("checked", $(this).prop("checked"));
-  });
-
-  // Remove Table Tr when click on remove btn start
-  $(".remove-btn").on("click", function () {
-    $(this).closest("tr").remove();
-
-    // Check if the table has no rows left
-    if ($(".table tbody tr").length === 0) {
-      $(".table").addClass("bg-danger");
-
-      // Show notification
-      $(".no-items-found").show();
-    }
-  });
-  // Remove Table Tr when click on remove btn end
+  // ================== Password Show Hide Js Start ==========
+  function initializePasswordToggle(toggleSelector) {
+    $(toggleSelector).on("click", function () {
+      $(this).toggleClass("ri-eye-off-line");
+      var input = $($(this).attr("data-toggle"));
+      if (input.attr("type") === "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+    });
+  }
+  // Call the function
+  initializePasswordToggle(".toggle-password");
+  // ========================= Password Show Hide Js End ===========================
 
   // Current Date Js start
   $(document).ready(function () {
-    let currentYear = document.querySelector('.current-year');
+    let currentYear = document.querySelector(".current-year");
 
     let date = new Date();
     date = date.getFullYear();
