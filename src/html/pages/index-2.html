@@ -241,7 +241,7 @@
                                                 class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
                                                 <i class="ri-chat-1-line"></i>
                                             </a>
-                                               <a href="javascript:void(0)"
+                                            <a href="javascript:void(0)"
                                                 class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1">
                                                 <i class="ri-time-line"></i>
                                                 Join Class
@@ -283,7 +283,7 @@
                                                 class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
                                                 <i class="ri-chat-1-line"></i>
                                             </a>
-                                               <a href="javascript:void(0)"
+                                            <a href="javascript:void(0)"
                                                 class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1">
                                                 <i class="ri-time-line"></i>
                                                 Join Class
@@ -296,6 +296,218 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- User activity Start -->
+                <div class="col-xxl-4 col-lg-6">
+                    <div class="card radius-12 border-0">
+                        <div
+                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
+                            <h6 class="mb-2 fw-bold text-lg">User activity</h6>
+                            <div class="">
+                                <select
+                                    class="form-select form-select-sm w-auto bg-base border text-secondary-light radius-8">
+                                    <option>Yearly</option>
+                                    <option>Monthly</option>
+                                    <option>Weekly</option>
+                                    <option>Today</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            Chart goes here....
+                        </div>
+                    </div>
+                </div>
+                <!-- User activity End -->
+
+                <!-- Top Student Start -->
+                <div class="col-xxl-4 col-lg-6">
+                    <div class="card radius-12 border-0">
+                        <div
+                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
+                            <h6 class="mb-2 fw-bold text-lg">Top Student</h6>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <iconify-icon icon="entypo:dots-three-vertical"
+                                        class="icon text-secondary-light"></iconify-icon>
+                                </button>
+                                <ul class="dropdown-menu p-12 border bg-base shadow">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                            <iconify-icon icon="hugeicons:view"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            View
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                            <iconify-icon icon="lucide:edit"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Edit
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                            <iconify-icon icon="fluent:delete-24-regular"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Delete
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-20">
+
+                                <div class="d-flex align-items-center justify-content-between gap-10">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span
+                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/avatar-img1.png" class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-sm mb-2">Brooklyn Simmons</h6>
+                                            <span class="text-xs text-secondary-light">Class: Six</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="text-sm text-secondary-light">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="20"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35"></circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">20</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-10">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span
+                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/avatar-img2.png" class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-sm mb-2">Floyd Miles</h6>
+                                            <span class="text-xs text-secondary-light">Class: Seven</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="text-sm text-secondary-light">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="35"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-red" cx="40"
+                                                    cy="40" r="35"></circle>
+                                                <circle class="complete stroke-8-px stroke-red" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">35</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-10">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span
+                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/avatar-img2.png" class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-sm mb-2">Courtney Henry</h6>
+                                            <span class="text-xs text-secondary-light">Class: Eight</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="text-sm text-secondary-light">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="45"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-warning" cx="40"
+                                                    cy="40" r="35"></circle>
+                                                <circle class="complete stroke-8-px stroke-warning" cx="40" cy="40"
+                                                    r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">45</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-10">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span
+                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/avatar-img4.png" class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-sm mb-2">Kathryn Murphy</h6>
+                                            <span class="text-xs text-secondary-light">Class: Nine</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="text-sm text-secondary-light">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="65"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-green" cx="40"
+                                                    cy="40" r="35"></circle>
+                                                <circle class="complete stroke-8-px stroke-green" cx="40" cy="40"
+                                                    r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">65</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between gap-10">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span
+                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/avatar-img5.png" class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-sm mb-2">Annette Black</h6>
+                                            <span class="text-xs text-secondary-light">Class: Ten</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-8">
+                                        <span class="text-sm text-secondary-light">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="65"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35"></circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40"
+                                                    r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">65</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Student End -->
 
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
@@ -1175,6 +1387,33 @@
     chart.render();
     // ============================ Month Order Chart End ==========================
 
+    // ================================ Animated Radial Progress Bar Start ================================ 
+    $('svg.radial-progress').each(function (index, value) {
+        $(this).find($('circle.complete')).removeAttr('style');
+    });
+
+    // Activate progress animation on scroll
+    $(window).scroll(function () {
+        $('svg.radial-progress').each(function (index, value) {
+            // Trigger when the element is fully in the viewport
+            if (
+                $(window).scrollTop() >= $(this).offset().top - $(window).height() &&
+                $(window).scrollTop() <= $(this).offset().top + $(this).height()
+            ) {
+                // Get percentage of progress
+                const percent = $(value).data('percentage');
+                // Get radius of the svg's circle.complete
+                const radius = $(this).find($('circle.complete')).attr('r');
+                // Get circumference (2πr)
+                const circumference = 2 * Math.PI * radius;
+                // Get stroke-dashoffset value based on the percentage of the circumference
+                const strokeDashOffset = circumference - ((percent * circumference) / 100);
+                // Transition progress for 1.25 seconds
+                $(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1250);
+            }
+        });
+    }).trigger('scroll');
+    // ================================ Animated Radial Progress Bar End ================================ 
 
 
     // ==========================================================

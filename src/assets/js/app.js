@@ -278,10 +278,12 @@
   // Current Date Js start
   $(document).ready(function () {
     let currentYear = document.querySelector(".current-year");
+    if(currentYear) {
+      let date = new Date();
+      date = date.getFullYear();
+      currentYear.innerHTML = date;
+    }
 
-    let date = new Date();
-    date = date.getFullYear();
-    currentYear.innerHTML = date;
   });
   // Current Date Js end
 })(jQuery);
