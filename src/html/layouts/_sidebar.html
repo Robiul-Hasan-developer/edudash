@@ -18,8 +18,9 @@
   <!-- User Info start -->
   <div class="mx-16 py-12">
     <div class="dropdown profile-dropdown">
-      <button type="button" class="profile-dropdown__button d-flex align-items-center justify-content-between p-10 w-100 overflow-hidden bg-neutral-50 radius-12 " data-bs-toggle="dropdown" data-bs-display="static"
-        aria-expanded="false">
+      <button type="button"
+        class="profile-dropdown__button d-flex align-items-center justify-content-between p-10 w-100 overflow-hidden bg-neutral-50 radius-12 "
+        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
         <span class="d-flex align-items-start gap-10">
           <img src="assets/images/thumbs/leave-request-img2.png" alt="Thumbnail"
             class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
@@ -62,11 +63,25 @@
   <!-- User Info end -->
   <div class="sidebar-menu-area">
     <ul class="sidebar-menu" id="sidebar-menu">
-      <li>
-        <a href="index.html">
+      <li class="dropdown">
+        <a href="javascript:void(0)">
           <i class="ri-home-4-line"></i>
-          <span>Home</span>
+          <span>Dashboard </span>
         </a>
+        <ul class="sidebar-submenu">
+          <li>
+            <a href="index.html">
+              <i class="ri-circle-fill circle-icon w-auto"></i>
+              School
+            </a>
+          </li>
+          <li>
+            <a href="index-2.html">
+              <i class="ri-circle-fill circle-icon w-auto"></i>
+              LMS
+            </a>
+          </li>
+        </ul>
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)">

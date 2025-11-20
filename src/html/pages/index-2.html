@@ -1,0 +1,630 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+@@include('../layouts/_sidebar.html')
+
+<main class="dashboard-main">
+    @@include('../layouts/_nav.html')
+
+    <div class="dashboard-main-body">
+
+        @@include('../layouts/_breadcrumb-main.html', {
+        mainPageTitle: "Dashboard",
+        mainPageDescription: "LMS -> Manage courses, students, assignments and performance metrics in one centralized"
+        })
+
+        <div class="mt-24">
+            <div class="row gy-4">
+
+                <div class="col-xl-6">
+                    <div class="bg-base rounded-3 p-20">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="border rounded-3">
+                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
+                                        <span
+                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-primary-100">
+                                            <img src="assets/images/icons/lms-icon-1.png" alt="Icon">
+                                        </span>
+                                        <span class="text-primary-light fw-medium">Enrolled Courses</span>
+                                    </div>
+                                    <div class="position-relative z-1">
+                                        <img src="assets/images/icons/lms-card-gradient-bg1.png"
+                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover"
+                                            alt="Gradient BG">
+                                        <div
+                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
+                                            <div class="">
+                                                <h6 class="mb-6">500</h6>
+                                                <span
+                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
+                                                    <i
+                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
+                                                    43,9%
+                                                </span>
+                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
+                                                    month</span>
+                                            </div>
+                                            <div class="">
+                                                <div id="enrolledCourses"
+                                                    class="remove-tooltip-title rounded-tooltip-value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="border rounded-3">
+                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
+                                        <span
+                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-purple-100">
+                                            <img src="assets/images/icons/lms-icon-2.png" alt="Icon">
+                                        </span>
+                                        <span class="text-primary-light fw-medium">Total Students</span>
+                                    </div>
+                                    <div class="position-relative z-1">
+                                        <img src="assets/images/icons/lms-card-gradient-bg2.png"
+                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover"
+                                            alt="Gradient BG">
+                                        <div
+                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
+                                            <div class="">
+                                                <h6 class="mb-6">3,570</h6>
+                                                <span
+                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
+                                                    <i
+                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
+                                                    43,9%
+                                                </span>
+                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
+                                                    month</span>
+                                            </div>
+                                            <div class="">
+                                                <div id="barChart" class="barChart remove-tooltip-title rounded-tooltip-value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="border rounded-3">
+                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
+                                        <span
+                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-warning-100">
+                                            <img src="assets/images/icons/lms-icon-3.png" alt="Icon">
+                                        </span>
+                                        <span class="text-primary-light fw-medium">Total Courses</span>
+                                    </div>
+                                    <div class="position-relative z-1">
+                                        <img src="assets/images/icons/lms-card-gradient-bg3.png"
+                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover"
+                                            alt="Gradient BG">
+                                        <div
+                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
+                                            <div class="">
+                                                <h6 class="mb-6">30</h6>
+                                                <span
+                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
+                                                    <i
+                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
+                                                    43,9%
+                                                </span>
+                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
+                                                    month</span>
+                                            </div>
+                                            <div class="">
+                                               <div id="barChartTwo" class="barChart remove-tooltip-title rounded-tooltip-value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="border rounded-3">
+                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
+                                        <span
+                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-success-100">
+                                            <img src="assets/images/icons/lms-icon-4.png" alt="Icon">
+                                        </span>
+                                        <span class="text-primary-light fw-medium">Total Earnings</span>
+                                    </div>
+                                    <div class="position-relative z-1">
+                                        <img src="assets/images/icons/lms-card-gradient-bg4.png"
+                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover"
+                                            alt="Gradient BG">
+                                        <div
+                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
+                                            <div class="">
+                                                <h6 class="mb-6">$50,000</h6>
+                                                <span
+                                                    class="fw-medium text-danger-600 text-md d-flex gap-6 align-items-center">
+                                                    <i
+                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-down-line"></i>
+                                                    20,3%
+                                                </span>
+                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
+                                                    month</span>
+                                            </div>
+                                            <div class="">
+                                                <div id="totalEarnings"
+                                                    class="remove-tooltip-title rounded-tooltip-value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+        
+              
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+                <!-- ======================================================================================== -->
+            </div>
+        </div>
+    </div>
+
+    @@include('../layouts/_footer.html')
+</main>
+
+@@include('../partial-html/_template-bottom.html')
+
+<script>
+
+    // ============================ Area chart js start ==============================
+    function createChart(chartId, chartColor, curveClass) {
+
+        let currentYear = new Date().getFullYear();
+
+        var options = {
+            series: [
+                {
+                    name: 'series1',
+                    data: [31, 24, 30, 25, 32, 28, 40, 32, 42, 38, 40, 32, 38, 35, 45],
+                },
+            ],
+            chart: {
+                type: 'area',
+                width: 150,
+                height: 60,
+                sparkline: {
+                    enabled: true // Remove whitespace
+                },
+
+                toolbar: {
+                    show: false
+                },
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                },
+                events: {
+                    mounted: function (chartContext, config) {
+                        // Apply CSS blur to markers
+                        document.querySelectorAll(`#${chartId} .apexcharts-marker`).forEach(marker => {
+                            marker.style.filter = 'blur(2px)';
+                        });
+                    },
+                    updated: function (chartContext, config) {
+                        // Apply CSS blur to markers
+                        document.querySelectorAll(`#${chartId} .apexcharts-marker`).forEach(marker => {
+                            marker.style.filter = 'blur(3px)';
+                        });
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: `${curveClass}`,
+                width: 2,
+                colors: [chartColor],
+                lineCap: 'round'
+            },
+            grid: {
+                show: true,
+                borderColor: 'transparent',
+                strokeDashArray: 0,
+                position: 'back',
+                xaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                row: {
+                    colors: undefined,
+                    opacity: 0.5
+                },
+                column: {
+                    colors: undefined,
+                    opacity: 0.5
+                },
+                padding: {
+                    top: -3,
+                    right: 0,
+                    bottom: 0,
+                    left: 0
+                },
+            },
+            fill: {
+                type: 'gradient',
+                colors: [chartColor], // Set the starting color (top color) here
+                gradient: {
+                    shade: 'light', // Gradient shading type
+                    type: 'vertical',  // Gradient direction (vertical)
+                    shadeIntensity: 0.5, // Intensity of the gradient shading
+                    gradientToColors: [`${chartColor}00`], // Bottom gradient color (with transparency)
+                    inverseColors: false, // Do not invert colors
+                    opacityFrom: .5, // Starting opacity
+                    opacityTo: 0.3,  // Ending opacity
+                    stops: [0, 100],
+                },
+            },
+            // Customize the circle marker color on hover
+            markers: {
+                colors: [chartColor],
+                strokeWidth: 2,
+                size: 0,
+                hover: {
+                    size: 8
+                }
+            },
+            xaxis: {
+                labels: {
+                    show: false
+                },
+                categories: [`Jan ${currentYear}`, `Feb ${currentYear}`, `Mar ${currentYear}`, `Apr ${currentYear}`, `May ${currentYear}`, `Jun ${currentYear}`, `Jul ${currentYear}`, `Aug ${currentYear}`, `Sep ${currentYear}`, `Oct ${currentYear}`, `Nov ${currentYear}`, `Dec ${currentYear}`],
+                tooltip: {
+                    enabled: false,
+                },
+            },
+            yaxis: {
+                labels: {
+                    show: false
+                }
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
+        chart.render();
+    }
+
+    createChart('enrolledCourses', '#0A51CE', 'smooth');
+    createChart('totalEarnings', '#00B252', 'straight');
+    // ============================ Area chart js End ==============================
+
+    // ============================ Bar chart js start ==============================
+    function createBarChart (barChartId, barChartColor) {
+        var options = {
+            series: [{
+                name: "Sales",
+                data: [{
+                    x: 'Sun',
+                    y: 15,
+                }, {
+                    x: 'Mon',
+                    y: 12,
+                }, {
+                    x: 'Tue',
+                    y: 18,
+                }, {
+                    x: 'Wed',
+                    y: 20,
+                }, {
+                    x: 'Thu',
+                    y: 13,
+                }]
+            }],
+            chart: {
+                type: 'bar',
+                height: 80,
+                width: 140,
+                 sparkline: {
+                    enabled: true // Remove whitespace
+                },
+                toolbar: {
+                    show: false
+                },
+            },
+            plotOptions: {
+                bar: {
+                    borderRadius: 4,
+                    horizontal: false,
+                    columnWidth: 24,
+                    columnWidth: '60%',
+                    endingShape: 'rounded',
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            fill: {
+                type: 'gradient',
+                colors: [barChartColor], // Set the starting color (top color) here
+                gradient: {
+                    shade: 'light', // Gradient shading type
+                    type: 'vertical',  // Gradient direction (vertical)
+                    shadeIntensity: 0.5, // Intensity of the gradient shading
+                    gradientToColors: [barChartColor], // Bottom gradient color (with transparency)
+                    inverseColors: false, // Do not invert colors
+                    opacityFrom: 1, // Starting opacity
+                    opacityTo: 1,  // Ending opacity
+                    stops: [0, 100],
+                },
+            },
+            grid: {
+                show: false,
+                borderColor: '#D1D5DB',
+                strokeDashArray: 4, // Use a number for dashed style
+                position: 'back',
+                padding: {
+                    top: -10,
+                    right: -10,
+                    bottom: -10,
+                    left: -10
+                }
+            },
+            xaxis: {
+                type: 'category',
+                categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu']
+            },
+            yaxis: {
+                show: false,
+            },
+        };
+    
+        var chart = new ApexCharts(document.querySelector(`#${barChartId}`), options);
+        chart.render();
+    }
+
+    createBarChart('barChart', '#8247FF');
+    createBarChart('barChartTwo', '#FEAC3B');
+    // ============================ Bar chart js End ==============================
+
+
+
+
+    // ==========================================================
+    // ==========================================================
+    // ==========================================================
+    // ==========================================================
+    // ==========================================================
+
+
+
+
+    // ===================== Income Vs Expense Start ===============================
+    // ===================== Income Vs Expense Start ===============================
+    // ===================== Income Vs Expense Start ===============================
+    // ===================== Income Vs Expense Start ===============================
+    // ===================== Income Vs Expense Start ===============================
+
+
+    // ===================== Income Vs Expense Start ===============================
+    // function createChartThree(chartId, color1, color2) {
+    //     var options = {
+    //         series: [{
+    //             name: 'Income',
+    //             data: [48, 35, 55, 32, 48, 30, 15, 50, 57]
+    //         }, {
+    //             name: 'Expense',
+    //             data: [12, 20, 15, 26, 22, 60, 40, 32, 25]
+    //         }],
+    //         legend: {
+    //             show: false
+    //         },
+    //         chart: {
+    //             type: 'area',
+    //             width: '100%',
+    //             height: 260,
+    //             toolbar: {
+    //                 show: false
+    //             },
+    //             padding: {
+    //                 left: 0,
+    //                 right: 0,
+    //                 top: 0,
+    //                 bottom: 0
+    //             }
+    //         },
+    //         dataLabels: {
+    //             enabled: false
+    //         },
+    //         stroke: {
+    //             curve: 'smooth',
+    //             width: 2,
+    //             colors: [color1, color2],
+    //             lineCap: 'round'
+    //         },
+    //         grid: {
+    //             show: true,
+    //             borderColor: '#D1D5DB',
+    //             strokeDashArray: 1,
+    //             position: 'back',
+    //             xaxis: {
+    //                 lines: {
+    //                     show: false
+    //                 }
+    //             },
+    //             yaxis: {
+    //                 lines: {
+    //                     show: true
+    //                 }
+    //             },
+    //             row: {
+    //                 colors: undefined,
+    //                 opacity: 0.2
+    //             },
+    //             column: {
+    //                 colors: undefined,
+    //                 opacity: 0.2
+    //             },
+    //             padding: {
+    //                 top: -20,
+    //                 right: 0,
+    //                 bottom: -10,
+    //                 left: 0
+    //             },
+    //         },
+    //         colors: [color1, color2],
+    //         markers: {
+    //             colors: [color1, color2],
+    //             strokeWidth: 1,
+    //             size: 0,
+    //             hover: {
+    //                 size: 10
+    //             }
+    //         },
+    //         xaxis: {
+    //             labels: {
+    //                 show: false
+    //             },
+    //             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    //             tooltip: {
+    //                 enabled: false
+    //             },
+    //             labels: {
+    //                 formatter: function (value) {
+    //                     return value;
+    //                 },
+    //                 style: {
+    //                     fontSize: "14px"
+    //                 }
+    //             }
+    //         },
+    //         yaxis: {
+    //             labels: {
+    //                 formatter: function (value) {
+    //                     return "$" + value + "k";
+    //                 },
+    //                 style: {
+    //                     fontSize: "14px"
+    //                 }
+    //             },
+    //         },
+    //         tooltip: {
+    //             x: {
+    //                 format: 'dd/MM/yy HH:mm'
+    //             }
+    //         },
+    //         fill: {
+    //             type: "gradient",
+    //             gradient: {
+    //                 shade: "light",
+    //                 type: "vertical",
+    //                 opacityFrom: 0.4,
+    //                 opacityTo: 0.05,
+    //                 stops: [0, 100]
+    //             }
+    //         }
+    //     };
+
+    //     var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
+    //     chart.render();
+    // }
+
+    // createChartThree('incomeExpense', '#16a34a', '#FF9F29');
+    // // ===================== Income Vs Expense End ===============================
+
+    // // ================================ New Admissions Chart Start ================================
+    // var options = {
+    //     series: [40, 87, 87, 30],
+    //     colors: ['#0A51CE', '#25A194', '#FF7A2C', '#009F5E'],
+    //     labels: ['Health', 'Business', 'Lifestyle', 'Entertainment'],
+    //     legend: {
+    //         show: false
+    //     },
+    //     chart: {
+    //         type: 'donut',
+    //         height: 270,
+    //         sparkline: {
+    //             enabled: true // Remove whitespace
+    //         },
+    //         margin: {
+    //             top: 0,
+    //             right: 0,
+    //             bottom: 0,
+    //             left: 0
+    //         },
+    //         padding: {
+    //             top: 0,
+    //             right: 0,
+    //             bottom: 0,
+    //             left: 0
+    //         }
+    //     },
+    //     stroke: {
+    //         width: 2,
+    //     },
+    //     dataLabels: {
+    //         enabled: false
+    //     },
+    //     responsive: [{
+    //         breakpoint: 480,
+    //         options: {
+    //             chart: {
+    //                 width: 200
+    //             },
+    //             legend: {
+    //                 position: 'bottom'
+    //             }
+    //         }
+    //     }],
+    // };
+
+    // var chart = new ApexCharts(document.querySelector("#newAdmissions"), options);
+    // chart.render();
+    // // ================================ New Admissions Chart End ================================
+
+    // // ================================ Animated Radial Progress Bar Start ================================
+    // $('svg.radial-progress').each(function (index, value) {
+    //     $(this).find($('circle.complete')).removeAttr('style');
+    // });
+
+    // // Activate progress animation on scroll
+    // $(window).scroll(function () {
+    //     $('svg.radial-progress').each(function (index, value) {
+    //         // Trigger when the element is fully in the viewport
+    //         if (
+    //             $(window).scrollTop() >= $(this).offset().top - $(window).height() &&
+    //             $(window).scrollTop() <= $(this).offset().top + $(this).height()
+    //         ) {
+    //             // Get percentage of progress
+    //             const percent = $(value).data('percentage');
+    //             // Get radius of the svg's circle.complete
+    //             const radius = $(this).find($('circle.complete')).attr('r');
+    //             // Get circumference (2πr)
+    //             const circumference = 2 * Math.PI * radius;
+    //             // Get stroke-dashoffset value based on the percentage of the circumference
+    //             const strokeDashOffset = circumference - ((percent * circumference) / 100);
+    //             // Transition progress for 1.25 seconds
+    //             $(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1250);
+    //         }
+    //     });
+    // }).trigger('scroll');
+    // // ================================ Animated Radial Progress Bar End ================================
+</script>
+
+</body>
+
+</html>
