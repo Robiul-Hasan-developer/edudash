@@ -110,3 +110,9 @@
     background: var(--neutral-100);
   }
 }
+
+[data-theme=dark] {
+  .lms-card-gradient-bg {
+    opacity: .2;
+  }
+}
