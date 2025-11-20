@@ -9,12 +9,14 @@
 
         @@include('../layouts/_breadcrumb-main.html', {
         mainPageTitle: "Dashboard",
-        mainPageDescription: "LMS -> Manage courses, students, assignments and performance metrics in one centralized"
-        })
+        mainPageDescription: "LMS -> Manage courses, students, assignments and performance metrics in one Dashboard."
+    })
+    <!-- mainPageDescription: "LMS -> Manage courses, students, assignments and performance metrics in one centralized LMS Dashboard." -->
 
         <div class="mt-24">
             <div class="row gy-4">
 
+                <!-- Widgets Start -->
                 <div class="col-xl-6">
                     <div class="bg-base rounded-3 p-20">
                         <div class="row g-3">
@@ -79,7 +81,8 @@
                                                     month</span>
                                             </div>
                                             <div class="">
-                                                <div id="barChart" class="barChart remove-tooltip-title rounded-tooltip-value"></div>
+                                                <div id="barChart"
+                                                    class="barChart remove-tooltip-title rounded-tooltip-value"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +115,8 @@
                                                     month</span>
                                             </div>
                                             <div class="">
-                                               <div id="barChartTwo" class="barChart remove-tooltip-title rounded-tooltip-value"></div>
+                                                <div id="barChartTwo"
+                                                    class="barChart remove-tooltip-title rounded-tooltip-value"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -155,14 +159,493 @@
                         </div>
                     </div>
                 </div>
+                <!-- Widgets End -->
+
+                <div class="col-xl-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <h6 class="text-lg mb-0">Earning Statistic</h6>
+                                <select class="form-select bg-base form-select-sm w-auto radius-8">
+                                    <option>Yearly</option>
+                                    <option>Monthly</option>
+                                    <option>Weekly</option>
+                                    <option>Today</option>
+                                </select>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center gap-2 mt-8">
+                                <h6 class="mb-0">$27,200</h6>
+                                <span
+                                    class="text-sm fw-semibold rounded-pill bg-success-focus text-success-main border br-success px-8 py-4 line-height-1 d-flex align-items-center gap-1">
+                                    10% <iconify-icon icon="bxs:up-arrow" class="text-xs"></iconify-icon>
+                                </span>
+                                <span class="text-xs fw-medium">+ $1500 Per Day</span>
+                            </div>
+                            <div id="earningStatistic" class=" pt-28 apexcharts-tooltip-style-1"></div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
-        
-              
+                <!-- <div class="col-xxl-8">
+                    <div class="card h-100">
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">Income Vs Expense </h6>
+                                <div class="dropdown">
+                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <iconify-icon icon="entypo:dots-three-vertical"
+                                            class="icon text-secondary-light"></iconify-icon>
+                                    </button>
+                                    <ul class="dropdown-menu p-12 border bg-base shadow">
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                                <iconify-icon icon="hugeicons:view"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                View
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                                <iconify-icon icon="lucide:edit"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Edit
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                                <iconify-icon icon="fluent:delete-24-regular"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Delete
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-20">
+                                <ul class="d-flex flex-wrap align-items-center justify-content-center mb-16 gap-3">
+                                    <li class="d-flex align-items-center gap-8">
+                                        <span class="w-12-px h-12-px rounded-circle bg-primary-600"></span>
+                                        <span class="text-secondary-light text-sm fw-semibold">
+                                            Income:
+                                            <span class="text-primary-light fw-bold">$500</span>
+                                        </span>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-8">
+                                        <span class="w-12-px h-12-px rounded-circle bg-warning-600"></span>
+                                        <span class="text-secondary-light text-sm font-semibold">
+                                            Expense:
+                                            <span class="text-primary-light fw-bold"> $300</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <div id="incomeExpense" class="apexcharts-tooltip-style-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">Top Teachers</h6>
+                                <div class="dropdown">
+                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <iconify-icon icon="entypo:dots-three-vertical"
+                                            class="icon text-secondary-light"></iconify-icon>
+                                    </button>
+                                    <ul class="dropdown-menu p-12 border bg-base shadow">
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                                <iconify-icon icon="hugeicons:view"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                View
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                                <iconify-icon icon="lucide:edit"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Edit
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                                <iconify-icon icon="fluent:delete-24-regular"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Delete
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-20 pe-0">
+                                <div class="pe-20 d-flex flex-column gap-24 max-h-462-px overflow-y-auto scroll-sm">
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="d-flex align-items-start gap-16">
+                                            <img src="assets/images/thumbs/top-teacher-img1.png" alt="Thumbnail"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                            <div class="">
+                                                <h6 class="mb-0 text-lg">Theresa Webb</h6>
+                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block fw-semibold text-primary-light">Mathematics</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="d-flex align-items-start gap-16">
+                                            <img src="assets/images/thumbs/top-teacher-img2.png" alt="Thumbnail"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                            <div class="">
+                                                <h6 class="mb-0 text-lg">Darrell Steward</h6>
+                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block fw-semibold text-primary-light">Physics</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="d-flex align-items-start gap-16">
+                                            <img src="assets/images/thumbs/top-teacher-img3.png" alt="Thumbnail"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                            <div class="">
+                                                <h6 class="mb-0 text-lg">Jane Cooper</h6>
+                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block fw-semibold text-primary-light">Biology</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="d-flex align-items-start gap-16">
+                                            <img src="assets/images/thumbs/top-teacher-img4.png" alt="Thumbnail"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                            <div class="">
+                                                <h6 class="mb-0 text-lg">Savannah Nguyen</h6>
+                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block fw-semibold text-primary-light">English</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="d-flex align-items-start gap-16">
+                                            <img src="assets/images/thumbs/top-teacher-img5.png" alt="Thumbnail"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                            <div class="">
+                                                <h6 class="mb-0 text-lg">Eleanor Pena</h6>
+                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="d-block fw-semibold text-primary-light">Math</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">New Admissions</h6>
+                                <div class="dropdown">
+                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <iconify-icon icon="entypo:dots-three-vertical"
+                                            class="icon text-secondary-light"></iconify-icon>
+                                    </button>
+                                    <ul class="dropdown-menu p-12 border bg-base shadow">
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                                <iconify-icon icon="hugeicons:view"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                View
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                                <iconify-icon icon="lucide:edit"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Edit
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                                <iconify-icon icon="fluent:delete-24-regular"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Delete
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-20">
+                                <div class="position-relative text-center">
+                                    <div id="newAdmissions" class="y-value-left apexcharts-tooltip-z-none"></div>
+                                    <div class="text-center position-absolute top-50 start-50 translate-middle">
+                                        <h5 class="mb-4">50</h5>
+                                        <span class="text-secondary-light">Total Admissions</span>
+                                    </div>
+                                </div>
+                                <ul class="d-flex flex-wrap align-items-center justify-content-center mt-48 gap-24">
+                                    <li class="d-flex align-items-center gap-2">
+                                        <span class="w-12-px h-12-px radius-2 bg-success-600 rotate-45-deg"></span>
+                                        <div class="">
+                                            <span class="text-secondary-light fw-medium">
+                                                English:
+                                                <span class="fw-bold text-primary-light">15</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2">
+                                        <span class="w-12-px h-12-px radius-2 bg-blue-600 rotate-45-deg"></span>
+                                        <div class="">
+                                            <span class="text-secondary-light fw-medium">
+                                                Math:
+                                                <span class="fw-bold text-primary-light">15</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2">
+                                        <span class="w-12-px h-12-px radius-2 bg-warning-600 rotate-45-deg"></span>
+                                        <div class="">
+                                            <span class="text-secondary-light fw-medium">
+                                                Biology:
+                                                <span class="fw-bold text-primary-light">5</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2">
+                                        <span class="w-12-px h-12-px radius-2 bg-primary-600 rotate-45-deg"></span>
+                                        <div class="">
+                                            <span class="text-secondary-light fw-medium">
+                                                Physics:
+                                                <span class="fw-bold text-primary-light">10</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div
+                            class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                            <h6 class="text-lg mb-0">Top Students</h6>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <iconify-icon icon="entypo:dots-three-vertical"
+                                        class="icon text-secondary-light"></iconify-icon>
+                                </button>
+                                <ul class="dropdown-menu p-12 border bg-base shadow">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                            <iconify-icon icon="hugeicons:view"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            View
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                            <iconify-icon icon="lucide:edit"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Edit
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                            <iconify-icon icon="fluent:delete-24-regular"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Delete
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="p-20">
+                            <div class="d-flex flex-column gap-28">
+                                <div class="d-flex align-items-center justify-content-between gap-12">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/top-student-img1.png" alt="Image"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-md mb-0">Brooklyn Simmons</h6>
+                                            <span class="text-xs text-secondary-light">Class: Six</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="text-sm fw-medium">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="80"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35">
+                                                </circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">80</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-12">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/top-student-img2.png" alt="Image"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-md mb-0">Floyd Miles</h6>
+                                            <span class="text-xs text-secondary-light">Class: Seven</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="text-sm fw-medium">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="40"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35">
+                                                </circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">40</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-12">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/top-student-img3.png" alt="Image"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-md mb-0">Courtney Henry</h6>
+                                            <span class="text-xs text-secondary-light">Class: Eight</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="text-sm fw-medium">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="20"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35">
+                                                </circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">20</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-12">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/top-student-img4.png" alt="Image"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-md mb-0">Kathryn Murphy</h6>
+                                            <span class="text-xs text-secondary-light">Class: Nine</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="text-sm fw-medium">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="60"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35">
+                                                </circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">60</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between gap-12">
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <img src="assets/images/thumbs/top-student-img5.png" alt="Image"
+                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="text-md mb-0">Annette Black</h6>
+                                            <span class="text-xs text-secondary-light">Class: Ten</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-12">
+                                        <span class="text-sm fw-medium">Marks</span>
+                                        <span class="text-primary-light text-sm d-block text-end">
+                                            <svg class="radial-progress w-44-px" data-percentage="67"
+                                                viewBox="0 0 80 80">
+                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
+                                                    cy="40" r="35">
+                                                </circle>
+                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
+                                                </circle>
+                                                <text class="percentage fill-black" x="50%" y="57%"
+                                                    transform="matrix(0, 1, -1, 0, 80, 0)">67</text>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
                 <!-- ======================================================================================== -->
@@ -314,7 +797,7 @@
     // ============================ Area chart js End ==============================
 
     // ============================ Bar chart js start ==============================
-    function createBarChart (barChartId, barChartColor) {
+    function createBarChart(barChartId, barChartColor) {
         var options = {
             series: [{
                 name: "Sales",
@@ -339,7 +822,7 @@
                 type: 'bar',
                 height: 80,
                 width: 140,
-                 sparkline: {
+                sparkline: {
                     enabled: true // Remove whitespace
                 },
                 toolbar: {
@@ -392,7 +875,7 @@
                 show: false,
             },
         };
-    
+
         var chart = new ApexCharts(document.querySelector(`#${barChartId}`), options);
         chart.render();
     }
@@ -401,6 +884,185 @@
     createBarChart('barChartTwo', '#FEAC3B');
     // ============================ Bar chart js End ==============================
 
+       // ============================ Month Order Chart start ==========================
+    var options = {
+        series: [
+            {
+                name: 'Actual',
+                data: [
+                    {
+                        x: 'Jan',
+                        y: 100,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 103,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Feb',
+                        y: 452,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 455,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Mar',
+                        y: 303,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 306,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Apr',
+                        y: 503,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 506,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'May',
+                        y: 93,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 96,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Jun',
+                        y: 302,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 305,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Jul',
+                        y: 452,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 455,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Aug',
+                        y: 153,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 156,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Sep',
+                        y: 453,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 456,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Oct',
+                        y: 103,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 106,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Nov',
+                        y: 253,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 256,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                    {
+                        x: 'Dec',
+                        y: 153,
+                        goals: [
+                            {
+                                name: 'Expected',
+                                value: 156,
+                                strokeHeight: 3,
+                                strokeColor: '#25A194'
+                            }
+                        ]
+                    },
+                ]
+            }
+        ],
+        chart: {
+            height: 280,
+            type: 'bar',
+            toolbar: {
+                show: false
+            },
+        },
+        plotOptions: {
+            bar: {
+                columnWidth: '100%'
+            }
+        },
+        colors: ['#25A1941F', "#000"],
+        dataLabels: {
+            enabled: false
+        },
+        legend: {
+            show: false,
+            showForSingleSeries: true,
+            customLegendItems: ['Actual', 'Expected'],
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#earningStatistic"), options);
+    chart.render();
+    // ============================ Month Order Chart End ==========================
 
 
 
