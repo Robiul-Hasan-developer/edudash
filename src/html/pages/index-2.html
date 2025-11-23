@@ -189,12 +189,30 @@
                 <div class="col-xxl-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <h6 class="text-lg mb-0">18 November 2025</h6>
+                            <div class="p-20">
+                                <div class="calendar">
+                                    <div class="calendar__header">
+                                        <button type="button" class="calendar__arrow left">
+                                            <i class="ri-arrow-left-s-line"></i>
+                                        </button>
+                                        <p class="display text-md text-secondary-light fw-semibold mb-0">""</p>
+                                        <button type="button" class="calendar__arrow right">
+                                            <i class="ri-arrow-right-s-line"></i>
+                                        </button>
+                                    </div>
 
+                                    <div class="calendar__week week">
+                                        <div class="calendar__week-text">Su</div>
+                                        <div class="calendar__week-text">Mo</div>
+                                        <div class="calendar__week-text">Tu</div>
+                                        <div class="calendar__week-text">We</div>
+                                        <div class="calendar__week-text">Th</div>
+                                        <div class="calendar__week-text">Fr</div>
+                                        <div class="calendar__week-text">Sa</div>
+                                    </div>
+                                    <div class="days"></div>
+                                </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -335,7 +353,8 @@
                                     </div>
                                     <div class="d-flex align-items-start gap-12">
                                         <div class="">
-                                            <span class="w-16-px h-16-px bg-success radius-4 position-relative mt-6"></span>
+                                            <span
+                                                class="w-16-px h-16-px bg-success radius-4 position-relative mt-6"></span>
                                         </div>
                                         <div class="">
                                             <p class="text-secondary-light text-md mb-0">Social Media</p>
@@ -344,7 +363,8 @@
                                     </div>
                                     <div class="d-flex align-items-start gap-12">
                                         <div class="">
-                                            <span class="w-16-px h-16-px bg-purple radius-4 position-relative mt-6"></span>
+                                            <span
+                                                class="w-16-px h-16-px bg-purple radius-4 position-relative mt-6"></span>
                                         </div>
                                         <div class="">
                                             <p class="text-secondary-light text-md mb-0">Google Search</p>
@@ -363,7 +383,7 @@
 
                 <!-- Top Student Start -->
                 <div class="col-xxl-4 col-lg-6">
-                    <div class="card radius-12 border-0">
+                    <div class="card radius-12 border-0 h-100">
                         <div
                             class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
                             <h6 class="mb-2 fw-bold text-lg">Top Student</h6>
@@ -871,471 +891,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- <div class="col-xxl-8">
-                    <div class="card h-100">
-                        <div class="card-body p-0">
-                            <div
-                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                                <h6 class="text-lg mb-0">Income Vs Expense </h6>
-                                <div class="dropdown">
-                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <iconify-icon icon="entypo:dots-three-vertical"
-                                            class="icon text-secondary-light"></iconify-icon>
-                                    </button>
-                                    <ul class="dropdown-menu p-12 border bg-base shadow">
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                                <iconify-icon icon="hugeicons:view"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                View
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                                <iconify-icon icon="lucide:edit"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Edit
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                                <iconify-icon icon="fluent:delete-24-regular"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Delete
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <ul class="d-flex flex-wrap align-items-center justify-content-center mb-16 gap-3">
-                                    <li class="d-flex align-items-center gap-8">
-                                        <span class="w-12-px h-12-px rounded-circle bg-primary-600"></span>
-                                        <span class="text-secondary-light text-sm fw-semibold">
-                                            Income:
-                                            <span class="text-primary-light fw-bold">$500</span>
-                                        </span>
-                                    </li>
-                                    <li class="d-flex align-items-center gap-8">
-                                        <span class="w-12-px h-12-px rounded-circle bg-warning-600"></span>
-                                        <span class="text-secondary-light text-sm font-semibold">
-                                            Expense:
-                                            <span class="text-primary-light fw-bold"> $300</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                                <div id="incomeExpense" class="apexcharts-tooltip-style-1"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-xxl-4 col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-body p-0">
-                            <div
-                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                                <h6 class="text-lg mb-0">Top Teachers</h6>
-                                <div class="dropdown">
-                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <iconify-icon icon="entypo:dots-three-vertical"
-                                            class="icon text-secondary-light"></iconify-icon>
-                                    </button>
-                                    <ul class="dropdown-menu p-12 border bg-base shadow">
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                                <iconify-icon icon="hugeicons:view"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                View
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                                <iconify-icon icon="lucide:edit"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Edit
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                                <iconify-icon icon="fluent:delete-24-regular"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Delete
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-20 pe-0">
-                                <div class="pe-20 d-flex flex-column gap-24 max-h-462-px overflow-y-auto scroll-sm">
-                                    <div class="d-flex align-items-center justify-content-between gap-16">
-                                        <div class="d-flex align-items-start gap-16">
-                                            <img src="assets/images/thumbs/top-teacher-img1.png" alt="Thumbnail"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-                                            <div class="">
-                                                <h6 class="mb-0 text-lg">Theresa Webb</h6>
-                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span class="d-block fw-semibold text-primary-light">Mathematics</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-16">
-                                        <div class="d-flex align-items-start gap-16">
-                                            <img src="assets/images/thumbs/top-teacher-img2.png" alt="Thumbnail"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-                                            <div class="">
-                                                <h6 class="mb-0 text-lg">Darrell Steward</h6>
-                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span class="d-block fw-semibold text-primary-light">Physics</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-16">
-                                        <div class="d-flex align-items-start gap-16">
-                                            <img src="assets/images/thumbs/top-teacher-img3.png" alt="Thumbnail"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-                                            <div class="">
-                                                <h6 class="mb-0 text-lg">Jane Cooper</h6>
-                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span class="d-block fw-semibold text-primary-light">Biology</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-16">
-                                        <div class="d-flex align-items-start gap-16">
-                                            <img src="assets/images/thumbs/top-teacher-img4.png" alt="Thumbnail"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-                                            <div class="">
-                                                <h6 class="mb-0 text-lg">Savannah Nguyen</h6>
-                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span class="d-block fw-semibold text-primary-light">English</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between gap-16">
-                                        <div class="d-flex align-items-start gap-16">
-                                            <img src="assets/images/thumbs/top-teacher-img5.png" alt="Thumbnail"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
-                                            <div class="">
-                                                <h6 class="mb-0 text-lg">Eleanor Pena</h6>
-                                                <span class="text-secondary-light text-sm mb-0">example@gmail.com</span>
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span class="d-block fw-semibold text-primary-light">Math</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-xxl-4 col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-body p-0">
-                            <div
-                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                                <h6 class="text-lg mb-0">New Admissions</h6>
-                                <div class="dropdown">
-                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <iconify-icon icon="entypo:dots-three-vertical"
-                                            class="icon text-secondary-light"></iconify-icon>
-                                    </button>
-                                    <ul class="dropdown-menu p-12 border bg-base shadow">
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                                <iconify-icon icon="hugeicons:view"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                View
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                                <iconify-icon icon="lucide:edit"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Edit
-                                            </button>
-                                        </li>
-                                        <li>
-                                            <button type="button"
-                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                                <iconify-icon icon="fluent:delete-24-regular"
-                                                    class="icon text-lg line-height-1"></iconify-icon>
-                                                Delete
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="p-20">
-                                <div class="position-relative text-center">
-                                    <div id="newAdmissions" class="y-value-left apexcharts-tooltip-z-none"></div>
-                                    <div class="text-center position-absolute top-50 start-50 translate-middle">
-                                        <h5 class="mb-4">50</h5>
-                                        <span class="text-secondary-light">Total Admissions</span>
-                                    </div>
-                                </div>
-                                <ul class="d-flex flex-wrap align-items-center justify-content-center mt-48 gap-24">
-                                    <li class="d-flex align-items-center gap-2">
-                                        <span class="w-12-px h-12-px radius-2 bg-success-600 rotate-45-deg"></span>
-                                        <div class="">
-                                            <span class="text-secondary-light fw-medium">
-                                                English:
-                                                <span class="fw-bold text-primary-light">15</span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center gap-2">
-                                        <span class="w-12-px h-12-px radius-2 bg-blue-600 rotate-45-deg"></span>
-                                        <div class="">
-                                            <span class="text-secondary-light fw-medium">
-                                                Math:
-                                                <span class="fw-bold text-primary-light">15</span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center gap-2">
-                                        <span class="w-12-px h-12-px radius-2 bg-warning-600 rotate-45-deg"></span>
-                                        <div class="">
-                                            <span class="text-secondary-light fw-medium">
-                                                Biology:
-                                                <span class="fw-bold text-primary-light">5</span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center gap-2">
-                                        <span class="w-12-px h-12-px radius-2 bg-primary-600 rotate-45-deg"></span>
-                                        <div class="">
-                                            <span class="text-secondary-light fw-medium">
-                                                Physics:
-                                                <span class="fw-bold text-primary-light">10</span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-xxl-4 col-lg-6">
-                    <div class="card h-100">
-                        <div
-                            class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                            <h6 class="text-lg mb-0">Top Students</h6>
-                            <div class="dropdown">
-                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <iconify-icon icon="entypo:dots-three-vertical"
-                                        class="icon text-secondary-light"></iconify-icon>
-                                </button>
-                                <ul class="dropdown-menu p-12 border bg-base shadow">
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                            <iconify-icon icon="hugeicons:view"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            View
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                            <iconify-icon icon="lucide:edit"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Edit
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                            <iconify-icon icon="fluent:delete-24-regular"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Delete
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="p-20">
-                            <div class="d-flex flex-column gap-28">
-                                <div class="d-flex align-items-center justify-content-between gap-12">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/top-student-img1.png" alt="Image"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-md mb-0">Brooklyn Simmons</h6>
-                                            <span class="text-xs text-secondary-light">Class: Six</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="text-sm fw-medium">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="80"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35">
-                                                </circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">80</text>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-12">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/top-student-img2.png" alt="Image"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-md mb-0">Floyd Miles</h6>
-                                            <span class="text-xs text-secondary-light">Class: Seven</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="text-sm fw-medium">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="40"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35">
-                                                </circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">40</text>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-12">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/top-student-img3.png" alt="Image"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-md mb-0">Courtney Henry</h6>
-                                            <span class="text-xs text-secondary-light">Class: Eight</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="text-sm fw-medium">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="20"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35">
-                                                </circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">20</text>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-12">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/top-student-img4.png" alt="Image"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-md mb-0">Kathryn Murphy</h6>
-                                            <span class="text-xs text-secondary-light">Class: Nine</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="text-sm fw-medium">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="60"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35">
-                                                </circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">60</text>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between gap-12">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/top-student-img5.png" alt="Image"
-                                                class="w-40-px h-40-px rounded-circle object-fit-cover">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-md mb-0">Annette Black</h6>
-                                            <span class="text-xs text-secondary-light">Class: Ten</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span class="text-sm fw-medium">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="67"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35">
-                                                </circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">67</text>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
-                <!-- ======================================================================================== -->
             </div>
         </div>
     </div>
@@ -1346,7 +901,6 @@
 @@include('../partial-html/_template-bottom.html')
 
 <script>
-
     // ============================ Area chart js start ==============================
     function createChart(chartId, chartColor, curveClass) {
 
@@ -1941,226 +1495,87 @@
     chart.render();
     // ================================ Users Overview Donut chart End ================================ 
 
+    // ============================= Calendar Js Start =================================
+    let display = document.querySelector(".display");
+    let days = document.querySelector(".days");
+    let previous = document.querySelector(".left");
+    let next = document.querySelector(".right");
 
-    // ==========================================================
-    // ==========================================================
-    // ==========================================================
-    // ==========================================================
-    // ==========================================================
+    let date = new Date();
 
+    let year = date.getFullYear();
+    let month = date.getMonth();
 
+    function displayCalendar() {
+        const firstDay = new Date(year, month, 1);
 
+        const lastDay = new Date(year, month + 1, 0);
 
-    // ===================== Income Vs Expense Start ===============================
-    // ===================== Income Vs Expense Start ===============================
-    // ===================== Income Vs Expense Start ===============================
-    // ===================== Income Vs Expense Start ===============================
-    // ===================== Income Vs Expense Start ===============================
+        const firstDayIndex = firstDay.getDay(); //4
 
+        const numberOfDays = lastDay.getDate(); //31
 
-    // ===================== Income Vs Expense Start ===============================
-    // function createChartThree(chartId, color1, color2) {
-    //     var options = {
-    //         series: [{
-    //             name: 'Income',
-    //             data: [48, 35, 55, 32, 48, 30, 15, 50, 57]
-    //         }, {
-    //             name: 'Expense',
-    //             data: [12, 20, 15, 26, 22, 60, 40, 32, 25]
-    //         }],
-    //         legend: {
-    //             show: false
-    //         },
-    //         chart: {
-    //             type: 'area',
-    //             width: '100%',
-    //             height: 260,
-    //             toolbar: {
-    //                 show: false
-    //             },
-    //             padding: {
-    //                 left: 0,
-    //                 right: 0,
-    //                 top: 0,
-    //                 bottom: 0
-    //             }
-    //         },
-    //         dataLabels: {
-    //             enabled: false
-    //         },
-    //         stroke: {
-    //             curve: 'smooth',
-    //             width: 2,
-    //             colors: [color1, color2],
-    //             lineCap: 'round'
-    //         },
-    //         grid: {
-    //             show: true,
-    //             borderColor: '#D1D5DB',
-    //             strokeDashArray: 1,
-    //             position: 'back',
-    //             xaxis: {
-    //                 lines: {
-    //                     show: false
-    //                 }
-    //             },
-    //             yaxis: {
-    //                 lines: {
-    //                     show: true
-    //                 }
-    //             },
-    //             row: {
-    //                 colors: undefined,
-    //                 opacity: 0.2
-    //             },
-    //             column: {
-    //                 colors: undefined,
-    //                 opacity: 0.2
-    //             },
-    //             padding: {
-    //                 top: -20,
-    //                 right: 0,
-    //                 bottom: -10,
-    //                 left: 0
-    //             },
-    //         },
-    //         colors: [color1, color2],
-    //         markers: {
-    //             colors: [color1, color2],
-    //             strokeWidth: 1,
-    //             size: 0,
-    //             hover: {
-    //                 size: 10
-    //             }
-    //         },
-    //         xaxis: {
-    //             labels: {
-    //                 show: false
-    //             },
-    //             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    //             tooltip: {
-    //                 enabled: false
-    //             },
-    //             labels: {
-    //                 formatter: function (value) {
-    //                     return value;
-    //                 },
-    //                 style: {
-    //                     fontSize: "14px"
-    //                 }
-    //             }
-    //         },
-    //         yaxis: {
-    //             labels: {
-    //                 formatter: function (value) {
-    //                     return "$" + value + "k";
-    //                 },
-    //                 style: {
-    //                     fontSize: "14px"
-    //                 }
-    //             },
-    //         },
-    //         tooltip: {
-    //             x: {
-    //                 format: 'dd/MM/yy HH:mm'
-    //             }
-    //         },
-    //         fill: {
-    //             type: "gradient",
-    //             gradient: {
-    //                 shade: "light",
-    //                 type: "vertical",
-    //                 opacityFrom: 0.4,
-    //                 opacityTo: 0.05,
-    //                 stops: [0, 100]
-    //             }
-    //         }
-    //     };
+        let formattedDate = date.toLocaleString("en-US", {
+            month: "long",
+            year: "numeric"
+        });
 
-    //     var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
-    //     chart.render();
-    // }
+        display.innerHTML = `${formattedDate}`;
 
-    // createChartThree('incomeExpense', '#16a34a', '#FF9F29');
-    // // ===================== Income Vs Expense End ===============================
+        for (let x = 1; x <= firstDayIndex; x++) {
+            const div = document.createElement("div");
+            div.innerHTML += "";
 
-    // // ================================ New Admissions Chart Start ================================
-    // var options = {
-    //     series: [40, 87, 87, 30],
-    //     colors: ['#0A51CE', '#25A194', '#FF7A2C', '#009F5E'],
-    //     labels: ['Health', 'Business', 'Lifestyle', 'Entertainment'],
-    //     legend: {
-    //         show: false
-    //     },
-    //     chart: {
-    //         type: 'donut',
-    //         height: 270,
-    //         sparkline: {
-    //             enabled: true // Remove whitespace
-    //         },
-    //         margin: {
-    //             top: 0,
-    //             right: 0,
-    //             bottom: 0,
-    //             left: 0
-    //         },
-    //         padding: {
-    //             top: 0,
-    //             right: 0,
-    //             bottom: 0,
-    //             left: 0
-    //         }
-    //     },
-    //     stroke: {
-    //         width: 2,
-    //     },
-    //     dataLabels: {
-    //         enabled: false
-    //     },
-    //     responsive: [{
-    //         breakpoint: 480,
-    //         options: {
-    //             chart: {
-    //                 width: 200
-    //             },
-    //             legend: {
-    //                 position: 'bottom'
-    //             }
-    //         }
-    //     }],
-    // };
+            days.appendChild(div);
+        }
 
-    // var chart = new ApexCharts(document.querySelector("#newAdmissions"), options);
-    // chart.render();
-    // // ================================ New Admissions Chart End ================================
+        for (let i = 1; i <= numberOfDays; i++) {
+            let div = document.createElement("div");
+            let currentDate = new Date(year, month, i);
 
-    // // ================================ Animated Radial Progress Bar Start ================================
-    // $('svg.radial-progress').each(function (index, value) {
-    //     $(this).find($('circle.complete')).removeAttr('style');
-    // });
+            div.dataset.date = currentDate.toDateString();
 
-    // // Activate progress animation on scroll
-    // $(window).scroll(function () {
-    //     $('svg.radial-progress').each(function (index, value) {
-    //         // Trigger when the element is fully in the viewport
-    //         if (
-    //             $(window).scrollTop() >= $(this).offset().top - $(window).height() &&
-    //             $(window).scrollTop() <= $(this).offset().top + $(this).height()
-    //         ) {
-    //             // Get percentage of progress
-    //             const percent = $(value).data('percentage');
-    //             // Get radius of the svg's circle.complete
-    //             const radius = $(this).find($('circle.complete')).attr('r');
-    //             // Get circumference (2πr)
-    //             const circumference = 2 * Math.PI * radius;
-    //             // Get stroke-dashoffset value based on the percentage of the circumference
-    //             const strokeDashOffset = circumference - ((percent * circumference) / 100);
-    //             // Transition progress for 1.25 seconds
-    //             $(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1250);
-    //         }
-    //     });
-    // }).trigger('scroll');
-    // // ================================ Animated Radial Progress Bar End ================================
+            div.innerHTML += i;
+            days.appendChild(div);
+            if (
+                currentDate.getFullYear() === new Date().getFullYear() &&
+                currentDate.getMonth() === new Date().getMonth() &&
+                currentDate.getDate() === new Date().getDate()
+            ) {
+                div.classList.add("current-date");
+            }
+        }
+    }
+
+    // Call the function to display the calendar
+    displayCalendar();
+
+    previous.addEventListener("click", () => {
+        days.innerHTML = "";
+
+        if (month < 0) {
+            month = 11;
+            year = year - 1;
+        }
+        month = month - 1;
+        date.setMonth(month);
+        displayCalendar();
+    });
+
+    next.addEventListener("click", () => {
+        days.innerHTML = "";
+
+        if (month > 11) {
+            month = 0;
+            year = year + 1;
+        }
+
+        month = month + 1;
+        date.setMonth(month);
+
+        displayCalendar();
+    });
+    // ============================= Calendar Js End =================================
 </script>
 
 </body>
