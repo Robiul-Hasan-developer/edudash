@@ -160,6 +160,7 @@
                 </div>
                 <!-- Widgets End -->
 
+                <!-- Earning Statistic start -->
                 <div class="col-xxl-6">
                     <div class="card h-100">
                         <div class="card-body">
@@ -184,7 +185,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Earning Statistic end -->
 
+                <!-- Calendar start -->
                 <div class="col-xxl-5">
                     <div class="card h-100">
                         <div class="card-body">
@@ -215,7 +218,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Calendar end -->
 
+                <!-- Upcoming Sessions start -->
                 <div class="col-xxl-7">
                     <div class="card h-100">
                         <div class="card-body">
@@ -231,11 +236,11 @@
                                                 <img src="assets/images/thumbs/session-img1.png" alt="Image"
                                                     class="w-100 h-100 object-fit-cover rounded-3">
                                             </div>
-                                            <div class="align-self-center">
+                                            <div class="align-self-center w-100">
                                                 <h6 class="text-md mb-0">Cameron Williamson</h6>
                                                 <span class="fw-medium">English</span>
                                                 <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap">
+                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
                                                     <div
                                                         class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
                                                         <i class="ri-calendar-2-line"></i>
@@ -273,11 +278,11 @@
                                                 <img src="assets/images/thumbs/session-img2.png" alt="Image"
                                                     class="w-100 h-100 object-fit-cover rounded-3">
                                             </div>
-                                            <div class="align-self-center">
+                                            <div class="align-self-center w-100">
                                                 <h6 class="text-md mb-0">Kristin Watson</h6>
                                                 <span class="fw-medium">English</span>
                                                 <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap">
+                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
                                                     <div
                                                         class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
                                                         <i class="ri-calendar-2-line"></i>
@@ -315,11 +320,11 @@
                                                 <img src="assets/images/thumbs/session-img2.png" alt="Image"
                                                     class="w-100 h-100 object-fit-cover rounded-3">
                                             </div>
-                                            <div class="align-self-center">
+                                            <div class="align-self-center w-100">
                                                 <h6 class="text-md mb-0">Kristin Watson</h6>
                                                 <span class="fw-medium">English</span>
                                                 <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap">
+                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
                                                     <div
                                                         class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
                                                         <i class="ri-calendar-2-line"></i>
@@ -357,11 +362,11 @@
                                                 <img src="assets/images/thumbs/session-img1.png" alt="Image"
                                                     class="w-100 h-100 object-fit-cover rounded-3">
                                             </div>
-                                            <div class="align-self-center">
+                                            <div class="align-self-center w-100">
                                                 <h6 class="text-md mb-0">Cameron Williamson</h6>
                                                 <span class="fw-medium">English</span>
                                                 <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap">
+                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
                                                     <div
                                                         class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
                                                         <i class="ri-calendar-2-line"></i>
@@ -397,6 +402,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Upcoming Sessions end -->
 
                 <!-- User activity Start -->
                 <div class="col-xl-6 col-xxl-4 col-lg-6">
@@ -943,6 +949,7 @@
                 </div>
                 <!-- Recent Enrolled Courses End -->
 
+                <!-- Course Activity start -->
                 <div class="col-xxl-4">
                     <div class="card h-100">
                         <div class="card-body">
@@ -974,6 +981,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- Course Activity end -->
+
             </div>
         </div>
     </div>
@@ -1419,10 +1428,10 @@
     function createChartTwo(chartId, color1, color2) {
         var options = {
             series: [{
-                name: 'Income',
+                name: 'Free Course',
                 data: [48, 35, 55, 32, 48, 30, 55, 50, 57]
             }, {
-                name: 'Expense',
+                name: 'Paid Course',
                 data: [12, 20, 15, 26, 22, 60, 40, 48, 25]
             }],
             legend: {
