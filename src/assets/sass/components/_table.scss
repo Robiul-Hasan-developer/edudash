@@ -1,5 +1,6 @@
 /* Table Common Css Start */
-.table>tbody tr > td:first-child, .table>thead tr > th:first-child {
+.table>tbody tr>td:first-child,
+.table>thead tr>th:first-child {
     position: sticky !important;
     left: 0;
     z-index: 1;
@@ -16,5 +17,64 @@ table td {
 table th {
     font-size: 14px;
     font-weight: 500;
+}
+
+
+.bordered-table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border: 1px solid var(--neutral-200);
+    border-radius: 8px;
+    min-width: max-content;
+    vertical-align: middle;
+}
+
+.bordered-table thead tr th {
+    background-color: var(--neutral-50) !important;
+    border-bottom: 1px solid var(--neutral-200) !important;
+    color: var(--text-primary-light) !important;
+    padding: 16px !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bordered-table thead tr th:first-child {
+    border-start-start-radius: 8px;
+}
+
+.bordered-table thead tr th:last-child {
+    border-start-end-radius: 8px;
+}
+
+.bordered-table thead tr th:not(:last-child) {
+    border-inline-end: 0 !important;
+}
+
+.bordered-table thead tr th:not(:first-child) {
+    border-inline-start: 0 !important;
+}
+
+.bordered-table thead tr th.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bordered-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.bordered-table tbody tr:last-child td:first-child {
+    border-end-start-radius: 8px;
+}
+
+.bordered-table tbody tr:last-child td:last-child {
+    border-end-end-radius: 8px;
+}
+
+.bordered-table tbody tr td {
+    color: var(--text-secondary-light);
+    padding: 16px !important;
+    border-bottom: 1px solid var(--neutral-200);
+    background-color: var(--white);
+    vertical-align: middle;
 }
 /* Table Common Css End */

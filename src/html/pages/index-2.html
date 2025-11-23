@@ -298,23 +298,22 @@
                 </div>
 
                 <!-- User activity Start -->
-                <div class="col-xxl-4 col-lg-6">
-                    <div class="card radius-12 border-0">
-                        <div
-                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">User activity</h6>
-                            <div class="">
-                                <select
-                                    class="form-select form-select-sm w-auto bg-base border text-secondary-light radius-8">
+                <div class="col-xl-6 col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                <h6 class="text-lg mb-0">Earning Statistic</h6>
+                                <select class="form-select bg-base form-select-sm w-auto radius-8">
                                     <option>Yearly</option>
                                     <option>Monthly</option>
                                     <option>Weekly</option>
                                     <option>Today</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="card-body">
-                            Chart goes here....
+
+                            <div class="pt-28">
+                                <div id="earningStatistic" class="apexcharts-tooltip-style-1"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -684,6 +683,115 @@
                                     </div>
                                     <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top Instructor End -->
+
+                <!-- Top Instructor Start -->
+                <div class="col-xxl-8">
+                    <div class="card radius-12 border-0">
+                        <div
+                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
+                            <h6 class="mb-2 fw-bold text-lg">Top Instructor</h6>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <iconify-icon icon="entypo:dots-three-vertical"
+                                        class="icon text-secondary-light"></iconify-icon>
+                                </button>
+                                <ul class="dropdown-menu p-12 border bg-base shadow">
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                            <iconify-icon icon="hugeicons:view"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            View
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                            <iconify-icon icon="lucide:edit"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Edit
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button"
+                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                            <iconify-icon icon="fluent:delete-24-regular"
+                                                class="icon text-lg line-height-1"></iconify-icon>
+                                            Delete
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive scroll-sm">
+                                <table class="table bordered-table mb-0 rounded-0 border-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Invoice</th>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Student</th>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Courses Name</th>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Amount</th>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Payment By</th>
+                                            <th scope="col" class="bg-neutral-100 rounded-0">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>#829776</td>
+                                            <td>John Doe</td>
+                                            <td>Scorm drawing course</td>
+                                            <td>$29.00</td>
+                                            <td>PayPal</td>
+                                            <td>04 Feb, 2025</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#829777</td>
+                                            <td>Emily Carter</td>
+                                            <td>Advanced UI/UX Design</td>
+                                            <td>$49.00</td>
+                                            <td>Stripe</td>
+                                            <td>06 Feb, 2025</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#829778</td>
+                                            <td>Michael Smith</td>
+                                            <td>Full-Stack Development</td>
+                                            <td>$79.00</td>
+                                            <td>MasterCard</td>
+                                            <td>08 Feb, 2025</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#829779</td>
+                                            <td>Sarah Johnson</td>
+                                            <td>Digital Marketing Pro</td>
+                                            <td>$39.00</td>
+                                            <td>Visa</td>
+                                            <td>10 Feb, 2025</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>#829780</td>
+                                            <td>David Wilson</td>
+                                            <td>Laravel API Development</td>
+                                            <td>$59.00</td>
+                                            <td>PayPal</td>
+                                            <td>12 Feb, 2025</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
                             </div>
                         </div>
                     </div>
