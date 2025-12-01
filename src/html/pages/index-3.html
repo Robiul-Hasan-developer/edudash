@@ -305,7 +305,7 @@
                         <div class="card-body p-0">
                             <div
                                 class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
-                                <h6 class="text-lg mb-0">Upcoming Events</h6>
+                                <h6 class="text-lg mb-0">Calendar</h6>
                             </div>
                             <div class="p-20">
                                 <div class="calendar style-big">
@@ -348,7 +348,7 @@
                     <div class="card radius-12 border-0">
                         <div
                             class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">Recent Enrolled Courses</h6>
+                            <h6 class="mb-2 fw-bold text-lg">Student Marks</h6>
                             <div class="dropdown">
                                 <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <iconify-icon icon="entypo:dots-three-vertical"
@@ -387,64 +387,125 @@
                         </div>
                         <div class="card-body p-0">
                             <div class="table-responsive scroll-sm">
-                                <table class="table bordered-table mb-0 rounded-0 border-0">
+                                <table class="table bordered-table mb-0 data-table" id="dataTable"
+                                    data-page-length='10'>
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Invoice</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Student</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Courses Name</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Amount</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Payment By</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Date</th>
+                                            <th scope="col">Admission No</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Class</th>
+                                            <th scope="col">Marks%</th>
+                                            <th scope="col">CGPA</th>
+                                            <th scope="col">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>#829776</td>
-                                            <td>John Doe</td>
-                                            <td>Scorm drawing course</td>
-                                            <td>$29.00</td>
-                                            <td>PayPal</td>
-                                            <td>04 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD45231</span></td>
+                                            <td class="py-10-px">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/thumbs/avatar-img2.png" alt="Image"
+                                                        class="flex-shrink-0 me-12 radius-8">
+                                                    <div>
+                                                        <h6 class="text-md mb-0 fw-medium">Wade Warren</h6>
+                                                        <span>Roll No: <span class="fw-semibold">08</span></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-10-px">Class 2 (B)</td>
+                                            <td class="py-10-px">88%</td>
+                                            <td class="py-10-px">3.9</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
 
                                         <tr>
-                                            <td>#829777</td>
-                                            <td>Emily Carter</td>
-                                            <td>Advanced UI/UX Design</td>
-                                            <td>$49.00</td>
-                                            <td>Stripe</td>
-                                            <td>06 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD67452</span></td>
+                                            <td class="py-10-px">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/thumbs/avatar-img3.png" alt="Image"
+                                                        class="flex-shrink-0 me-12 radius-8">
+                                                    <div>
+                                                        <h6 class="text-md mb-0 fw-medium">Brooklyn Simmons</h6>
+                                                        <span>Roll No: <span class="fw-semibold">15</span></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-10-px">Class 3 (A)</td>
+                                            <td class="py-10-px">72%</td>
+                                            <td class="py-10-px">3.1</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
 
                                         <tr>
-                                            <td>#829778</td>
-                                            <td>Michael Smith</td>
-                                            <td>Full-Stack Development</td>
-                                            <td>$79.00</td>
-                                            <td>MasterCard</td>
-                                            <td>08 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD98214</span></td>
+                                            <td class="py-10-px">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/thumbs/avatar-img4.png" alt="Image"
+                                                        class="flex-shrink-0 me-12 radius-8">
+                                                    <div>
+                                                        <h6 class="text-md mb-0 fw-medium">Darlene Robertson</h6>
+                                                        <span>Roll No: <span class="fw-semibold">20</span></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-10-px">Class 4 (C)</td>
+                                            <td class="py-10-px">54%</td>
+                                            <td class="py-10-px">2.4</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-danger-100 text-danger-600 px-24 py-4 radius-4 fw-medium text-sm">Fail</span>
+                                            </td>
                                         </tr>
 
                                         <tr>
-                                            <td>#829779</td>
-                                            <td>Sarah Johnson</td>
-                                            <td>Digital Marketing Pro</td>
-                                            <td>$39.00</td>
-                                            <td>Visa</td>
-                                            <td>10 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD76133</span></td>
+                                            <td class="py-10-px">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/thumbs/avatar-img5.png" alt="Image"
+                                                        class="flex-shrink-0 me-12 radius-8">
+                                                    <div>
+                                                        <h6 class="text-md mb-0 fw-medium">Theresa Webb</h6>
+                                                        <span>Roll No: <span class="fw-semibold">11</span></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-10-px">Class 5 (A)</td>
+                                            <td class="py-10-px">41%</td>
+                                            <td class="py-10-px">1.9</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-danger-100 text-danger-600 px-24 py-4 radius-4 fw-medium text-sm">Fail</span>
+                                            </td>
                                         </tr>
 
                                         <tr>
-                                            <td>#829780</td>
-                                            <td>David Wilson</td>
-                                            <td>Laravel API Development</td>
-                                            <td>$59.00</td>
-                                            <td>PayPal</td>
-                                            <td>12 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD33578</span></td>
+                                            <td class="py-10-px">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="assets/images/thumbs/avatar-img6.png" alt="Image"
+                                                        class="flex-shrink-0 me-12 radius-8">
+                                                    <div>
+                                                        <h6 class="text-md mb-0 fw-medium">Arlene McCoy</h6>
+                                                        <span>Roll No: <span class="fw-semibold">06</span></span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="py-10-px">Class 1 (C)</td>
+                                            <td class="py-10-px">91%</td>
+                                            <td class="py-10-px">4.0</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
+
                                     </tbody>
-
                                 </table>
                             </div>
                         </div>
@@ -594,6 +655,28 @@
         displayCalendar();
     });
     // ============================= Calendar Js End =================================
+
+
+    let table = new DataTable('#dataTable');
+
+    //============================= ✅ Data Table start =============================
+    $('.data-table').each(function () {
+        const $table = $(this);
+        const tableInstance = new DataTable(this);
+
+        // Handle search input (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-search .dt-input').on('keyup', function () {
+            tableInstance.search(this.value).draw();
+        });
+
+        // Handle page length change (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-length .dt-input').on('change', function () {
+            const value = $(this).val();
+            tableInstance.page.len(value).draw();
+        });
+    });
+    //============================= ✅ Data Table end =============================
+
 </script>
 
 </body>
