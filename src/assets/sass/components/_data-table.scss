@@ -187,6 +187,13 @@ table.dataTable td.dt-type-date {
         background-color: #1b2431;
     }
 
+    div.dt-container .dt-paging .dt-paging-button.disabled,
+    div.dt-container .dt-paging .dt-paging-button.disabled:hover,
+    div.dt-container .dt-paging .dt-paging-button.disabled:active {
+        color: rgb(255 255 255 / 89%) !important;
+    }
 }
+
+
 
 /* Data Table css end */
