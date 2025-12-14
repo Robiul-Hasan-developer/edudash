@@ -9,407 +9,82 @@
 
         @@include('../layouts/_breadcrumb-main.html', {
         mainPageTitle: "Dashboard",
-        mainPageDescription: "LMS -> Manage courses, students, assignments and performance metrics in one centralized LMS Dashboard."
+        mainPageDescription: "Student -> Manage courses, students, and assignments efficiently from a centralized teacher."
         })
 
         <div class="mt-24">
             <div class="row gy-4">
 
-                <!-- Widgets Start -->
-                <div class="col-xxl-6">
-                    <div class="bg-base rounded-3 p-20">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="border rounded-3">
-                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
-                                        <span
-                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-primary-100">
-                                            <img src="assets/images/icons/lms-icon-1.png" alt="Icon">
-                                        </span>
-                                        <span class="text-primary-light fw-medium">Enrolled Courses</span>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <img src="assets/images/icons/lms-card-gradient-bg1.png"
-                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover lms-card-gradient-bg"
-                                            alt="Gradient BG">
-                                        <div
-                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
-                                            <div class="">
-                                                <h6 class="mb-6">500</h6>
-                                                <span
-                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
-                                                    <i
-                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
-                                                    43,9%
-                                                </span>
-                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
-                                                    month</span>
-                                            </div>
-                                            <div class="">
-                                                <div id="enrolledCourses"
-                                                    class="remove-tooltip-title rounded-tooltip-value"></div>
-                                            </div>
-                                        </div>
+                <!-- Dashboard widgets start -->
+                <div class="col-xxl-4">
+                    <div class="card radius-12 border-0 h-100">
+                        <div class="card-body p-24 d-flex gap-16 flex-sm-nowrap flex-wrap">
+                            <div
+                                class="radius-8 overflow-hidden position-relative z-1 py-32 px-20 text-center d-flex justify-content-center align-items-center flex-grow-1">
+                                <img src="assets/images/bg/edit-profile-bg.png" alt="BG Image"
+                                    class="position-absolute start-0 top-0 w-100 h-100 z-n1">
+                                <div class="">
+                                    <span class="mb-12">
+                                        <img src="assets/images/thumbs/studnt-edit-profile-img.png" alt="BG Image"
+                                            class="rounded-circle object-fit-cover">
+                                    </span>
+                                    <h6 class="text-white">Devon Lane</h6>
+                                    <span class="text-white text-lg d-block">Class: 7</span>
+                                    <span class="text-white text-lg d-block">Roll No: 03</span>
+                                    <div class="mt-12">
+                                        <a href="edit-teacher.html"
+                                            class="px-20 py-8 text-white bg-white bg-opacity-10 radius-6 fw-medium text-lg">Edit
+                                            Profile</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="border rounded-3">
-                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
-                                        <span
-                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-purple-100">
-                                            <img src="assets/images/icons/lms-icon-2.png" alt="Icon">
-                                        </span>
-                                        <span class="text-primary-light fw-medium">Total Students</span>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <img src="assets/images/icons/lms-card-gradient-bg2.png"
-                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover lms-card-gradient-bg"
-                                            alt="Gradient BG">
-                                        <div
-                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
-                                            <div class="">
-                                                <h6 class="mb-6">3,570</h6>
-                                                <span
-                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
-                                                    <i
-                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
-                                                    43,9%
-                                                </span>
-                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
-                                                    month</span>
-                                            </div>
-                                            <div class="">
-                                                <div id="barChart"
-                                                    class="barChart remove-tooltip-title rounded-tooltip-value"></div>
-                                            </div>
-                                        </div>
+
+                            <div class="d-flex flex-column gap-20 flex-grow-1 justify-content-between">
+                                <div
+                                    class="radius-8 py-24 px-24 text-start d-flex align-items-center gap-12 bg-purple-100">
+                                    <span
+                                        class="w-48-px h-48-px d-inline-flex justify-content-center align-items-center rounded-circle border border-purple-300 bg-purple-200">
+                                        <img src="assets/images/icons/teacher-widget-icon1.png" alt="User Icon">
+                                    </span>
+                                    <div class="">
+                                        <span class="text-secondary-light fw-medium d-block">Events</span>
+                                        <h5 class="text-primary-light">10</h5>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="border rounded-3">
-                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
-                                        <span
-                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-warning-100">
-                                            <img src="assets/images/icons/lms-icon-3.png" alt="Icon">
-                                        </span>
-                                        <span class="text-primary-light fw-medium">Total Courses</span>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <img src="assets/images/icons/lms-card-gradient-bg3.png"
-                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover lms-card-gradient-bg"
-                                            alt="Gradient BG">
-                                        <div
-                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
-                                            <div class="">
-                                                <h6 class="mb-6">30</h6>
-                                                <span
-                                                    class="fw-medium text-success-600 text-md d-flex gap-6 align-items-center">
-                                                    <i
-                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-up-line"></i>
-                                                    43,9%
-                                                </span>
-                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
-                                                    month</span>
-                                            </div>
-                                            <div class="">
-                                                <div id="barChartTwo"
-                                                    class="barChart remove-tooltip-title rounded-tooltip-value"></div>
-                                            </div>
-                                        </div>
+                                <div
+                                    class="radius-8 py-24 px-24 text-start d-flex align-items-center gap-12 bg-success-100">
+                                    <span
+                                        class="w-48-px h-48-px d-inline-flex justify-content-center align-items-center rounded-circle border border-success-300 bg-success-200">
+                                        <img src="assets/images/icons/teacher-widget-icon2.png" alt="User Icon">
+                                    </span>
+                                    <div class="">
+                                        <span class="text-secondary-light fw-medium d-block">Notifications</span>
+                                        <h5 class="text-primary-light">15</h5>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="border rounded-3">
-                                    <div class="px-16 py-12 d-flex gap-8 align-items-center">
-                                        <span
-                                            class="d-flex align-items-center justify-content-center w-32-px h-32-px rounded-circle bg-success-100">
-                                            <img src="assets/images/icons/lms-icon-4.png" alt="Icon">
-                                        </span>
-                                        <span class="text-primary-light fw-medium">Total Earnings</span>
-                                    </div>
-                                    <div class="position-relative z-1">
-                                        <img src="assets/images/icons/lms-card-gradient-bg4.png"
-                                            class="position-absolute w-100 h-100 z-n1 object-fit-cover lms-card-gradient-bg"
-                                            alt="Gradient BG">
-                                        <div
-                                            class="px-16 py-12 d-flex align-items-center justify-content-between gap-12 flex-wrap">
-                                            <div class="">
-                                                <h6 class="mb-6">$50,000</h6>
-                                                <span
-                                                    class="fw-medium text-danger-600 text-md d-flex gap-6 align-items-center">
-                                                    <i
-                                                        class="text-lg line-height-1 fw-medium ri-arrow-left-down-line"></i>
-                                                    20,3%
-                                                </span>
-                                                <span class="text-secondary-light fw-medium mt-6 d-block">From last
-                                                    month</span>
-                                            </div>
-                                            <div class="">
-                                                <div id="totalEarnings"
-                                                    class="remove-tooltip-title rounded-tooltip-value"></div>
-                                            </div>
-                                        </div>
+                                <div
+                                    class="radius-8 py-24 px-24 text-start d-flex align-items-center gap-12 bg-primary-100">
+                                    <span
+                                        class="w-48-px h-48-px d-inline-flex justify-content-center align-items-center rounded-circle border border-primary-300 bg-primary-200">
+                                        <img src="assets/images/icons/teacher-widget-icon3.png" alt="User Icon">
+                                    </span>
+                                    <div class="">
+                                        <span class="text-secondary-light fw-medium d-block">Attendance</span>
+                                        <h5 class="text-primary-light">90%</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Widgets End -->
-
-                <!-- Earning Statistic start -->
-                <div class="col-xxl-6">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <h6 class="text-lg mb-0">Earning Statistic</h6>
-                                <select class="form-select bg-base form-select-sm w-auto radius-8">
-                                    <option>Yearly</option>
-                                    <option>Monthly</option>
-                                    <option>Weekly</option>
-                                    <option>Today</option>
-                                </select>
-                            </div>
-                            <div class="d-flex flex-wrap align-items-center gap-2 mt-8">
-                                <h6 class="mb-0">$27,200</h6>
-                                <span
-                                    class="text-sm fw-semibold rounded-pill bg-success-focus text-success-main border br-success px-8 py-4 line-height-1 d-flex align-items-center gap-1">
-                                    10% <iconify-icon icon="bxs:up-arrow" class="text-xs"></iconify-icon>
-                                </span>
-                                <span class="text-xs fw-medium">+ $1500 Per Day</span>
-                            </div>
-                            <div id="earningStatistic" class=" pt-28 apexcharts-tooltip-style-1"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Earning Statistic end -->
-
-                <!-- Calendar start -->
-                <div class="col-xxl-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="p-20">
-                                <div class="calendar">
-                                    <div class="calendar__header">
-                                        <button type="button" class="calendar__arrow left">
-                                            <i class="ri-arrow-left-s-line"></i>
-                                        </button>
-                                        <p class="display text-md text-secondary-light fw-semibold mb-0">""</p>
-                                        <button type="button" class="calendar__arrow right">
-                                            <i class="ri-arrow-right-s-line"></i>
-                                        </button>
-                                    </div>
-
-                                    <div class="calendar__week week">
-                                        <div class="calendar__week-text">Su</div>
-                                        <div class="calendar__week-text">Mo</div>
-                                        <div class="calendar__week-text">Tu</div>
-                                        <div class="calendar__week-text">We</div>
-                                        <div class="calendar__week-text">Th</div>
-                                        <div class="calendar__week-text">Fr</div>
-                                        <div class="calendar__week-text">Sa</div>
-                                    </div>
-                                    <div class="days"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Calendar end -->
-
-                <!-- Upcoming Sessions start -->
-                <div class="col-xxl-7">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex flex-wrap align-items-center justify-content-between pb-16">
-                                <h6 class="text-lg mb-0">Upcoming Sessions</h6>
-                            </div>
-
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="border rounded-3 p-12">
-                                        <div class="d-flex  gap-12">
-                                            <div class="d-flex flex-shrink-0">
-                                                <img src="assets/images/thumbs/session-img1.png" alt="Image"
-                                                    class="w-100 h-100 object-fit-cover rounded-3">
-                                            </div>
-                                            <div class="align-self-center w-100">
-                                                <h6 class="text-md mb-0">Cameron Williamson</h6>
-                                                <span class="fw-medium">English</span>
-                                                <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-calendar-2-line"></i>
-                                                        15 Jun 2025
-                                                    </div>
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-time-line"></i>
-                                                        12:30 PM
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-16 d-flex gap-12">
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-600 d-flex align-items-center gap-6 px-16 flex-grow-1 justify-content-center">
-                                                Join Class
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
-                                                <i class="ri-chat-1-line"></i>
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1 justify-content-center">
-                                                <i class="ri-time-line"></i>
-                                                Join Class
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="border rounded-3 p-12">
-                                        <div class="d-flex  gap-12">
-                                            <div class="d-flex flex-shrink-0">
-                                                <img src="assets/images/thumbs/session-img2.png" alt="Image"
-                                                    class="w-100 h-100 object-fit-cover rounded-3">
-                                            </div>
-                                            <div class="align-self-center w-100">
-                                                <h6 class="text-md mb-0">Kristin Watson</h6>
-                                                <span class="fw-medium">English</span>
-                                                <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-calendar-2-line"></i>
-                                                        15 Jun 2025
-                                                    </div>
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-time-line"></i>
-                                                        12:30 PM
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-16 d-flex gap-12">
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-600 d-flex align-items-center gap-6 px-16 flex-grow-1 justify-content-center">
-                                                Join Class
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
-                                                <i class="ri-chat-1-line"></i>
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1 justify-content-center">
-                                                <i class="ri-time-line"></i>
-                                                Join Class
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="border rounded-3 p-12">
-                                        <div class="d-flex  gap-12">
-                                            <div class="d-flex flex-shrink-0">
-                                                <img src="assets/images/thumbs/session-img2.png" alt="Image"
-                                                    class="w-100 h-100 object-fit-cover rounded-3">
-                                            </div>
-                                            <div class="align-self-center w-100">
-                                                <h6 class="text-md mb-0">Kristin Watson</h6>
-                                                <span class="fw-medium">English</span>
-                                                <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-calendar-2-line"></i>
-                                                        15 Jun 2025
-                                                    </div>
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-time-line"></i>
-                                                        12:30 PM
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-16 d-flex gap-12">
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-600 d-flex align-items-center gap-6 px-16 flex-grow-1 justify-content-center">
-                                                Join Class
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
-                                                <i class="ri-chat-1-line"></i>
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1 justify-content-center">
-                                                <i class="ri-time-line"></i>
-                                                Join Class
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="border rounded-3 p-12">
-                                        <div class="d-flex  gap-12">
-                                            <div class="d-flex flex-shrink-0">
-                                                <img src="assets/images/thumbs/session-img1.png" alt="Image"
-                                                    class="w-100 h-100 object-fit-cover rounded-3">
-                                            </div>
-                                            <div class="align-self-center w-100">
-                                                <h6 class="text-md mb-0">Cameron Williamson</h6>
-                                                <span class="fw-medium">English</span>
-                                                <div
-                                                    class="mt-8 d-flex align-items-center gap-8 justify-content-between flex-wrap w-100">
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-calendar-2-line"></i>
-                                                        15 Jun 2025
-                                                    </div>
-                                                    <div
-                                                        class="d-flex align-items-center gap-8 text-neutral-500 fw-medium">
-                                                        <i class="ri-time-line"></i>
-                                                        12:30 PM
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-16 d-flex gap-12">
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-600 d-flex align-items-center gap-6 px-16 flex-grow-1 justify-content-center">
-                                                Join Class
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-primary-100 d-flex align-items-center justify-content-center gap-6 p-0 w-44-px h-44-px text-primary-600 text-xl">
-                                                <i class="ri-chat-1-line"></i>
-                                            </a>
-                                            <a href="javascript:void(0)"
-                                                class="btn btn-warning-100 d-flex align-items-center gap-6 px-16 text-warning-600 flex-grow-1 justify-content-center">
-                                                <i class="ri-time-line"></i>
-                                                Join Class
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- Upcoming Sessions end -->
+                <!-- Dashboard widgets end -->
 
                 <!-- User activity Start -->
-                <div class="col-xl-6 col-xxl-4 col-lg-6">
+                <div class="col-xxl-4 col-lg-6">
                     <div class="card radius-12 border-0 h-100">
                         <div
                             class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">User activity</h6>
+                            <h6 class="mb-2 fw-bold text-lg">Attendance</h6>
                             <select class="form-select bg-base form-select-sm w-auto radius-8">
                                 <option>Yearly</option>
                                 <option>Monthly</option>
@@ -417,52 +92,44 @@
                                 <option>Today</option>
                             </select>
                         </div>
-                        <div class="card-body py-24 d-flex flex-column justify-content-center">
-                            <div class="d-flex align-items-center gap-20 flex-sm-nowrap flex-wrap">
-                                <div class="d-flex flex-column gap-12">
-                                    <div class="d-flex align-items-start gap-12">
-                                        <div class="">
-                                            <span
-                                                class="w-16-px h-16-px bg-primary-600 radius-4 position-relative mt-6"></span>
-                                        </div>
-                                        <div class="">
-                                            <p class="text-secondary-light text-md mb-0">Organic Search</p>
-                                            <h6 class="mb-0 text-lg">875</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-start gap-12">
-                                        <div class="">
-                                            <span
-                                                class="w-16-px h-16-px bg-warning-600 radius-4 position-relative mt-6"></span>
-                                        </div>
-                                        <div class="">
-                                            <p class="text-secondary-light text-md mb-0">Referrals</p>
-                                            <h6 class="mb-0 text-lg">350</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-start gap-12">
-                                        <div class="">
-                                            <span
-                                                class="w-16-px h-16-px bg-success radius-4 position-relative mt-6"></span>
-                                        </div>
-                                        <div class="">
-                                            <p class="text-secondary-light text-md mb-0">Social Media</p>
-                                            <h6 class="mb-0 text-lg">320</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-start gap-12">
-                                        <div class="">
-                                            <span
-                                                class="w-16-px h-16-px bg-purple radius-4 position-relative mt-6"></span>
-                                        </div>
-                                        <div class="">
-                                            <p class="text-secondary-light text-md mb-0">Google Search</p>
-                                            <h6 class="mb-0 text-lg">340</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="">
+                        <div class="card-body py-24">
+                            <div class=" gap-20">
+                                <div class="text-center">
                                     <div id="userOverviewDonutChart" class="apexcharts-tooltip-z-none"></div>
+                                </div>
+                                <div class="d-flex gap-12 justify-content-around mt-24">
+                                    <div class="d-flex align-items-start gap-8">
+                                        <span class="w-6-px h-16-px bg-success-500 rounded-pill position-relative mt-8">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="mb-0">200</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Present</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-8">
+                                        <span class="w-6-px h-16-px bg-info rounded-pill position-relative mt-8">
+                                        </span>
+                                        <div class="">
+                                            <h6 class="mb-0">300</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Half Day </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-8">
+                                        <span
+                                            class="w-6-px h-16-px bg-purple rounded-pill position-relative mt-8"></span>
+                                        <div class="">
+                                            <h6 class="mb-0">172</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Late</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-8">
+                                        <span
+                                            class="w-6-px h-16-px bg-warning rounded-pill position-relative mt-8"></span>
+                                        <div class="">
+                                            <h6 class="mb-0">500</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Absent</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -470,382 +137,145 @@
                 </div>
                 <!-- User activity End -->
 
-                <!-- Top Student Start -->
+                <!-- Leave Status start -->
                 <div class="col-xxl-4 col-lg-6">
                     <div class="card radius-12 border-0 h-100">
                         <div
                             class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">Top Student</h6>
-                            <div class="dropdown">
-                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <iconify-icon icon="entypo:dots-three-vertical"
-                                        class="icon text-secondary-light"></iconify-icon>
-                                </button>
-                                <ul class="dropdown-menu p-12 border bg-base shadow">
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                            <iconify-icon icon="hugeicons:view"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            View
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                            <iconify-icon icon="lucide:edit"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Edit
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                            <iconify-icon icon="fluent:delete-24-regular"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Delete
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
+                            <h6 class="mb-2 fw-bold text-lg">Today's Class</h6>
                         </div>
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-20">
-
-                                <div class="d-flex align-items-center justify-content-between gap-10">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span
-                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/avatar-img1.png"
-                                                class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-sm mb-2">Brooklyn Simmons</h6>
-                                            <span class="text-xs text-secondary-light">Class: Six</span>
+                        <div class="card-body pe-0 py-8">
+                            <div class="d-flex flex-column max-h-390-px overflow-y-auto scroll-sm pe-20">
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-4 fw-medium">English</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-8">
-                                        <span class="text-sm text-secondary-light">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="20"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35"></circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">20</text>
-                                            </svg>
-                                        </span>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Completed</span>
                                     </div>
                                 </div>
-
-                                <div class="d-flex align-items-center justify-content-between gap-10">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span
-                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/avatar-img2.png"
-                                                class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-sm mb-2">Floyd Miles</h6>
-                                            <span class="text-xs text-secondary-light">Class: Seven</span>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-4 fw-medium">Physics</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:50 - 10:35 AM</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-8">
-                                        <span class="text-sm text-secondary-light">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="35"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-red" cx="40"
-                                                    cy="40" r="35"></circle>
-                                                <circle class="complete stroke-8-px stroke-red" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">35</text>
-                                            </svg>
-                                        </span>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Inprogress</span>
                                     </div>
                                 </div>
-
-                                <div class="d-flex align-items-center justify-content-between gap-10">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span
-                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/avatar-img2.png"
-                                                class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-sm mb-2">Courtney Henry</h6>
-                                            <span class="text-xs text-secondary-light">Class: Eight</span>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-4 fw-medium">Bangla</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-8">
-                                        <span class="text-sm text-secondary-light">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="45"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-warning" cx="40"
-                                                    cy="40" r="35"></circle>
-                                                <circle class="complete stroke-8-px stroke-warning" cx="40" cy="40"
-                                                    r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">45</text>
-                                            </svg>
-                                        </span>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Inprogress</span>
                                     </div>
                                 </div>
-
-                                <div class="d-flex align-items-center justify-content-between gap-10">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span
-                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/avatar-img4.png"
-                                                class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-sm mb-2">Kathryn Murphy</h6>
-                                            <span class="text-xs text-secondary-light">Class: Nine</span>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-4 fw-medium">Chemistry</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-8">
-                                        <span class="text-sm text-secondary-light">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="65"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-green" cx="40"
-                                                    cy="40" r="35"></circle>
-                                                <circle class="complete stroke-8-px stroke-green" cx="40" cy="40"
-                                                    r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">65</text>
-                                            </svg>
-                                        </span>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Inprogress</span>
                                     </div>
                                 </div>
-
-                                <div class="d-flex align-items-center justify-content-between gap-10">
-                                    <div class="d-flex align-items-center gap-12">
-                                        <span
-                                            class="w-44-px h-44-px rounded-circle d-flex justify-content-center align-items-center">
-                                            <img src="assets/images/thumbs/avatar-img5.png"
-                                                class="w-44-px h-44-px object-fit-cover rounded-circle" alt="Icon">
-                                        </span>
-                                        <div class="">
-                                            <h6 class="text-sm mb-2">Annette Black</h6>
-                                            <span class="text-xs text-secondary-light">Class: Ten</span>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-4 fw-medium">Accounting</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center gap-8">
-                                        <span class="text-sm text-secondary-light">Marks</span>
-                                        <span class="text-primary-light text-sm d-block text-end">
-                                            <svg class="radial-progress w-44-px" data-percentage="65"
-                                                viewBox="0 0 80 80">
-                                                <circle class="incomplete stroke-8-px opacity-02 stroke-blue" cx="40"
-                                                    cy="40" r="35"></circle>
-                                                <circle class="complete stroke-8-px stroke-blue" cx="40" cy="40" r="35">
-                                                </circle>
-                                                <text class="percentage fill-black" x="50%" y="57%"
-                                                    transform="matrix(0, 1, -1, 0, 80, 0)">65</text>
-                                            </svg>
-                                        </span>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Inprogress</span>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Top Student End -->
-
-                <!-- Top Instructor Start -->
-                <div class="col-xxl-4">
-                    <div class="card radius-12 border-0">
-                        <div
-                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">Top Instructor</h6>
-                            <div class="dropdown">
-                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <iconify-icon icon="entypo:dots-three-vertical"
-                                        class="icon text-secondary-light"></iconify-icon>
-                                </button>
-                                <ul class="dropdown-menu p-12 border bg-base shadow">
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalView">
-                                            <iconify-icon icon="hugeicons:view"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            View
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
-                                            <iconify-icon icon="lucide:edit"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Edit
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button type="button"
-                                            class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
-                                            data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
-                                            <iconify-icon icon="fluent:delete-24-regular"
-                                                class="icon text-lg line-height-1"></iconify-icon>
-                                            Delete
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column gap-20">
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/users/user1.png" alt="Image"
-                                        class="w-40-px h-40-px radius-4 flex-shrink-0 me-12 overflow-hidden">
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
                                     <div class="flex-grow-1">
-                                        <h6 class="text-md mb-0 fw-medium">Dianne Russell</h6>
-                                        <span class="text-sm text-secondary-light fw-medium">Agent ID: 36254</span>
+                                        <h6 class="text-lg mb-4 fw-medium">English</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Completed</span>
                                     </div>
                                 </div>
-                                <div class="">
-                                    <div class="d-flex align-items-center gap-6 mb-1">
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                    </div>
-                                    <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/users/user2.png" alt="Image"
-                                        class="w-40-px h-40-px radius-4 flex-shrink-0 me-12 overflow-hidden">
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
                                     <div class="flex-grow-1">
-                                        <h6 class="text-md mb-0 fw-medium">Wade Warren</h6>
-                                        <span class="text-sm text-secondary-light fw-medium">Agent ID: 36254</span>
+                                        <h6 class="text-lg mb-4 fw-medium">English</h6>
+                                        <div class="d-flex align-items-center gap-8">
+                                            <span class="d-flex">
+                                                <i class="ri-graduation-cap-line"></i>
+                                            </span>
+                                            <span class="text-sm text-secondary-light fw-medium">09:300 - 09:45
+                                                AM</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="">
-                                    <div class="d-flex align-items-center gap-6 mb-1">
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Completed</span>
                                     </div>
-                                    <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/users/user3.png" alt="Image"
-                                        class="w-40-px h-40-px radius-4 flex-shrink-0 me-12 overflow-hidden">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-md mb-0 fw-medium">Albert Flores</h6>
-                                        <span class="text-sm text-secondary-light fw-medium">Agent ID: 36254</span>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="d-flex align-items-center gap-6 mb-1">
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                    </div>
-                                    <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/users/user4.png" alt="Image"
-                                        class="w-40-px h-40-px radius-4 flex-shrink-0 me-12 overflow-hidden">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-md mb-0 fw-medium">Bessie Cooper</h6>
-                                        <span class="text-sm text-secondary-light fw-medium">Agent ID: 36254</span>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="d-flex align-items-center gap-6 mb-1">
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                    </div>
-                                    <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between gap-3">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/users/user5.png" alt="Image"
-                                        class="w-40-px h-40-px radius-4 flex-shrink-0 me-12 overflow-hidden">
-                                    <div class="flex-grow-1">
-                                        <h6 class="text-md mb-0 fw-medium">Arlene McCoy</h6>
-                                        <span class="text-sm text-secondary-light fw-medium">Agent ID: 36254</span>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <div class="d-flex align-items-center gap-6 mb-1">
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                        <span class="text-lg text-warning-600 d-flex line-height-1"><i
-                                                class="ri-star-fill"></i></span>
-                                    </div>
-                                    <span class="text-primary-light text-sm d-block text-end">25 Reviews</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Top Instructor End -->
+                <!-- Leave Status End -->
 
                 <!-- Recent Enrolled Courses Start -->
                 <div class="col-xxl-8">
                     <div class="card radius-12 border-0">
                         <div
                             class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
-                            <h6 class="mb-2 fw-bold text-lg">Recent Enrolled Courses</h6>
+                            <h6 class="mb-2 fw-bold text-lg">Exam Results</h6>
                             <div class="dropdown">
                                 <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <iconify-icon icon="entypo:dots-three-vertical"
@@ -884,64 +314,93 @@
                         </div>
                         <div class="card-body p-0">
                             <div class="table-responsive scroll-sm">
-                                <table class="table bordered-table mb-0 rounded-0 border-0">
+                                <table class="table bordered-table mb-0 data-table" id="dataTable"
+                                    data-page-length='10'>
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Invoice</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Student</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Courses Name</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Amount</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Payment By</th>
-                                            <th scope="col" class="bg-neutral-100 rounded-0">Date</th>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Exam Name</th>
+                                            <th scope="col">Subject</th>
+                                            <th scope="col">Grade</th>
+                                            <th scope="col">Marks%</th>
+                                            <th scope="col">CGPA</th>
+                                            <th scope="col">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>#829776</td>
-                                            <td>John Doe</td>
-                                            <td>Scorm drawing course</td>
-                                            <td>$29.00</td>
-                                            <td>PayPal</td>
-                                            <td>04 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">Class Test</td>
+                                            <td class="py-10-px">English</td>
+                                            <td class="py-10-px">A</td>
+                                            <td class="py-10-px">95%</td>
+                                            <td class="py-10-px">4.2</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
-
                                         <tr>
-                                            <td>#829777</td>
-                                            <td>Emily Carter</td>
-                                            <td>Advanced UI/UX Design</td>
-                                            <td>$49.00</td>
-                                            <td>Stripe</td>
-                                            <td>06 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">First Semester</td>
+                                            <td class="py-10-px">Chemistry </td>
+                                            <td class="py-10-px">A</td>
+                                            <td class="py-10-px">80%</td>
+                                            <td class="py-10-px">3.2</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
-
                                         <tr>
-                                            <td>#829778</td>
-                                            <td>Michael Smith</td>
-                                            <td>Full-Stack Development</td>
-                                            <td>$79.00</td>
-                                            <td>MasterCard</td>
-                                            <td>08 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">Class Test</td>
+                                            <td class="py-10-px">Bangla</td>
+                                            <td class="py-10-px">B</td>
+                                            <td class="py-10-px">70%</td>
+                                            <td class="py-10-px">4.5</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
-
                                         <tr>
-                                            <td>#829779</td>
-                                            <td>Sarah Johnson</td>
-                                            <td>Digital Marketing Pro</td>
-                                            <td>$39.00</td>
-                                            <td>Visa</td>
-                                            <td>10 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">Class Test</td>
+                                            <td class="py-10-px">Accounting</td>
+                                            <td class="py-10-px">C</td>
+                                            <td class="py-10-px">60%</td>
+                                            <td class="py-10-px">3.9</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
                                         </tr>
-
                                         <tr>
-                                            <td>#829780</td>
-                                            <td>David Wilson</td>
-                                            <td>Laravel API Development</td>
-                                            <td>$59.00</td>
-                                            <td>PayPal</td>
-                                            <td>12 Feb, 2025</td>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">First Semester</td>
+                                            <td class="py-10-px">Chemistry </td>
+                                            <td class="py-10-px">A</td>
+                                            <td class="py-10-px">80%</td>
+                                            <td class="py-10-px">3.2</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Pass</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-10-px"><span class="text-primary-600">AD52365</span></td>
+                                            <td class="py-10-px">Class Test</td>
+                                            <td class="py-10-px">English </td>
+                                            <td class="py-10-px">F</td>
+                                            <td class="py-10-px">30%</td>
+                                            <td class="py-10-px">2.5</td>
+                                            <td class="py-10-px">
+                                                <span
+                                                    class="bg-danger-100 text-danger-600 px-24 py-4 radius-4 fw-medium text-sm">Fail</span>
+                                            </td>
                                         </tr>
                                     </tbody>
-
                                 </table>
                             </div>
                         </div>
@@ -949,41 +408,416 @@
                 </div>
                 <!-- Recent Enrolled Courses End -->
 
-                <!-- Course Activity start -->
-                <div class="col-xxl-4">
+                <!-- Calendar start -->
+                <div class="col-xxl-4 col-lg-6">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                                <h6 class="text-lg mb-0">Course Activity</h6>
-                                <select class="form-select bg-base form-select-sm w-auto radius-8">
-                                    <option>Yearly</option>
-                                    <option>Monthly</option>
-                                    <option>Weekly</option>
-                                    <option>Today</option>
-                                </select>
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">Calendar</h6>
                             </div>
+                            <div class="p-20">
+                                <div class="calendar style-big">
+                                    <div class="calendar__header">
+                                        <button type="button" class="calendar__arrow left">
+                                            <i class="ri-arrow-left-s-line"></i>
+                                        </button>
+                                        <p class="display text-md text-secondary-light fw-semibold mb-0">""</p>
+                                        <button type="button" class="calendar__arrow right">
+                                            <i class="ri-arrow-right-s-line"></i>
+                                        </button>
+                                    </div>
 
-                            <ul class="d-flex flex-wrap align-items-center justify-content-center my-32 gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <span class="w-12-px h-12-px rounded-circle bg-primary-600"></span>
-                                    <span class="text-secondary-light text-sm">Paid Course:
-                                        <span class="text-primary-light text-md fw-bold line-height-1 ms-4">500</span>
-                                    </span>
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <span class="w-12-px h-12-px rounded-circle bg-warning-600"></span>
-                                    <span class="text-secondary-light text-sm">Free Course:
-                                        <span class="text-primary-light text-xl fw-bold line-height-1 ms-4">200</span>
-                                    </span>
-                                </li>
-                            </ul>
-                            <div class="margin-16-minus">
-                                <div id="courseActivityChart" class="apexcharts-tooltip-style-1"></div>
+                                    <div class="calendar__week week">
+                                        <div class="calendar__week-text">Su</div>
+                                        <div class="calendar__week-text">Mo</div>
+                                        <div class="calendar__week-text">Tu</div>
+                                        <div class="calendar__week-text">We</div>
+                                        <div class="calendar__week-text">Th</div>
+                                        <div class="calendar__week-text">Fr</div>
+                                        <div class="calendar__week-text">Sa</div>
+                                    </div>
+                                    <div class="days"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Course Activity end -->
+                <!-- Calendar end -->
+
+                <!-- Leave Status start -->
+                <div class="col-xxl-4 col-lg-6">
+                    <div class="card radius-12 border-0 h-100">
+                        <div
+                            class="d-flex align-items-center flex-wrap gap-2 justify-content-between py-12 px-20 border-bottom border-neutral-200">
+                            <h6 class="mb-2 fw-bold text-lg">Leave Status</h6>
+                            <select class="form-select bg-base form-select-sm w-auto radius-8">
+                                <option>Yearly</option>
+                                <option>Monthly</option>
+                                <option>Weekly</option>
+                                <option>Today</option>
+                            </select>
+                        </div>
+                        <div class="card-body pe-0">
+                            <div class="d-flex flex-column max-h-494-px overflow-y-auto scroll-sm pe-20">
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Emergency Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Medical Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Now Well</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Medical Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Emergency Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Now Well</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Medical Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Emergency Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Emergency Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Medical Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Now Well</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Medical Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Emergency Leave</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-success-100 text-success-600 px-24 py-4 radius-4 fw-medium text-sm">Accepted</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-between gap-3 py-10 border-bottom">
+                                    <div class="flex-grow-1">
+                                        <h6 class="text-lg mb-0 fw-medium">Now Well</h6>
+                                        <span class="text-sm text-secondary-light fw-medium">Date: 10/10/24</span>
+                                    </div>
+                                    <div class="">
+                                        <span
+                                            class="bg-warning-100 text-warning-600 px-24 py-4 radius-4 fw-medium text-sm">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leave Status End -->
+
+                <!-- Notice Board start -->
+                <div class="col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">Notice Board</h6>
+                                <div class="dropdown">
+                                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <iconify-icon icon="entypo:dots-three-vertical"
+                                            class="icon text-secondary-light"></iconify-icon>
+                                    </button>
+                                    <ul class="dropdown-menu p-12 border bg-base shadow">
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalView">
+                                                <iconify-icon icon="hugeicons:view"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                View
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalEdit">
+                                                <iconify-icon icon="lucide:edit"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Edit
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button type="button"
+                                                class="delete-item dropdown-item px-16 py-8 rounded text-secondary-light bg-hover-danger-100 text-hover-danger-600 d-flex align-items-center gap-10"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModalDelete">
+                                                <iconify-icon icon="fluent:delete-24-regular"
+                                                    class="icon text-lg line-height-1"></iconify-icon>
+                                                Delete
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="p-20 pe-0">
+                                <div class="pe-20 d-flex flex-column gap-28 overflow-y-auto max-h-490-px scroll-sm">
+                                    <div class="d-flex align-items-start gap-16">
+                                        <img src="assets/images/thumbs/notice-board-img1.png" alt="Thumbnail"
+                                            class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                        <div class="">
+                                            <h6 class="mb-4 text-lg">Admin</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy
+                                                text of the
+                                                printing and typesetti</p>
+                                            <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-16">
+                                        <img src="assets/images/thumbs/notice-board-img2.png" alt="Thumbnail"
+                                            class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                        <div class="">
+                                            <h6 class="mb-4 text-lg">Kathryn Murphy</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy
+                                                text of the
+                                                printing and typesett ing industry Lorem Ipsum is simply dummy text of
+                                                the printing and
+                                                typesetting industry.</p>
+                                            <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-16">
+                                        <img src="assets/images/thumbs/notice-board-img3.png" alt="Thumbnail"
+                                            class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                        <div class="">
+                                            <h6 class="mb-4 text-lg">Admin</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Lorem Ipsum is simply dummy
+                                                text of the
+                                                printing and typesetti</p>
+                                            <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-16">
+                                        <img src="assets/images/thumbs/notice-board-img2.png" alt="Thumbnail"
+                                            class="w-40-px h-40-px rounded-circle object-fit-cover flex-shrink-0">
+                                        <div class="">
+                                            <h6 class="mb-4 text-lg">John Doe</h6>
+                                            <p class="text-secondary-light text-sm mb-0">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Laborum voluptas corporis qui dolore est odit officia
+                                                fuga?</p>
+                                            <span class="text-secondary-light text-sm mb-0 mt-4">25 Jan 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notice Board End -->
+
+                <!-- Upcoming Events start -->
+                <div class="col-xxl-4 col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body p-0">
+                            <div
+                                class="d-flex flex-wrap align-items-center justify-content-between px-20 py-16 border-bottom border-neutral-200">
+                                <h6 class="text-lg mb-0">Upcoming Events</h6>
+                            </div>
+                            <div class="p-20 pe-0">
+                                <div class="pe-20 d-flex flex-column gap-28 overflow-y-auto max-h-490-px scroll-sm">
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="ps-10 border-start-width-3-px border-purple-600">
+                                            <div class="d-flex align-items-end gap-6">
+                                                <h6 class="text-lg fw-normal mb-0">09:00 - 09:45</h6>
+                                                <span class="text-xs text-secondary-light line-height-1 mb-2">AM</span>
+                                            </div>
+                                            <p class="text-secondary-light mt-4 mb-2 text-sm">Marketing Strategy Kickoff
+                                            </p>
+                                            <p class="text-xs text-secondary-light mb-0">Lead by <a
+                                                    href="javascript:void(0)"
+                                                    class="text-primary-600 hover-underline">Robert Fox</a></p>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="py-6 px-16 radius-4 bg-neutral-100 text-secondary-light fw-semibold bg-hover-primary-600 hover-text-white">View</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="ps-10 border-start-width-3-px border-warning-600">
+                                            <div class="d-flex align-items-end gap-6">
+                                                <h6 class="text-lg fw-normal mb-0">11:15 - 12:00</h6>
+                                                <span class="text-xs text-secondary-light line-height-1 mb-2">AM</span>
+                                            </div>
+                                            <p class="text-secondary-light mt-4 mb-2 text-sm">Product Design Brainstorm
+                                            </p>
+                                            <p class="text-xs text-secondary-light mb-0">Lead by <a
+                                                    href="javascript:void(0)"
+                                                    class="text-primary-600 hover-underline">Leslie Alexander</a></p>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="py-6 px-16 radius-4 bg-neutral-100 text-secondary-light fw-semibold bg-hover-primary-600 hover-text-white">View</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="ps-10 border-start-width-3-px border-blue-600">
+                                            <div class="d-flex align-items-end gap-6">
+                                                <h6 class="text-lg fw-normal mb-0">02:00 - 03:00</h6>
+                                                <span class="text-xs text-secondary-light line-height-1 mb-2">PM</span>
+                                            </div>
+                                            <p class="text-secondary-light mt-4 mb-2 text-sm">Client Feedback Review</p>
+                                            <p class="text-xs text-secondary-light mb-0">Lead by <a
+                                                    href="javascript:void(0)"
+                                                    class="text-primary-600 hover-underline">Courtney Henry</a></p>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="py-6 px-16 radius-4 bg-neutral-100 text-secondary-light fw-semibold bg-hover-primary-600 hover-text-white">View</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="ps-10 border-start-width-3-px border-success-600">
+                                            <div class="d-flex align-items-end gap-6">
+                                                <h6 class="text-lg fw-normal mb-0">04:15 - 05:00</h6>
+                                                <span class="text-xs text-secondary-light line-height-1 mb-2">PM</span>
+                                            </div>
+                                            <p class="text-secondary-light mt-4 mb-2 text-sm">Sprint Planning &amp; Task
+                                                Allocation</p>
+                                            <p class="text-xs text-secondary-light mb-0">Lead by <a
+                                                    href="javascript:void(0)"
+                                                    class="text-primary-600 hover-underline">Eleanor Pena</a></p>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="py-6 px-16 radius-4 bg-neutral-100 text-secondary-light fw-semibold bg-hover-primary-600 hover-text-white">View</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between gap-16">
+                                        <div class="ps-10 border-start-width-3-px border-primary-600">
+                                            <div class="d-flex align-items-end gap-6">
+                                                <h6 class="text-lg fw-normal mb-0">01:15 - 02:00</h6>
+                                                <span class="text-xs text-secondary-light line-height-1 mb-2">PM</span>
+                                            </div>
+                                            <p class="text-secondary-light mt-4 mb-2 text-sm">Client Feedback Review</p>
+                                            <p class="text-xs text-secondary-light mb-0">Lead by <a
+                                                    href="javascript:void(0)"
+                                                    class="text-primary-600 hover-underline">John</a></p>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)"
+                                                class="py-6 px-16 radius-4 bg-neutral-100 text-secondary-light fw-semibold bg-hover-primary-600 hover-text-white">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upcoming Events End -->
 
             </div>
         </div>
@@ -995,553 +829,10 @@
 @@include('../partial-html/_template-bottom.html')
 
 <script>
-    // ============================ Area chart js start ==============================
-    function createChart(chartId, chartColor, curveClass) {
-
-        let currentYear = new Date().getFullYear();
-
-        var options = {
-            series: [
-                {
-                    name: 'series1',
-                    data: [31, 24, 30, 25, 32, 28, 40, 32, 42, 38, 40, 32, 38, 35, 45],
-                },
-            ],
-            chart: {
-                type: 'area',
-                width: 150,
-                height: 60,
-                sparkline: {
-                    enabled: true // Remove whitespace
-                },
-
-                toolbar: {
-                    show: false
-                },
-                padding: {
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0
-                },
-                events: {
-                    mounted: function (chartContext, config) {
-                        // Apply CSS blur to markers
-                        document.querySelectorAll(`#${chartId} .apexcharts-marker`).forEach(marker => {
-                            marker.style.filter = 'blur(2px)';
-                        });
-                    },
-                    updated: function (chartContext, config) {
-                        // Apply CSS blur to markers
-                        document.querySelectorAll(`#${chartId} .apexcharts-marker`).forEach(marker => {
-                            marker.style.filter = 'blur(3px)';
-                        });
-                    }
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: `${curveClass}`,
-                width: 2,
-                colors: [chartColor],
-                lineCap: 'round'
-            },
-            grid: {
-                show: true,
-                borderColor: 'transparent',
-                strokeDashArray: 0,
-                position: 'back',
-                xaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                yaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                row: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                column: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                padding: {
-                    top: -3,
-                    right: 0,
-                    bottom: 0,
-                    left: 0
-                },
-            },
-            fill: {
-                type: 'gradient',
-                colors: [chartColor], // Set the starting color (top color) here
-                gradient: {
-                    shade: 'light', // Gradient shading type
-                    type: 'vertical',  // Gradient direction (vertical)
-                    shadeIntensity: 0.5, // Intensity of the gradient shading
-                    gradientToColors: [`${chartColor}00`], // Bottom gradient color (with transparency)
-                    inverseColors: false, // Do not invert colors
-                    opacityFrom: .5, // Starting opacity
-                    opacityTo: 0.3,  // Ending opacity
-                    stops: [0, 100],
-                },
-            },
-            // Customize the circle marker color on hover
-            markers: {
-                colors: [chartColor],
-                strokeWidth: 2,
-                size: 0,
-                hover: {
-                    size: 8
-                }
-            },
-            xaxis: {
-                labels: {
-                    show: false
-                },
-                categories: [`Jan ${currentYear}`, `Feb ${currentYear}`, `Mar ${currentYear}`, `Apr ${currentYear}`, `May ${currentYear}`, `Jun ${currentYear}`, `Jul ${currentYear}`, `Aug ${currentYear}`, `Sep ${currentYear}`, `Oct ${currentYear}`, `Nov ${currentYear}`, `Dec ${currentYear}`],
-                tooltip: {
-                    enabled: false,
-                },
-            },
-            yaxis: {
-                labels: {
-                    show: false
-                }
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                },
-            },
-        };
-
-        var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
-        chart.render();
-    }
-
-    createChart('enrolledCourses', '#0A51CE', 'smooth');
-    createChart('totalEarnings', '#00B252', 'straight');
-    // ============================ Area chart js End ==============================
-
-    // ============================ Bar chart js start ==============================
-    function createBarChart(barChartId, barChartColor) {
-        var options = {
-            series: [{
-                name: "Sales",
-                data: [{
-                    x: 'Sun',
-                    y: 15,
-                }, {
-                    x: 'Mon',
-                    y: 12,
-                }, {
-                    x: 'Tue',
-                    y: 18,
-                }, {
-                    x: 'Wed',
-                    y: 20,
-                }, {
-                    x: 'Thu',
-                    y: 13,
-                }]
-            }],
-            chart: {
-                type: 'bar',
-                height: 80,
-                width: 140,
-                sparkline: {
-                    enabled: true // Remove whitespace
-                },
-                toolbar: {
-                    show: false
-                },
-            },
-            plotOptions: {
-                bar: {
-                    borderRadius: 4,
-                    horizontal: false,
-                    columnWidth: 4,
-                    columnWidth: '60%',
-                    endingShape: 'rounded',
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            fill: {
-                type: 'gradient',
-                colors: [barChartColor], // Set the starting color (top color) here
-                gradient: {
-                    shade: 'light', // Gradient shading type
-                    type: 'vertical',  // Gradient direction (vertical)
-                    shadeIntensity: 0.5, // Intensity of the gradient shading
-                    gradientToColors: [barChartColor], // Bottom gradient color (with transparency)
-                    inverseColors: false, // Do not invert colors
-                    opacityFrom: 1, // Starting opacity
-                    opacityTo: 1,  // Ending opacity
-                    stops: [0, 100],
-                },
-            },
-            grid: {
-                show: false,
-                borderColor: '#D1D5DB',
-                strokeDashArray: 4, // Use a number for dashed style
-                position: 'back',
-                padding: {
-                    top: -10,
-                    right: -10,
-                    bottom: -10,
-                    left: -10
-                }
-            },
-            xaxis: {
-                type: 'category',
-                categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu']
-            },
-            yaxis: {
-                show: false,
-            },
-        };
-
-        var chart = new ApexCharts(document.querySelector(`#${barChartId}`), options);
-        chart.render();
-    }
-
-    createBarChart('barChart', '#8247FF');
-    createBarChart('barChartTwo', '#FEAC3B');
-    // ============================ Bar chart js End ==============================
-
-    // ============================ Month Order Chart start ==========================
-    var options = {
-        series: [
-            {
-                name: 'Actual',
-                data: [
-                    {
-                        x: 'Jan',
-                        y: 100,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 103,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Feb',
-                        y: 452,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 455,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Mar',
-                        y: 303,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 306,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Apr',
-                        y: 503,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 506,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'May',
-                        y: 93,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 96,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Jun',
-                        y: 302,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 305,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Jul',
-                        y: 452,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 455,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Aug',
-                        y: 153,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 156,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Sep',
-                        y: 453,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 456,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Oct',
-                        y: 103,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 106,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Nov',
-                        y: 253,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 256,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                    {
-                        x: 'Dec',
-                        y: 153,
-                        goals: [
-                            {
-                                name: 'Expected',
-                                value: 156,
-                                strokeHeight: 3,
-                                strokeColor: '#25A194'
-                            }
-                        ]
-                    },
-                ]
-            }
-        ],
-        chart: {
-            height: 280,
-            type: 'bar',
-            toolbar: {
-                show: false
-            },
-        },
-        plotOptions: {
-            bar: {
-                columnWidth: '100%'
-            }
-        },
-        colors: ['#25A1941F', "#000"],
-        dataLabels: {
-            enabled: false
-        },
-        legend: {
-            show: false,
-            showForSingleSeries: true,
-            customLegendItems: ['Actual', 'Expected'],
-        }
-    };
-
-    var chart = new ApexCharts(document.querySelector("#earningStatistic"), options);
-    chart.render();
-    // ============================ Month Order Chart End ==========================
-
-    // ================================ Animated Radial Progress Bar Start ================================ 
-    $('svg.radial-progress').each(function (index, value) {
-        $(this).find($('circle.complete')).removeAttr('style');
-    });
-
-    // Activate progress animation on scroll
-    $(window).scroll(function () {
-        $('svg.radial-progress').each(function (index, value) {
-            // Trigger when the element is fully in the viewport
-            if (
-                $(window).scrollTop() >= $(this).offset().top - $(window).height() &&
-                $(window).scrollTop() <= $(this).offset().top + $(this).height()
-            ) {
-                // Get percentage of progress
-                const percent = $(value).data('percentage');
-                // Get radius of the svg's circle.complete
-                const radius = $(this).find($('circle.complete')).attr('r');
-                // Get circumference (2πr)
-                const circumference = 2 * Math.PI * radius;
-                // Get stroke-dashoffset value based on the percentage of the circumference
-                const strokeDashOffset = circumference - ((percent * circumference) / 100);
-                // Transition progress for 1.25 seconds
-                $(this).find($('circle.complete')).animate({ 'stroke-dashoffset': strokeDashOffset }, 1250);
-            }
-        });
-    }).trigger('scroll');
-    // ================================ Animated Radial Progress Bar End ================================ 
-
-    // ===================== Average Enrollment Rate Start =============================== 
-    function createChartTwo(chartId, color1, color2) {
-        var options = {
-            series: [{
-                name: 'Free Course',
-                data: [48, 35, 55, 32, 48, 30, 55, 50, 57]
-            }, {
-                name: 'Paid Course',
-                data: [12, 20, 15, 26, 22, 60, 40, 48, 25]
-            }],
-            legend: {
-                show: false
-            },
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 260,
-                toolbar: {
-                    show: false
-                },
-                padding: {
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth',
-                width: 3,
-                colors: [color1, color2], // Use two colors for the lines
-                lineCap: 'round'
-            },
-            grid: {
-                show: true,
-                borderColor: '#D1D5DB',
-                strokeDashArray: 1,
-                position: 'back',
-                xaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                yaxis: {
-                    lines: {
-                        show: true
-                    }
-                },
-                row: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                column: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                padding: {
-                    top: -20,
-                    right: 0,
-                    bottom: -10,
-                    left: 0
-                },
-            },
-            colors: [color1, color2],
-            markers: {
-                colors: [color1, color2], // Use two colors for the markers
-                strokeWidth: 3,
-                size: 0,
-                hover: {
-                    size: 10
-                }
-            },
-            xaxis: {
-                labels: {
-                    show: false
-                },
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                tooltip: {
-                    enabled: false
-                },
-                labels: {
-                    formatter: function (value) {
-                        return value;
-                    },
-                    style: {
-                        fontSize: "14px"
-                    }
-                }
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        fontSize: "14px"
-                    }
-                },
-            },
-            tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
-                }
-            }
-        };
-
-        var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
-        chart.render();
-    }
-
-    createChartTwo('courseActivityChart', '#487FFF', '#FF9F29');
-    // ===================== Average Enrollment Rate End =============================== 
 
     // ================================ Users Overview Donut chart Start ================================ 
     var options = {
-        series: [300, 200, 500, 172],
+        series: [200, 200, 200, 200],
         colors: ['#487FFF', '#9935FE', '#FF9F29', "#45B369"],
         labels: ['Total Visitors', 'Registrations', 'Total Page Views', 'Registrations'],
         legend: {
@@ -1576,7 +867,7 @@
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: 300
                 },
                 legend: {
                     position: 'bottom'
@@ -1670,6 +961,28 @@
         displayCalendar();
     });
     // ============================= Calendar Js End =================================
+
+
+    let table = new DataTable('#dataTable');
+
+    //============================= ✅ Data Table start =============================
+    $('.data-table').each(function () {
+        const $table = $(this);
+        const tableInstance = new DataTable(this);
+
+        // Handle search input (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-search .dt-input').on('keyup', function () {
+            tableInstance.search(this.value).draw();
+        });
+
+        // Handle page length change (inside same wrapper)
+        $table.closest('.dataTable-wrapper').find('.dt-length .dt-input').on('change', function () {
+            const value = $(this).val();
+            tableInstance.page.len(value).draw();
+        });
+    });
+    //============================= ✅ Data Table end =============================
+
 </script>
 
 </body>

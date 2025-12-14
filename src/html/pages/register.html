@@ -1,0 +1,103 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<div class="d-lg-flex bg-white">
+    <!-- Left Image -->
+    <div class="w-50 d-lg-block d-none overflow-hidden d-flex">
+        <img src="assets/images/thumbs/login-img.png" alt="Register Image" class="w-100 h-100 object-fit-cover">
+    </div>
+
+    <!-- Right Form -->
+    <div class="lg-w-50 px-24 py-40 d-flex justify-content-center align-items-center">
+        <div class="max-w-540-px mx-auto w-100">
+
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+
+            <div class="mt-48 mb-32">
+                <h1 class="h6 fw-bold text-primary-light">Create Your Account 🚀</h1>
+                <p class="text-sm text-secondary-light">
+                    Fill in the details to get started
+                </p>
+            </div>
+
+            <form action="#" class="d-flex flex-column gap-24">
+
+                <!-- Full Name -->
+                <div>
+                    <label class="text-sm fw-semibold text-primary-light mb-8">
+                        Full Name <span class="text-danger-600">*</span>
+                    </label>
+                    <input type="text" class="form-control" placeholder="Enter your full name">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="text-sm fw-semibold text-primary-light mb-8">
+                        Email Address <span class="text-danger-600">*</span>
+                    </label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label class="text-sm fw-semibold text-primary-light mb-8">
+                        Password <span class="text-danger-600">*</span>
+                    </label>
+                    <input type="password" class="form-control" placeholder="Create a password">
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label class="text-sm fw-semibold text-primary-light mb-8">
+                        Confirm Password <span class="text-danger-600">*</span>
+                    </label>
+                    <input type="password" class="form-control" placeholder="Confirm password">
+                </div>
+
+                <!-- Role Select -->
+                <div>
+                    <label class="text-sm fw-semibold text-primary-light mb-8">
+                        Select Role
+                    </label>
+                    <select class="form-select">
+                        <option value="">Choose your role</option>
+                        <option>Student</option>
+                        <option>Teacher</option>
+                        <option>Guardian</option>
+                        <option>Admin</option>
+                    </select>
+                </div>
+
+                <!-- Terms -->
+                <div class="form-check style-check d-flex align-items-center">
+                    <input class="form-check-input border border-neutral-400" type="checkbox" value="" id="remeber">
+                    <label class="form-check-label" for="remeber"> I agree to the <a href="#"
+                            class="text-primary-600 text-decoration-underline">Terms & Conditions</a> </label>
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-primary-600 w-100 py-16 radius-8 text-sm fw-semibold">
+                    Create Account
+                </button>
+
+            </form>
+
+            <!-- Login Link -->
+            <div class="mt-24 text-center text-sm">
+                Already have an account?
+                <a href="login.html" class="text-primary-600 fw-semibold text-decoration-underline">
+                    Log In
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@@include('../partial-html/_template-bottom.html')
+
+</body>
+
+</html>

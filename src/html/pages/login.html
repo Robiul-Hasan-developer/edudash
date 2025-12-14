@@ -2,42 +2,50 @@
 @@include('../partial-html/_template-top.html')
 
 <div class="d-lg-flex bg-white">
-    <div class="w-50 d-lg-block d-none overflow-hidden d-flex">
+    <div class="w-50 d-lg-flex d-none overflow-hidden">
         <img src="assets/images/thumbs/login-img.png" alt="Login Image" class="w-100 h-100 object-fit-cover">
     </div>
-    <div class="lg-w-50 px-24 py-40 d-flex justify-content-center align-items-end">
+    <div class="lg-w-50 px-24 py-32 d-flex justify-content-center align-items-center">
         <div class="max-w-540-px mx-auto">
             <a href="index.html" class="">
                 <img src="assets/images/logo.png" alt="Logo">
             </a>
-            <div class="mt-48 mb-32">
-                <h1 class="h6 fw-bold text-primary-light">Hi, Welcome Back!</h1>
-                <p class="">Log In to your account</p>
+            <div class="mt-32 mb-32">
+                <h1 class="h6 fw-bold text-primary-light mb-8">
+                    Welcome Back 👋
+                </h1>
+                <p class="text-sm text-secondary-light mb-0">
+                    Log in to your account to continue
+                </p>
             </div>
             <form action="#" class="d-flex flex-column gap-32">
                 <div class="d-flex flex-column gap-16">
-                    <div class="">
-                        <label for="email"
-                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Email</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                    <div>
+                        <label for="email" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">
+                            Email Address
+                            <span class="text-danger-600">*</span>
+                        </label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
                     </div>
-                    <div class="">
-                        <label for="your-password"
-                            class="text-sm fw-semibold text-primary-light d-inline-block mb-8">Password
+
+                    <div>
+                        <label for="password" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">
+                            Password
                             <span class="text-danger-600">*</span>
                         </label>
                         <div class="position-relative">
-                            <input type="password" id="your-password" class="form-control"
-                                placeholder="Enter your password">
+                            <input type="password" id="password" class="form-control" placeholder="Enter your password"
+                                required>
                             <span
                                 class="toggle-password ri-eye-line cursor-pointer position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light"
-                                data-toggle="#your-password"></span>
+                                data-toggle="#password" aria-label="Toggle password visibility">
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between gap-2">
                     <div class="form-check style-check d-flex align-items-center">
-                        <input class="form-check-input border border-neutral-300" type="checkbox" value="" id="remeber">
+                        <input class="form-check-input border border-neutral-400" type="checkbox" value="" id="remeber">
                         <label class="form-check-label" for="remeber">Remember me </label>
                     </div>
                     <a href="javascript:void(0)" class="text-primary-600 fw-medium text-decoration-underline">Forgot
@@ -46,6 +54,9 @@
                 <div class="">
                     <button type="submit" class="btn btn-primary-600 text-sm btn-sm px-12 py-16 w-100 radius-8"> Log In
                     </button>
+                </div>
+                <div class="text-center text-sm text-secondary-light">
+                    or login as
                 </div>
                 <div class="d-grid sm-grid-cols-3 grid-cols-2 gap-16">
                     <a href="javascript:void(0)"
@@ -92,33 +103,17 @@
                     </a>
                 </div>
             </form>
-            <div class="mt-200-px text-center text-sm">
-                <p class="mb-0">Don't have an account? <a href="sign-up.html"
-                        class="text-primary-600 fw-semibold text-decoration-underline">Sign Up</a></p>
+            <div class="mt-32 text-center text-sm">
+                Don't have an account?
+                <a href="register.html" class="text-primary-600 fw-semibold text-decoration-underline">
+                    Create an account
+                </a>
             </div>
         </div>
     </div>
 </div>
 
 @@include('../partial-html/_template-bottom.html')
-
-<!-- <script>
-    // ================== Password Show Hide Js Start ==========
-    function initializePasswordToggle(toggleSelector) {
-        $(toggleSelector).on('click', function () {
-            $(this).toggleClass("ri-eye-off-line");
-            var input = $($(this).attr("data-toggle"));
-            if (input.attr("type") === "password") {
-                input.attr("type", "text");
-            } else {
-                input.attr("type", "password");
-            }
-        });
-    }
-    // Call the function
-    initializePasswordToggle('.toggle-password');
-    // ========================= Password Show Hide Js End ===========================
-</script> -->
 
 </body>
 
