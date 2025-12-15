@@ -1,34 +1,6 @@
 (function ($) {
   "use strict";
 
-  // =========================== Redirect to login page js start =======================
-  (function () {
-    if (window.location.pathname === "/") {
-      window.location.pathname = "/login.html";
-    }
-  })();
-
-  // Login form submit
-  let loginForm = document.querySelector(".submit-form");
-  let email = document.querySelector(".email-field");
-  let password = document.querySelector(".password-field");
-
-  if(loginForm) {
-    loginForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-  
-      const emailValue = email.value.trim();
-      const passwordValue = password.value.trim();
-  
-      if (emailValue === "" || passwordValue === "") {
-        alert("Please enter random email and password");
-        return;
-      }
-  
-      window.location.href = "index.html";
-    });
-  }
-  // =========================== Redirect to login page js end =======================
 
   // sidebar submenu collapsible js
   $(".sidebar-menu .dropdown").on("click", function () {
