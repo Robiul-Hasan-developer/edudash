@@ -1,19 +1,34 @@
-/* === navbar css start === */ 
+/* === navbar css start === */
 @import 'navbar';
-/* === navbar css end === */ 
+/* === navbar css end === */
 
-/* === sidebar css start === */ 
+/* === sidebar css start === */
 @import 'sidebar';
 /* === sidebar css end === */
 
-/* === breadcrumb css start === */ 
+/* === breadcrumb css start === */
 @import 'breadcrumb';
 /* === breadcrumb css end === */
 
-/* === dashboard body css start === */ 
+/* === dashboard body css start === */
 @import 'dashboard-body';
 /* === dashboard body css end === */
 
-/* === footer css start === */ 
+/* === footer css start === */
 @import 'footer';
 /* === footer css end === */
+
+
+[dir="rtl"] {
+    .ri-arrow-right-s-line:before {
+        content: "\EA64";
+    }
+
+    .sidebar-menu li.dropdown>a::after {
+        content: "\EA64";
+    }
+
+    .ri-arrow-left-s-line:before {
+        content: "\ea6e";
+    }
+}
