@@ -18,14 +18,14 @@
                     Log in to your account to continue
                 </p>
             </div>
-            <form action="#" class="d-flex flex-column gap-32">
+            <form action="#" class="d-flex flex-column gap-32 submit-form">
                 <div class="d-flex flex-column gap-16">
                     <div>
                         <label for="email" class="text-sm fw-semibold text-primary-light d-inline-block mb-8">
                             Email Address
                             <span class="text-danger-600">*</span>
                         </label>
-                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        <input type="email" id="email" class="email-field form-control" placeholder="Enter your email" >
                     </div>
 
                     <div>
@@ -34,8 +34,8 @@
                             <span class="text-danger-600">*</span>
                         </label>
                         <div class="position-relative">
-                            <input type="password" id="password" class="form-control" placeholder="Enter your password"
-                                required>
+                            <input type="password" id="password" class="password-field form-control" placeholder="Enter your password"
+                                >
                             <button type="button"
                                 class="toggle-password btn p-0 border-0 bg-transparent position-absolute end-0 top-50 translate-middle-y me-16 text-secondary-light cursor-pointer ri-eye-line"
                                 data-toggle="#password" aria-label="Toggle password visibility">
@@ -52,7 +52,7 @@
                         Password?</a>
                 </div>
                 <div class="">
-                    <button type="submit" class="btn btn-primary-600 text-sm btn-sm px-12 py-16 w-100 radius-8"> Log In
+                    <button type="submit" class="loginBtn btn btn-primary-600 text-sm btn-sm px-12 py-16 w-100 radius-8"> Log In
                     </button>
                 </div>
                 <div class="text-center text-sm text-secondary-light">
